@@ -1,0 +1,25 @@
+[
+    {
+        "number": 1,
+        "question" : "Which squad members won't play a game?",
+        "help" : "Like Liam Dawson in 2019, they might field, but won't start.",
+        "options" : "englandPLayers",
+        "isMulti" : true
+    },
+    {
+        "number": 2,
+        "question" : "What will Englands run rate be?",
+        "help" : "Includes knockout games and batting second",
+        "options" : "runRate",
+        "isMulti" : false
+
+    },
+    {
+        "number": 3,
+        "question" : "Who will concede the most sixes?",
+        "help" : "All matches they play count",
+        "options" : "englandBowlers",
+        "isMulti" : false
+
+    }
+]
