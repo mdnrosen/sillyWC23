@@ -1,11 +1,65 @@
 import React from 'react'
 
+import { Box, Card, CardContent, FormControl, Grid } from '@mui/material'
+
+import { RoundTitle } from '../components/RoundTitle'
+import { QuestionTitle } from '../components/QuestionTitle'
+
 export const HeadToHeadRound = () => {
-  return (
-    <>
-        <h1>Head to Head</h1>
-    </>
-  )
+    return (
+        <>
+            <Card sx={{ my: 2 }}>
+
+                <RoundTitle num="2" name="Head to Head" marking="5pts for each correct" />
+                <CardContent>
+                    <Box component="form">
+                        <Grid container spacing={2}>
+
+                            <Grid item xs={12}>
+                                <FormControl fullWidth>
+
+                                    <QuestionTitle
+                                        title="True or false. There will be a super over."
+                                        num="1"
+                                        question=""
+                                        hint=""
+                                    />
+
+                                    <QuestionTitle
+                                        title="Pace or spin. What will take more wickets?"
+                                        num="2"
+                                        question=""
+                                        hint=""
+                                    />
+
+                                    <QuestionTitle
+                                        title="Bat or chase. Captains will choose to do either more?"
+                                        num="3"
+                                        question=""
+                                        hint=""
+                                    />
+
+                                    <QuestionTitle
+                                        title="Bat first or chase. Which will win more games?"
+                                        num="4"
+                                        question=""
+                                        hint=""
+                                    />
+
+                                    <QuestionTitle
+                                        title="Who wins. India or Pakistan or Game cancelled?"
+                                        num="5"
+                                        question=""
+                                        hint=""
+                                    />
+                                </FormControl>
+                            </Grid>
+                        </Grid>
+                    </Box>
+                </CardContent>
+            </Card>
+        </>
+    )
 }
 
 /*
@@ -16,7 +70,7 @@ True or false. There will be a super over.
 Pace or spin. What will take more wickets?
 Bat or chase. Captains will choose to do either more?
 Bat first or chase. Which will win more games?
-Who wins. India or Pakistan or Game cancelled 
+Who wins. India or Pakistan or Game cancelled? 
 
 Consider using radio buttons or an even more preferable alternative like:
 -> https://mui.com/material-ui/react-toggle-button/
