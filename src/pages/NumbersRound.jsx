@@ -1,10 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import { Card, CardContent, Box, Grid, FormControl, TextField } from '@mui/material'
 import { RoundTitle } from '../components/RoundTitle'
 import { QuestionTitle } from '../components/QuestionTitle'
 
 export const NumbersRound = () => {
+    const [ guesses, setGuesses ] = useState({})
+
+    const handleChange = (e) => {
+        setGuesses({...guesses, [e.target.name]: e.target.value})
+    }
+
+
+
   return (
     <Card sx={{ my: 2 }}>
         <RoundTitle 
@@ -13,7 +21,7 @@ export const NumbersRound = () => {
             marking="5pts within 5% | 3pts within 10% | 1pt within 15%"
         />
         <CardContent>
-            <Box component="form">
+            <Box component="form" onChange={handleChange}>
                 <Grid container spacing={2}>
                     <Grid item xs={12}>
                         <FormControl fullWidth>
@@ -26,6 +34,7 @@ export const NumbersRound = () => {
                             <TextField 
                                 fullWidth 
                                 label="Percentage"
+                                name="num_freehits"
                                 type="number"
                                 variant="outlined"
                                 InputLabelProps={{ shrink: true }}
@@ -45,6 +54,7 @@ export const NumbersRound = () => {
                                 fullWidth 
                                 label="Runs"
                                 type="number"
+                                name="num_firstinns"
                                 variant="outlined"
                                 InputLabelProps={{ shrink: true }}
                             />
@@ -63,6 +73,7 @@ export const NumbersRound = () => {
                                 fullWidth 
                                 label="Wickets"
                                 type="number"
+                                name="num_dutchwkts"
                                 variant="outlined"
                                 InputLabelProps={{ shrink: true }}
                             />
@@ -80,6 +91,7 @@ export const NumbersRound = () => {
                             <TextField 
                                 fullWidth 
                                 label="Decisions"
+                                name="num_umpires"
                                 type="number"
                                 variant="outlined"
                                 InputLabelProps={{ shrink: true }}
@@ -98,6 +110,7 @@ export const NumbersRound = () => {
                             <TextField 
                                 fullWidth 
                                 label="Runs"
+                                name="num_tailenderruns"
                                 type="number"
                                 variant="outlined"
                                 InputLabelProps={{ shrink: true }}
@@ -116,6 +129,7 @@ export const NumbersRound = () => {
                             <TextField 
                                 fullWidth 
                                 label="Sixes"
+                                name="num_totalsixes"
                                 type="number"
                                 variant="outlined"
                                 InputLabelProps={{ shrink: true }}
