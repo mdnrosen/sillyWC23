@@ -24,11 +24,8 @@ export const StandingsRound = () => {
                                 hint="Just drag and drop"
                                 question="Select your final group standings"                    
                             />
-                        </FormControl>
                         <TeamList />
-
-                        {/* Drag and drog magic to go here */}
-
+                        </FormControl>
                     </Grid>
                 </Grid>
             </Box>
