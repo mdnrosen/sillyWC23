@@ -2,7 +2,6 @@ import { Box, Card, CardContent, FormControl, Grid, InputLabel, MenuItem, Select
 import React, { useState } from 'react'
 import { RoundTitle } from '../components/RoundTitle'
 import { QuestionTitle } from '../components/QuestionTitle'
-import questions from '../assets/data/englandRound.json'
 import runRateOpts from '../assets/data/options/runRate.json'
 import squads from '../assets/data/squads.json'
 import { getOptions } from '../utils/helpers'
@@ -16,7 +15,6 @@ export const EnglandRound = () => {
     const handleChange = (event) => {
         console.log(event.target.value)
     }
-
 
   return (
     <Card sx={{ my: 2 }}>
