@@ -83,7 +83,7 @@ export const TeamList = () => {
                                     />
                                 </ListItemAvatar>
                                 <ListItemText 
-                                    primary={<Typography color="primary" variant="overline">{team.name}</Typography>}
+                                    primary={<Typography color="primary" variant="h6">{team.name.toUpperCase()}</Typography>}
                                 />         
                             </ListItem>
                         </Card>
