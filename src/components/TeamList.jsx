@@ -9,7 +9,6 @@ export const TeamList = () => {
     const [ teams, setTeams ] = useState(teamData)
     const [ teamOrder, setTeamOrder ] = useState(teamData)
 
-
     useEffect(() => {
         const propsData = teams.map((team, i) => {
             return {
@@ -20,7 +19,7 @@ export const TeamList = () => {
         setTeamOrder(propsData)
     },[teams])
     
-
+    
     const reorder = (list, startIndex, endIndex) => {
         const result = Array.from(list);
         const [removed] = result.splice(startIndex, 1);
