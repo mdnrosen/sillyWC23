@@ -7,7 +7,7 @@ export const RoundTitle = ({ num, name, marking }) => {
         <Typography color="black" variant="h4">
             ROUND {num} - {name.toUpperCase()}
         </Typography>
-        <Typography color="black" variant="body">
+        <Typography color="black" variant="body2">
           {marking}
         </Typography>
     </Toolbar>
