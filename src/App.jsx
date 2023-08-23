@@ -8,6 +8,7 @@ import { TeamList } from './components/TeamList';
 
 import { Home } from './pages/Home'
 import { EnglandRound } from './pages/EnglandRound';
+import { StandingsRound } from './pages/StandingsRound';
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
             <Routes>
               <Route path='/' element={<Home />} />
               <Route path='/england' element={<EnglandRound />} />
+              <Route path='/standings' element={<StandingsRound />} />
             </Routes>
           </BrowserRouter>
       </ThemeProvider>

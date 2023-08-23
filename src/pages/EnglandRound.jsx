@@ -19,8 +19,8 @@ export const EnglandRound = () => {
 
 
   return (
-    <Card sx={{ py: 4}}>
-        <RoundTitle num="1" title="England" />
+    <Card sx={{ my: 2 }}>
+        <RoundTitle num="1" name="England" marking="5pts for each correct" />
         <CardContent>
             <Box component="form">
                 <Grid container spacing={2}>
@@ -42,8 +42,6 @@ export const EnglandRound = () => {
                                         <MenuItem key={i} value={opt.value}>{opt.label}</MenuItem>
                                     ))}
                        
-
-
                                 </Select>
                             </FormControl>
                         </Grid>

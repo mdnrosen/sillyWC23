@@ -8,7 +8,6 @@ export const TeamList = () => {
 
   return (
     <Box sx={{ width: { xs: '100%', lg: '50%', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}}>
-        <Toolbar></Toolbar>
         <Box>
         {teams.map(team => (
             <Card>

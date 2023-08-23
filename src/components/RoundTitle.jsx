@@ -1,15 +1,15 @@
 import { ListItem, ListItemText, Toolbar, Typography } from '@mui/material'
 import React from 'react'
 
-export const RoundTitle = ({ num, title, question, hint }) => {
+export const RoundTitle = ({ num, name, marking }) => {
   return (
-    <Toolbar sx={{ py: 1, display: 'flex', justifyContent: 'space-between' , alignItems: 'center' }}>
-        <ListItem>
-          <ListItemText 
-            primary={`Q${num} ${title}`}
-            secondary={question}
-          />
-        </ListItem>
+    <Toolbar sx={{ backgroundColor: 'secondary.main', color: 'black', py: 4, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' , alignItems: 'flex-start' }}>
+        <Typography color="black" variant="h4">
+            ROUND {num} - {name.toUpperCase()}
+        </Typography>
+        <Typography color="black" variant="body">
+          {marking}
+        </Typography>
     </Toolbar>
   )
 }
