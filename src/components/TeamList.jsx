@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import { Avatar, Card, ListItem, ListItemAvatar, ListItemText, Typography } from '@mui/material'
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
@@ -7,7 +7,19 @@ import teamData from '../assets/data/teams.json'
 
 export const TeamList = () => {
     const [ teams, setTeams ] = useState(teamData)
+    const [ teamOrder, setTeamOrder ] = useState(teamData)
 
+
+    useEffect(() => {
+        const propsData = teams.map((team, i) => {
+            return {
+                position: i + 1,
+                name: team.name,
+            }
+        })
+        setTeamOrder(propsData)
+    },[teams])
+    
 
     const reorder = (list, startIndex, endIndex) => {
         const result = Array.from(list);
