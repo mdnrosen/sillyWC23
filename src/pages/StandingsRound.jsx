@@ -5,11 +5,6 @@ import { RoundTitle } from '../components/RoundTitle'
 import { QuestionTitle } from '../components/QuestionTitle'
 import { TeamList } from '../components/TeamList'
 
-function convertUnicode(input) {
-    return input.replace(/\\+u([0-9a-fA-F]{4})/g, (a,b) =>
-      String.fromCharCode(parseInt(b, 16)));
-  }
-
 export const StandingsRound = () => {
   return (
     <Card sx={{ my: 2 }}>
@@ -31,7 +26,6 @@ export const StandingsRound = () => {
                             />
                         </FormControl>
                         <TeamList />
-                        <p>{convertUnicode('U+1F1E8')}</p>
 
                         {/* Drag and drog magic to go here */}
 
