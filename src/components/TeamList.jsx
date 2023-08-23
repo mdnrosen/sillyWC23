@@ -9,7 +9,6 @@ export const TeamList = () => {
     const [ teams, setTeams ] = useState(teamData)
     const [ teamOrder, setTeamOrder ] = useState(teamData)
 
-
     useEffect(() => {
         const propsData = teams.map((team, i) => {
             return {
@@ -20,25 +19,17 @@ export const TeamList = () => {
         setTeamOrder(propsData)
     },[teams])
     
-
     const reorder = (list, startIndex, endIndex) => {
         const result = Array.from(list);
         const [removed] = result.splice(startIndex, 1);
         result.splice(endIndex, 0, removed);
-      
         return result;
       };
       
-      
       const getItemStyle = (isDragging, draggableStyle) => ({
-        // some basic styles to make the items look a bit nicer
         userSelect: "none",
         padding: 1,
-      
-        // change background colour if dragging
         background: isDragging ? "#FFE9D6" : "black",
-      
-        // styles we need to apply on draggables
         ...draggableStyle
       });
       
@@ -49,19 +40,18 @@ export const TeamList = () => {
       });
       
 
-  const onDragEnd = (result) => {
-    if (!result.destination) {
-        return;
-      }
-  
-      const newTeams = reorder(
-        teams,
-        result.source.index,
-        result.destination.index
-      );
+    const onDragEnd = (result) => {
+        const { destination, source } = result;
+        if (!destination) return
+    
+        const newTeams = reorder(
+            teams,
+            source.index,
+            destination.index
+        );
 
-      setTeams(newTeams)
-  }
+        setTeams(newTeams)
+    }
 
     return (
       <DragDropContext onDragEnd={onDragEnd}>
