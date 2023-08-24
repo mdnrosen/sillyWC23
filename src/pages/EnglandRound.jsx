@@ -17,7 +17,7 @@ export const EnglandRound = () => {
     }
 
   return (
-    <Card sx={{ my: 2 }}>
+    <Card sx={{ py: 1 }}>
         <RoundTitle num="1" name="England" marking="5pts for each correct" />
         <CardContent>
             <Box component="form">
@@ -28,6 +28,7 @@ export const EnglandRound = () => {
                                 <QuestionTitle 
                                     title="The Liam Dawson role"
                                     num="1"
+                                    name="eng_noplay"
                                     question="Which player won't play a single game?"
                                     hint="Listed XI - playing as a sub doesn't count"
                                 
@@ -49,6 +50,7 @@ export const EnglandRound = () => {
                                 <QuestionTitle 
                                     title="500 out of the question?"
                                     num="2"
+                                    name="eng_runrate"
                                     question="What will England's run rate be?"
                                     hint="Includes knockout games too"
                                 
@@ -70,6 +72,7 @@ export const EnglandRound = () => {
                                 <QuestionTitle 
                                     title="Yes Bank Maximums"
                                     num="3"
+                                    name="eng_sixesconceded"
                                     question="Which bowler will concede the most sixes?"
                                     hint="Fairly simple..."
                                 
@@ -91,6 +94,7 @@ export const EnglandRound = () => {
                                 <QuestionTitle 
                                     title="Pole-less"
                                     num="4"
+                                    name="eng_fewestwickets"
                                     question="Which bowler will take the fewest wickets?"
                                     hint="Minimum overs bowled is 10"
                                 
@@ -111,6 +115,7 @@ export const EnglandRound = () => {
                                 <QuestionTitle 
                                     title="Get on with it"
                                     num="5"
+                                    name="eng_strikerate"
                                     question="WWho will have the lowest batting strike rate?"
                                     hint="Minimum 50 balls faced"
                                 

@@ -7,7 +7,7 @@ import { TeamList } from '../components/TeamList'
 
 export const StandingsRound = () => {
   return (
-    <Card sx={{ my: 2 }}>
+    <Card sx={{ py: 1 }}>
         <RoundTitle 
             num="5"
             name="Group Standings"
