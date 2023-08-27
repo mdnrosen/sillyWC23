@@ -1,26 +1,29 @@
 import { Box, Card, CardContent, FormControl, Grid, InputLabel, MenuItem, Select, Toolbar, Typography } from '@mui/material'
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { RoundTitle } from '../components/RoundTitle'
 import { QuestionTitle } from '../components/QuestionTitle'
 import runRateOpts from '../assets/data/options/runRate.json'
 import squads from '../assets/data/squads.json'
 import { getOptions } from '../utils/helpers'
+import { GuessesContext } from '../App'
 
 export const EnglandRound = () => {
+    const guesses = useContext(GuessesContext)
 
     const englandPlayers = squads.find(squad => squad.team === 'England').players
     const englandBowlers = englandPlayers.filter(player => player.bowler)
     const englandBatters = englandPlayers.filter(player => player.batter)
 
-    const handleChange = (event) => {
-        console.log(event.target.value)
+    const handleChange = (e) => {
+        const { name, value } = e.target
+        setGuesses({...guesses, [name]: value})
     }
 
   return (
     <Card sx={{ py: 1 }}>
         <RoundTitle num="1" name="England" marking="5pts for each correct" />
         <CardContent>
-            <Box component="form">
+            <Box component="form" onChange={handleChange}>
                 <Grid container spacing={2}>
 
                         <Grid item xs={12}>
@@ -28,12 +31,12 @@ export const EnglandRound = () => {
                                 <QuestionTitle 
                                     title="The Liam Dawson role"
                                     num="1"
-                                    name="eng_noplay"
                                     question="Which player won't play a single game?"
                                     hint="Listed XI - playing as a sub doesn't count"
                                 
                                 />
                                 <Select
+                                    name="eng_noplay"
                                     onChange={handleChange}
                                     placeholder="Pick..."
                                 >
@@ -50,13 +53,13 @@ export const EnglandRound = () => {
                                 <QuestionTitle 
                                     title="500 out of the question?"
                                     num="2"
-                                    name="eng_runrate"
                                     question="What will England's run rate be?"
                                     hint="Includes knockout games too"
                                 
                                 />
                                 <Select
                                     onChange={handleChange}
+                                    name="eng_runrate"
                                     placeholder="Pick..."
                                 >
                                     {runRateOpts.map((opt, i) => (
@@ -72,12 +75,12 @@ export const EnglandRound = () => {
                                 <QuestionTitle 
                                     title="Yes Bank Maximums"
                                     num="3"
-                                    name="eng_sixesconceded"
                                     question="Which bowler will concede the most sixes?"
                                     hint="Fairly simple..."
                                 
                                 />
                                 <Select
+                                    name="eng_sixesconceded"
                                     onChange={handleChange}
                                     placeholder="Pick..."
                                 >
@@ -94,12 +97,12 @@ export const EnglandRound = () => {
                                 <QuestionTitle 
                                     title="Pole-less"
                                     num="4"
-                                    name="eng_fewestwickets"
                                     question="Which bowler will take the fewest wickets?"
                                     hint="Minimum overs bowled is 10"
                                 
                                 />
                                 <Select
+                                    name="eng_fewestwickets"
                                     onChange={handleChange}
                                     placeholder="Pick..."
                                 >
@@ -115,12 +118,12 @@ export const EnglandRound = () => {
                                 <QuestionTitle 
                                     title="Get on with it"
                                     num="5"
-                                    name="eng_strikerate"
                                     question="WWho will have the lowest batting strike rate?"
                                     hint="Minimum 50 balls faced"
                                 
                                 />
                                 <Select
+                                    name="eng_strikerate"
                                     onChange={handleChange}
                                     placeholder="Pick..."
                                 >
@@ -144,6 +147,7 @@ export const EnglandRound = () => {
                                 <Select
                                     onChange={handleChange}
                                     placeholder="Pick..."
+                                    name="eng_drops"
                                 >
                                     {getOptions(englandPlayers, 'name', 'name').map((opt, i) => (
                                         <MenuItem key={i} value={opt.value}>{opt.label}</MenuItem>

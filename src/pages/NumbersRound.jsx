@@ -11,8 +11,6 @@ export const NumbersRound = () => {
         setGuesses({...guesses, [e.target.name]: e.target.value})
     }
 
-
-
   return (
     <Card sx={{ py: 1 }}>
         <RoundTitle 
