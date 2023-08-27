@@ -1,14 +1,15 @@
-import { createContext, useState, useContext } from "react";
+import { createContext, useState, useEffect,useContext } from "react";
 
 const GuessContext = createContext({});
 
-export function getGuesses(){
+export function useGuesses(){
     return useContext(GuessContext)
 }
 
 export function GuessesProvider({ children }){
     const [ guesses, setGuesses ] = useStickyState({}, 'sillywc_guesses')
 
+    // This is a custom hook to persist state on refresh
     function useStickyState(defaultVal, key) {
       const [ value, setValue ] = useState(() => {
         const stickyVal = window.localStorage.getItem(key)

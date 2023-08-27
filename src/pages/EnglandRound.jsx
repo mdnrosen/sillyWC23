@@ -1,22 +1,23 @@
 import { Box, Card, CardContent, FormControl, Grid, InputLabel, MenuItem, Select, Toolbar, Typography } from '@mui/material'
-import React, { useContext, useState } from 'react'
 import { RoundTitle } from '../components/RoundTitle'
 import { QuestionTitle } from '../components/QuestionTitle'
 import runRateOpts from '../assets/data/options/runRate.json'
 import squads from '../assets/data/squads.json'
 import { getOptions } from '../utils/helpers'
-import { GuessesContext } from '../App'
+import { useGuesses } from '../context/GuessContext'
+
 
 export const EnglandRound = () => {
-    const guesses = useContext(GuessesContext)
+    const { guesses, updateGuesses } = useGuesses()
 
+    // Options setting
     const englandPlayers = squads.find(squad => squad.team === 'England').players
     const englandBowlers = englandPlayers.filter(player => player.bowler)
     const englandBatters = englandPlayers.filter(player => player.batter)
 
     const handleChange = (e) => {
         const { name, value } = e.target
-        setGuesses({...guesses, [name]: value})
+        updateGuesses(name, value)
     }
 
   return (
@@ -39,6 +40,7 @@ export const EnglandRound = () => {
                                     name="eng_noplay"
                                     onChange={handleChange}
                                     placeholder="Pick..."
+                                    value={guesses['eng_noplay']}
                                 >
                                     {getOptions(englandPlayers, 'name', 'name').map((opt, i) => (
                                         <MenuItem key={i} value={opt.value}>{opt.label}</MenuItem>
@@ -61,6 +63,7 @@ export const EnglandRound = () => {
                                     onChange={handleChange}
                                     name="eng_runrate"
                                     placeholder="Pick..."
+                                    value={guesses['eng_runrate']}
                                 >
                                     {runRateOpts.map((opt, i) => (
                                         <MenuItem key={i} value={opt.value}>{opt.label}</MenuItem>
@@ -83,6 +86,7 @@ export const EnglandRound = () => {
                                     name="eng_sixesconceded"
                                     onChange={handleChange}
                                     placeholder="Pick..."
+                                    value={guesses['eng_sixesconceded']}
                                 >
                                     {getOptions(englandBowlers, 'name', 'name').map((opt, i) => (
                                         <MenuItem key={i} value={opt.value}>{opt.label}</MenuItem>
@@ -105,6 +109,7 @@ export const EnglandRound = () => {
                                     name="eng_fewestwickets"
                                     onChange={handleChange}
                                     placeholder="Pick..."
+                                    value={guesses['eng_fewestwickets']}
                                 >
                                     {getOptions(englandBowlers, 'name', 'name').map((opt, i) => (
                                         <MenuItem key={i} value={opt.value}>{opt.label}</MenuItem>
@@ -126,6 +131,7 @@ export const EnglandRound = () => {
                                     name="eng_strikerate"
                                     onChange={handleChange}
                                     placeholder="Pick..."
+                                    value={guesses['eng_strikerate']}
                                 >
                                     {getOptions(englandBatters, 'name', 'name').map((opt, i) => (
                                         <MenuItem key={i} value={opt.value}>{opt.label}</MenuItem>
@@ -148,6 +154,7 @@ export const EnglandRound = () => {
                                     onChange={handleChange}
                                     placeholder="Pick..."
                                     name="eng_drops"
+                                    value={guesses['eng_drops']}
                                 >
                                     {getOptions(englandPlayers, 'name', 'name').map((opt, i) => (
                                         <MenuItem key={i} value={opt.value}>{opt.label}</MenuItem>

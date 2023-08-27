@@ -1,14 +1,14 @@
-import React, { useState } from 'react'
-
 import { Card, CardContent, Box, Grid, FormControl, TextField } from '@mui/material'
 import { RoundTitle } from '../components/RoundTitle'
 import { QuestionTitle } from '../components/QuestionTitle'
+import { useGuesses } from '../context/GuessContext'
 
 export const NumbersRound = () => {
-    const [ guesses, setGuesses ] = useState({})
+    const { guesses, updateGuesses } = useGuesses()
 
     const handleChange = (e) => {
-        setGuesses({...guesses, [e.target.name]: e.target.value})
+        const { name, value } = e.target
+        updateGuesses(name, value)
     }
 
   return (
@@ -31,6 +31,7 @@ export const NumbersRound = () => {
                             />
                             <TextField 
                                 fullWidth 
+                                value={guesses['num_freehits'] || ''}
                                 label="Percentage"
                                 name="num_freehits"
                                 type="number"
@@ -53,6 +54,7 @@ export const NumbersRound = () => {
                                 label="Runs"
                                 type="number"
                                 name="num_firstinns"
+                                value={guesses['num_firstinns'] || ''}
                                 variant="outlined"
                                 InputLabelProps={{ shrink: true }}
                             />
@@ -72,6 +74,7 @@ export const NumbersRound = () => {
                                 label="Wickets"
                                 type="number"
                                 name="num_dutchwkts"
+                                value={guesses['num_dutchwkts'] || ''}
                                 variant="outlined"
                                 InputLabelProps={{ shrink: true }}
                             />
@@ -90,6 +93,7 @@ export const NumbersRound = () => {
                                 fullWidth 
                                 label="Decisions"
                                 name="num_umpires"
+                                value={guesses['num_umpires'] || ''}
                                 type="number"
                                 variant="outlined"
                                 InputLabelProps={{ shrink: true }}
@@ -109,6 +113,7 @@ export const NumbersRound = () => {
                                 fullWidth 
                                 label="Runs"
                                 name="num_tailenderruns"
+                                value={guesses['num_tailenderruns'] || ''}
                                 type="number"
                                 variant="outlined"
                                 InputLabelProps={{ shrink: true }}
@@ -128,6 +133,7 @@ export const NumbersRound = () => {
                                 fullWidth 
                                 label="Sixes"
                                 name="num_totalsixes"
+                                value={guesses['num_totalsixes'] || ''}
                                 type="number"
                                 variant="outlined"
                                 InputLabelProps={{ shrink: true }}

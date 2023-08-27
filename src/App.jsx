@@ -14,37 +14,23 @@ import { NumbersRound } from './pages/NumbersRound';
 import { Navbar } from './components/Navbar';
 import { BottomNav } from './components/BottomNav';
 
-export const GuessesContext = createContext({})
+import { GuessesProvider } from './context/GuessContext'
 
 function App() {
-  const [ guesses, setGuesses ] = useStickyState({}, 'sillywc_guesses')
-
-  function useStickyState(defaultVal, key) {
-    const [ value, setValue ] = useState(() => {
-      const stickyVal = window.localStorage.getItem(key)
-        return stickyVal !== null ? JSON.parse(stickyVal) : defaultVal
-      })
-
-      useEffect(() => {
-        window.localStorage.setItem(key, JSON.stringify(value))
-      }, [key, value])
-      return [ value, setValue ]
-    }
-
   return (
     <Container maxWidth='md'>
       <ThemeProvider theme={theme}>
         <CssBaseline />
           <BrowserRouter>
             <Navbar />
-            <GuessesContext.Provider value={guesses}>
+            <GuessesProvider>
               <Routes>
                 <Route path='/' element={<Home />} />
                 <Route path='/england' element={<EnglandRound />} />
                 <Route path='/standings' element={<StandingsRound />} />
                 <Route path='/numbers' element={<NumbersRound />} />
               </Routes>
-            </GuessesContext.Provider>
+            </GuessesProvider>
             <BottomNav />
           </BrowserRouter>
       </ThemeProvider>
