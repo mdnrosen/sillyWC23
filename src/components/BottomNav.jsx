@@ -1,27 +1,64 @@
-import { Button, Toolbar, Grid } from '@mui/material'
-import React from 'react'
+import { Button, Card, Toolbar, Grid } from '@mui/material'
+import React, { useEffect, useState } from 'react'
 import { useNavigate, useLocation } from 'react-router-dom'
 
-
-
 export const BottomNav = () => {
+    const location = useLocation()
+    const navigate = useNavigate()
+
+    const [ next, setNext ] = useState(null)
+    const [ prev, setPrev ] = useState(null)
+
     const rounds = [
-        'england',
-        'fiftyfifty',
-        'numbers',
-        'multis',
-        'standings'
+        '/england',
+        '/numbers',
+        '/fiftyfifty',
+        '/multis',
+        '/standings'
     ]
 
-    const showPrev = () => {
-        return true
-    }
+    useEffect(() => {
+      const current = location.pathname
+      const index = rounds.indexOf(current)
+      console.log('index', index)
+
+      if (index < 0) {
+        setNext(null)
+        setPrev(null)
+      }
+
+      setNext(index === 4 ? null : rounds[index+1])
+      setPrev(index === 0 ? null : rounds[index-1])
+    },[location])
 
 
   return (
-    <Toolbar sx={{ display: 'flex', justifyContent: 'space-between', background: 'secondary'}}>
-        {showPrev() ?? <Button>Previous</Button>}
-        <Button>Next</Button>
-    </Toolbar>
+    <Card sx={{ pb: 2}}>
+      <Toolbar>
+        <Grid container>
+          <Grid item xs={6} textAlign="left">
+            {prev &&
+              <Button
+                onClick={() => navigate(prev)} 
+                variant="contained" 
+                color="secondary">
+                Back
+              </Button>
+            }
+            
+          </Grid>
+          <Grid item xs={6} textAlign="right">
+            {next &&
+              <Button
+                onClick={() => navigate(next)} 
+                variant="contained" 
+                color="secondary">
+                Next
+              </Button>
+            }
+          </Grid>
+        </Grid>
+      </Toolbar>
+    </Card>
   )
 }
