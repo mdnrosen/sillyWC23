@@ -5,9 +5,14 @@ import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
 import teamData from '../assets/data/teams.json'
 
 
-export const TeamList = () => {
+export const TeamList = ({ updateStandings }) => {
     const [ teams, setTeams ] = useState(teamData)
     const [ teamOrder, setTeamOrder ] = useState(teamData)
+
+
+    useEffect(() => {
+      updateStandings(teamOrder)
+    },[teamOrder])
 
     useEffect(() => {
         const propsData = teams.map((team, i) => {

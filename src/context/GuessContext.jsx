@@ -1,4 +1,4 @@
-import { createContext, useState, useEffect,useContext } from "react";
+import { createContext, useState, useEffect, useContext } from "react";
 
 const GuessContext = createContext({});
 
@@ -26,8 +26,17 @@ export function GuessesProvider({ children }){
         setGuesses({...guesses, [name]: value});
     }
 
+    const updateStandings = (arr) => {
+      setGuesses({...guesses, standings: arr});
+    }
+
     return (
-        <GuessContext.Provider value={{ guesses, updateGuesses }}>
+        <GuessContext.Provider 
+          value={{ 
+            guesses, 
+            updateGuesses,
+            updateStandings
+          }}>
             {children}
         </GuessContext.Provider>
     )

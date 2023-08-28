@@ -4,8 +4,13 @@ import { Box, Card, CardContent, FormControl, Grid } from '@mui/material'
 import { RoundTitle } from '../components/RoundTitle'
 import { QuestionTitle } from '../components/QuestionTitle'
 import { TeamList } from '../components/TeamList'
+import { useGuesses} from '../context/GuessContext'
 
 export const StandingsRound = () => {
+const { guesses, updateStandings } = useGuesses()
+
+
+
   return (
     <Card sx={{ py: 1 }}>
         <RoundTitle 
@@ -24,7 +29,7 @@ export const StandingsRound = () => {
                                 hint="Just drag and drop"
                                 question="Select your final group standings"                    
                             />
-                        <TeamList />
+                        <TeamList updateStandings={updateStandings} />
                         </FormControl>
                     </Grid>
                 </Grid>
