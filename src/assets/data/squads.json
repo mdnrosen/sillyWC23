@@ -1,73 +1,22 @@
 [
     {
-        "team" : "England",
+        "team": "England",
         "players": [
-            {
-                "id": "72a53e6d-896c-4b86-af94-80c59c1cfa5a",
-                "name": "Jos Buttler",
-                "batter": true,
-                "bowler": false
-            },
-            {
-                "id": "934cb8e1-1b7d-4169-bf4d-45b5876c5d68",
-                "name": "Joe Root",
-                "batter": true,
-                "bowler": true
-            },
-            {
-                "id": "c4b1a83f-0fe6-4c81-976b-3c6cc4a2ac9b",
-                "name": "Eoin Morgan",
-                "batter": true,
-                "bowler": false
-            },
-            {
-                "id": "5b2c72b2-21f5-4b3d-9157-34824eb4c4f7",
-                "name": "Jonny Bairstow",
-                "batter": true,
-                "bowler": false
-            },
-            {
-                "id": "71a1a8f9-48ef-4ad5-8b5b-931c3d564f86",
-                "name": "Jason Roy",
-                "batter": true,
-                "bowler": false
-            },
-            {
-                "id": "86c6e0e6-64f1-4b6b-99e9-0a4d53e25eaa",
-                "name": "Ben Stokes",
-                "batter": true,
-                "bowler": true
-            },
-            {
-                "id": "f5b5d2fe-4e6d-47f7-a615-74c4f438d6b9",
-                "name": "Chris Woakes",
-                "batter": true,
-                "bowler": true
-            },
-            {
-                "id": "8b2b20d1-76b7-44dd-b659-92c3d85cfe22",
-                "name": "Adil Rashid",
-                "batter": false,
-                "bowler": true
-            },
-            {
-                "id": "e2854a7b-8913-4c2b-af45-5e8f562178e6",
-                "name": "Mark Wood",
-                "batter": false,
-                "bowler": true
-            },
-            {
-                "id": "3f3b21e8-ec2d-4b67-88d4-7f54d8d38fa2",
-                "name": "Liam Plunkett",
-                "batter": false,
-                "bowler": true
-            },
-            {
-                "id": "b89b7e1c-412b-4b99-b2c2-9e963b216d4f",
-                "name": "Tom Curran",
-                "batter": false,
-                "bowler": true
-            }
+            { "id": "572a53e6d-896c-4b86-af94-80c59c1cfa5a", "name": "Jos Buttler", "batter": true, "bowler": false },
+            { "id": "6934cb8e1-1b7d-4169-bf4d-45b5876c5d68", "name": "Joe Root", "batter": true, "bowler": true },
+            { "id": "7c4b1a83f-0fe6-4c81-976b-3c6cc4a2ac9b", "name": "Moeen Ali", "batter": true, "bowler": true },
+            { "id": "85b2c72b2-21f5-4b3d-9157-34824eb4c4f7", "name": "Jonny Bairstow", "batter": true, "bowler": false },
+            { "id": "971a1a8f9-48ef-4ad5-8b5b-931c3d564f86", "name": "Jason Roy", "batter": true, "bowler": false },
+            { "id": "a6c6e0e6-64f1-4b6b-99e9-0a4d53e25eaa", "name": "Ben Stokes", "batter": true, "bowler": true },
+            { "id": "bf5b5d2fe-4e6d-47f7-a615-74c4f438d6b9", "name": "Chris Woakes", "batter": false, "bowler": true },
+            { "id": "d82b20d1-76b7-44dd-b659-92c3d85cfe22", "name": "Adil Rashid", "batter": false, "bowler": true },
+            { "id": "2e2854a7b-8913-4c2b-af45-5e8f562178e6", "name": "Mark Wood", "batter": false, "bowler": true },
+            { "id": "43f3b21e8-ec2d-4b67-88d4-7f54d8d38fa2", "name": "Gus Atkinson", "batter": false, "bowler": true },
+            { "id": "5b89b7e1c-412b-4b99-b2c2-9e963b216d4f", "name": "Sam Curran", "batter": false, "bowler": true },
+            { "id": "6b89b7e1c-412b-4b99-b2c2-28ahf8a8a0k", "name": "David Willey", "batter": false, "bowler": true },
+            { "id": "7b89b7e1c-412b-4b99-b2c2-28ahf8a8a0k", "name": "Liam Livingstone", "batter": true, "bowler": true },
+            { "id": "8b89b7e1c-412b-4b99-b2c2-28ahf8a8a0k", "name": "Reece Topley", "batter": false, "bowler": true },
+            { "id": "9b89b7e1c-412b-4b99-b2c2-28ahf8a8a0k", "name": "Dawid Malan", "batter": true, "bowler": false }
         ]
     },
     {
