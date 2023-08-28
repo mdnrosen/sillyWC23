@@ -15,6 +15,7 @@ import { Navbar } from './components/Navbar';
 import { BottomNav } from './components/BottomNav';
 
 import { GuessesProvider } from './context/GuessContext'
+import { MultiRound } from './pages/MultiRound'
 
 function App() {
   return (
@@ -27,8 +28,9 @@ function App() {
               <Routes>
                 <Route path='/' element={<Home />} />
                 <Route path='/england' element={<EnglandRound />} />
-                <Route path='/standings' element={<StandingsRound />} />
                 <Route path='/numbers' element={<NumbersRound />} />
+                <Route path="/multis" element={<MultiRound />} />
+                <Route path='/standings' element={<StandingsRound />} />
               </Routes>
             </GuessesProvider>
             <BottomNav />

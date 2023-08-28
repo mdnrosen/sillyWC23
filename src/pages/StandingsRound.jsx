@@ -7,7 +7,7 @@ import { TeamList } from '../components/TeamList'
 import { useGuesses} from '../context/GuessContext'
 
 export const StandingsRound = () => {
-const { guesses, updateStandings } = useGuesses()
+const { updateStandings } = useGuesses()
 
 
 

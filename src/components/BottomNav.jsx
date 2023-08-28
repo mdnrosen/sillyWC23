@@ -20,12 +20,6 @@ export const BottomNav = () => {
     useEffect(() => {
       const current = location.pathname
       const index = rounds.indexOf(current)
-      console.log('index', index)
-
-      if (index < 0) {
-        setNext(null)
-        setPrev(null)
-      }
 
       setNext(index === 4 ? null : rounds[index+1])
       setPrev(index === 0 ? null : rounds[index-1])
