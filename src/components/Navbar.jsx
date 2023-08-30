@@ -47,6 +47,7 @@ export const Navbar = () => {
                     >
                         {pages.map((page, i) => (
                             <MenuItem
+                                key={i}
                                 onClick={() => handleNavigate(page.path)}
                             >
                                 {page.label}
