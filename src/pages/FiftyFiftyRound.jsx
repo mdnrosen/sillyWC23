@@ -5,12 +5,12 @@ import { Box, Card, CardContent, FormControl, Grid } from '@mui/material'
 import { RoundTitle } from '../components/RoundTitle'
 import { QuestionTitle } from '../components/QuestionTitle'
 
-export const HeadToHeadRound = () => {
+export const FiftyFiftyRound = () => {
     return (
         <>
             <Card sx={{ my: 2 }}>
 
-                <RoundTitle num="2" name="Head to Head" marking="5pts for each correct" />
+                <RoundTitle num="3" name="Fifty Fifty" marking="5pts for each correct" />
                 <CardContent>
                     <Box component="form">
                         <Grid container spacing={2}>
