@@ -1,16 +1,18 @@
 import React from 'react'
 
-import { Box, Card, CardContent, FormControl, Grid, ToggleButton, ToggleButtonGroup, Typography } from '@mui/material'
+import { Box, Card, CardContent, FormControl, Grid, ToggleButton, ToggleButtonGroup } from '@mui/material'
 
 import { RoundTitle } from '../components/RoundTitle'
 import { QuestionTitle } from '../components/QuestionTitle'
+import { useGuesses } from '../context/GuessContext'
 
 export const FiftyFiftyRound = () => {
 
-    const [bool, setBool] = React.useState('true')
+    const { guesses, updateGuesses } = useGuesses()
 
-    const handleBool = (event, newBool) => {
-        setBool(newBool)
+    const handleChange = (e) => {
+        const { name, value } = e.target
+        updateGuesses(name, value)
     }
 
 
@@ -35,18 +37,14 @@ export const FiftyFiftyRound = () => {
                                 />
                                 <Box alignSelf={'center'}>
                                     <ToggleButtonGroup
-                                        value={bool}
+                                        fullWidth
+                                        value={guesses['super_over']}
                                         exclusive
-                                        onChange={handleBool}
+                                        onChange={handleChange}
                                         aria-label='true or false'
                                     >
-                                        <ToggleButton value="true" aria-label='true'>
-                                            <Typography>true</Typography>
-                                        </ToggleButton>
-                                        <ToggleButton value="false" aria-label='false'>
-                                            <Typography>false</Typography>
-
-                                        </ToggleButton>
+                                        <ToggleButton name="super_over" value="true" aria-label='true'>true</ToggleButton>
+                                        <ToggleButton name="super_over" value="false" aria-label='false'>false</ToggleButton>
                                     </ToggleButtonGroup>
                                 </Box>
                             </FormControl>
