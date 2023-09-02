@@ -16,33 +16,13 @@ export const FiftyFiftyRound = () => {
             <CardContent>
                 <Box component="form">
                     <Grid container spacing={2}>
-                        <Grid item xs={12}>
-                            <FormControl fullWidth>
-                                <QuestionTitle
-                                    title="True or false. There will be a super over."
-                                    num="1"
-                                    question=""
-                                    hint=""
-                                />
-                            </FormControl>
-                        </Grid>
-                        <Grid item xs={12}>
-                            <FormControl fullWidth>
-                                <QuestionTitle
-                                    title="Pace or spin. What will take more wickets?"
-                                    num="2"
-                                    question=""
-                                    hint=""
-                                />
-                            </FormControl>
-                        </Grid>
-                        <Grid item xs={12}>
-                            <FormControl fullWidth>
 
+                        <Grid item xs={12}>
+                            <FormControl fullWidth>
                                 <QuestionTitle
-                                    title="Bat or chase. Captains will choose to do either more?"
-                                    num="3"
-                                    question=""
+                                    title="True or false"
+                                    num="14"
+                                    question="There will be a super over."
                                     hint=""
                                 />
                             </FormControl>
@@ -51,9 +31,31 @@ export const FiftyFiftyRound = () => {
                         <Grid item xs={12}>
                             <FormControl fullWidth>
                                 <QuestionTitle
-                                    title="Bat first or chase. Which will win more games?"
-                                    num="4"
-                                    question=""
+                                    title="Pace or spin"
+                                    num="15"
+                                    question="What will take more wickets?"
+                                    hint=""
+                                />
+                            </FormControl>
+                        </Grid>
+
+                        <Grid item xs={12}>
+                            <FormControl fullWidth>
+                                <QuestionTitle
+                                    title="Bat or chase"
+                                    num="16"
+                                    question="Which will captains choose to do more?"
+                                    hint=""
+                                />
+                            </FormControl>
+                        </Grid>
+
+                        <Grid item xs={12}>
+                            <FormControl fullWidth>
+                                <QuestionTitle
+                                    title="Bat first or chase"
+                                    num="17"
+                                    question="Which will win more games?"
                                     hint=""
                                 />
                             </FormControl>
@@ -63,12 +65,13 @@ export const FiftyFiftyRound = () => {
                             <FormControl fullWidth>
                                 <QuestionTitle
                                     title="Who wins. India or Pakistan or Game cancelled?"
-                                    num="5"
+                                    num="18"
                                     question=""
                                     hint=""
                                 />
                             </FormControl>
                         </Grid>
+
                     </Grid>
                 </Box>
             </CardContent>
