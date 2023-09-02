@@ -4,15 +4,15 @@ import { Box, Card, CardContent, FormControl, Grid } from '@mui/material'
 import { RoundTitle } from '../components/RoundTitle'
 import { QuestionTitle } from '../components/QuestionTitle'
 import { TeamList } from '../components/TeamList'
-
-function convertUnicode(input) {
-    return input.replace(/\\+u([0-9a-fA-F]{4})/g, (a,b) =>
-      String.fromCharCode(parseInt(b, 16)));
-  }
+import { useGuesses} from '../context/GuessContext'
 
 export const StandingsRound = () => {
+const { updateStandings } = useGuesses()
+
+
+
   return (
-    <Card sx={{ my: 2 }}>
+    <Card sx={{ py: 1 }}>
         <RoundTitle 
             num="5"
             name="Group Standings"
@@ -29,12 +29,8 @@ export const StandingsRound = () => {
                                 hint="Just drag and drop"
                                 question="Select your final group standings"                    
                             />
+                        <TeamList updateStandings={updateStandings} />
                         </FormControl>
-                        <TeamList />
-                        <p>{convertUnicode('U+1F1E8')}</p>
-
-                        {/* Drag and drog magic to go here */}
-
                     </Grid>
                 </Grid>
             </Box>

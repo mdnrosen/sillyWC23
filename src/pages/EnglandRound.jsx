@@ -1,28 +1,30 @@
 import { Box, Card, CardContent, FormControl, Grid, InputLabel, MenuItem, Select, Toolbar, Typography } from '@mui/material'
-import React, { useState } from 'react'
 import { RoundTitle } from '../components/RoundTitle'
 import { QuestionTitle } from '../components/QuestionTitle'
-import questions from '../assets/data/englandRound.json'
 import runRateOpts from '../assets/data/options/runRate.json'
 import squads from '../assets/data/squads.json'
 import { getOptions } from '../utils/helpers'
+import { useGuesses } from '../context/GuessContext'
+
 
 export const EnglandRound = () => {
+    const { guesses, updateGuesses } = useGuesses()
 
+    // Options setting
     const englandPlayers = squads.find(squad => squad.team === 'England').players
     const englandBowlers = englandPlayers.filter(player => player.bowler)
     const englandBatters = englandPlayers.filter(player => player.batter)
 
-    const handleChange = (event) => {
-        console.log(event.target.value)
+    const handleChange = (e) => {
+        const { name, value } = e.target
+        updateGuesses(name, value)
     }
 
-
   return (
-    <Card sx={{ my: 2 }}>
+    <Card sx={{ py: 1 }}>
         <RoundTitle num="1" name="England" marking="5pts for each correct" />
         <CardContent>
-            <Box component="form">
+            <Box component="form" onChange={handleChange}>
                 <Grid container spacing={2}>
 
                         <Grid item xs={12}>
@@ -35,8 +37,10 @@ export const EnglandRound = () => {
                                 
                                 />
                                 <Select
+                                    name="eng_noplay"
                                     onChange={handleChange}
                                     placeholder="Pick..."
+                                    value={guesses['eng_noplay']}
                                 >
                                     {getOptions(englandPlayers, 'name', 'name').map((opt, i) => (
                                         <MenuItem key={i} value={opt.value}>{opt.label}</MenuItem>
@@ -57,7 +61,9 @@ export const EnglandRound = () => {
                                 />
                                 <Select
                                     onChange={handleChange}
+                                    name="eng_runrate"
                                     placeholder="Pick..."
+                                    value={guesses['eng_runrate']}
                                 >
                                     {runRateOpts.map((opt, i) => (
                                         <MenuItem key={i} value={opt.value}>{opt.label}</MenuItem>
@@ -77,8 +83,10 @@ export const EnglandRound = () => {
                                 
                                 />
                                 <Select
+                                    name="eng_sixesconceded"
                                     onChange={handleChange}
                                     placeholder="Pick..."
+                                    value={guesses['eng_sixesconceded']}
                                 >
                                     {getOptions(englandBowlers, 'name', 'name').map((opt, i) => (
                                         <MenuItem key={i} value={opt.value}>{opt.label}</MenuItem>
@@ -98,8 +106,10 @@ export const EnglandRound = () => {
                                 
                                 />
                                 <Select
+                                    name="eng_fewestwickets"
                                     onChange={handleChange}
                                     placeholder="Pick..."
+                                    value={guesses['eng_fewestwickets']}
                                 >
                                     {getOptions(englandBowlers, 'name', 'name').map((opt, i) => (
                                         <MenuItem key={i} value={opt.value}>{opt.label}</MenuItem>
@@ -118,8 +128,10 @@ export const EnglandRound = () => {
                                 
                                 />
                                 <Select
+                                    name="eng_strikerate"
                                     onChange={handleChange}
                                     placeholder="Pick..."
+                                    value={guesses['eng_strikerate']}
                                 >
                                     {getOptions(englandBatters, 'name', 'name').map((opt, i) => (
                                         <MenuItem key={i} value={opt.value}>{opt.label}</MenuItem>
@@ -141,6 +153,8 @@ export const EnglandRound = () => {
                                 <Select
                                     onChange={handleChange}
                                     placeholder="Pick..."
+                                    name="eng_drops"
+                                    value={guesses['eng_drops']}
                                 >
                                     {getOptions(englandPlayers, 'name', 'name').map((opt, i) => (
                                         <MenuItem key={i} value={opt.value}>{opt.label}</MenuItem>

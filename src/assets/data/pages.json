@@ -1,0 +1,26 @@
+[
+    {
+        "label" : "Round 1 - England",
+        "path" : "/england"
+    },
+    {
+        "label" : "Round 2 - Numbers",
+        "path" : "/numbers"
+    },
+    {
+        "label" : "Round 3 - Head to Head",
+        "path" : "/head2head"
+    },
+    {
+        "label" : "Round 4 - Multis",
+        "path" : "/multis"
+    },
+    {
+        "label" : "Round 5 - Standings",
+        "path" : "/standings"
+    },
+    {
+        "label" : "Summary",
+        "path" : "/summary"
+    }
+]
