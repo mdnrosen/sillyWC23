@@ -7,58 +7,72 @@ import { QuestionTitle } from '../components/QuestionTitle'
 
 export const FiftyFiftyRound = () => {
     return (
-        <>
-            <Card sx={{ my: 2 }}>
-
-                <RoundTitle num="3" name="Fifty Fifty" marking="5pts for each correct" />
-                <CardContent>
-                    <Box component="form">
-                        <Grid container spacing={2}>
-
-                            <Grid item xs={12}>
-                                <FormControl fullWidth>
-
-                                    <QuestionTitle
-                                        title="True or false. There will be a super over."
-                                        num="1"
-                                        question=""
-                                        hint=""
-                                    />
-
-                                    <QuestionTitle
-                                        title="Pace or spin. What will take more wickets?"
-                                        num="2"
-                                        question=""
-                                        hint=""
-                                    />
-
-                                    <QuestionTitle
-                                        title="Bat or chase. Captains will choose to do either more?"
-                                        num="3"
-                                        question=""
-                                        hint=""
-                                    />
-
-                                    <QuestionTitle
-                                        title="Bat first or chase. Which will win more games?"
-                                        num="4"
-                                        question=""
-                                        hint=""
-                                    />
-
-                                    <QuestionTitle
-                                        title="Who wins. India or Pakistan or Game cancelled?"
-                                        num="5"
-                                        question=""
-                                        hint=""
-                                    />
-                                </FormControl>
-                            </Grid>
+        <Card sx={{ py: 1 }}>
+            <RoundTitle
+                num="3"
+                name="Fifty Fifty"
+                marking="5pts for each correct"
+            />
+            <CardContent>
+                <Box component="form">
+                    <Grid container spacing={2}>
+                        <Grid item xs={12}>
+                            <FormControl fullWidth>
+                                <QuestionTitle
+                                    title="True or false. There will be a super over."
+                                    num="1"
+                                    question=""
+                                    hint=""
+                                />
+                            </FormControl>
                         </Grid>
-                    </Box>
-                </CardContent>
-            </Card>
-        </>
+                        <Grid item xs={12}>
+                            <FormControl fullWidth>
+                                <QuestionTitle
+                                    title="Pace or spin. What will take more wickets?"
+                                    num="2"
+                                    question=""
+                                    hint=""
+                                />
+                            </FormControl>
+                        </Grid>
+                        <Grid item xs={12}>
+                            <FormControl fullWidth>
+
+                                <QuestionTitle
+                                    title="Bat or chase. Captains will choose to do either more?"
+                                    num="3"
+                                    question=""
+                                    hint=""
+                                />
+                            </FormControl>
+                        </Grid>
+
+                        <Grid item xs={12}>
+                            <FormControl fullWidth>
+                                <QuestionTitle
+                                    title="Bat first or chase. Which will win more games?"
+                                    num="4"
+                                    question=""
+                                    hint=""
+                                />
+                            </FormControl>
+                        </Grid>
+
+                        <Grid item xs={12}>
+                            <FormControl fullWidth>
+                                <QuestionTitle
+                                    title="Who wins. India or Pakistan or Game cancelled?"
+                                    num="5"
+                                    question=""
+                                    hint=""
+                                />
+                            </FormControl>
+                        </Grid>
+                    </Grid>
+                </Box>
+            </CardContent>
+        </Card>
     )
 }
 
