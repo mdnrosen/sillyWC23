@@ -1,11 +1,19 @@
 import React from 'react'
 
-import { Box, Card, CardContent, FormControl, Grid } from '@mui/material'
+import { Box, Card, CardContent, FormControl, Grid, ToggleButton, ToggleButtonGroup, Typography } from '@mui/material'
 
 import { RoundTitle } from '../components/RoundTitle'
 import { QuestionTitle } from '../components/QuestionTitle'
 
 export const FiftyFiftyRound = () => {
+
+    const [bool, setBool] = React.useState('true')
+
+    const handleBool = (event, newBool) => {
+        setBool(newBool)
+    }
+
+
     return (
         <Card sx={{ py: 1 }}>
             <RoundTitle
@@ -25,6 +33,22 @@ export const FiftyFiftyRound = () => {
                                     question="There will be a super over."
                                     hint=""
                                 />
+                                <Box alignSelf={'center'}>
+                                    <ToggleButtonGroup
+                                        value={bool}
+                                        exclusive
+                                        onChange={handleBool}
+                                        aria-label='true or false'
+                                    >
+                                        <ToggleButton value="true" aria-label='true'>
+                                            <Typography>true</Typography>
+                                        </ToggleButton>
+                                        <ToggleButton value="false" aria-label='false'>
+                                            <Typography>false</Typography>
+
+                                        </ToggleButton>
+                                    </ToggleButtonGroup>
+                                </Box>
                             </FormControl>
                         </Grid>
 
@@ -80,6 +104,9 @@ export const FiftyFiftyRound = () => {
 }
 
 /*
+
+TODO: populate hints
+TODO: update <QuestionTitle> title and/or question props
 
 QUESTIONS:
 
