@@ -1,18 +1,18 @@
 import React from 'react'
-import { Box, Card, CardContent, FormControl, Grid } from '@mui/material'
+import { Box, CardContent, FormControl, Grid } from '@mui/material'
 
 import { RoundTitle } from '../components/RoundTitle'
 import { QuestionTitle } from '../components/QuestionTitle'
+import { RoundCard } from '../components/RoundCard'
+
 import { TeamList } from '../components/TeamList'
 import { useGuesses} from '../context/GuessContext'
 
 export const StandingsRound = () => {
 const { updateStandings } = useGuesses()
 
-
-
   return (
-    <Card sx={{ py: 1 }}>
+    <RoundCard>
         <RoundTitle 
             num="5"
             name="Group Standings"
@@ -35,7 +35,6 @@ const { updateStandings } = useGuesses()
                 </Grid>
             </Box>
         </CardContent>
-
-    </Card>
+    </RoundCard>
   )
 }

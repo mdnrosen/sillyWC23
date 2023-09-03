@@ -1,11 +1,11 @@
-import { Box, Card, CardContent, FormControl, Grid, InputLabel, MenuItem, Select, Toolbar, Typography } from '@mui/material'
+import { Box, CardContent, FormControl, Grid, InputLabel, MenuItem, Select, Toolbar, Typography } from '@mui/material'
 import { RoundTitle } from '../components/RoundTitle'
 import { QuestionTitle } from '../components/QuestionTitle'
 import runRateOpts from '../assets/data/options/runRate.json'
 import squads from '../assets/data/squads.json'
 import { getOptions } from '../utils/helpers'
 import { useGuesses } from '../context/GuessContext'
-
+import { RoundCard } from '../components/RoundCard'
 
 export const EnglandRound = () => {
     const { guesses, updateGuesses } = useGuesses()
@@ -21,80 +21,79 @@ export const EnglandRound = () => {
     }
 
   return (
-    <Card sx={{ py: 1 }}>
+    <RoundCard>
         <RoundTitle num="1" name="England" marking="5pts for each correct" />
         <CardContent>
             <Box component="form" onChange={handleChange}>
                 <Grid container spacing={2}>
+                    <Grid item xs={12}>
+                        <FormControl fullWidth>
+                            <QuestionTitle 
+                                title="The Liam Dawson role"
+                                num="1"
+                                question="Which player won't play a single game?"
+                                hint="Listed XI - playing as a sub doesn't count"
+                            
+                            />
+                            <Select
+                                name="eng_noplay"
+                                onChange={handleChange}
+                                placeholder="Pick..."
+                                value={guesses['eng_noplay']}
+                            >
+                                {getOptions(englandPlayers, 'name', 'name').map((opt, i) => (
+                                    <MenuItem key={i} value={opt.value}>{opt.label}</MenuItem>
+                                ))}
+                    
+                            </Select>
+                        </FormControl>
+                    </Grid>
 
-                        <Grid item xs={12}>
-                            <FormControl fullWidth>
-                                <QuestionTitle 
-                                    title="The Liam Dawson role"
-                                    num="1"
-                                    question="Which player won't play a single game?"
-                                    hint="Listed XI - playing as a sub doesn't count"
-                                
-                                />
-                                <Select
-                                    name="eng_noplay"
-                                    onChange={handleChange}
-                                    placeholder="Pick..."
-                                    value={guesses['eng_noplay']}
-                                >
-                                    {getOptions(englandPlayers, 'name', 'name').map((opt, i) => (
-                                        <MenuItem key={i} value={opt.value}>{opt.label}</MenuItem>
-                                    ))}
-                       
-                                </Select>
-                            </FormControl>
-                        </Grid>
+                    <Grid item xs={12}>
+                        <FormControl fullWidth>
+                            <QuestionTitle 
+                                title="500 out of the question?"
+                                num="2"
+                                question="What will England's run rate be?"
+                                hint="Includes knockout games too"
+                            
+                            />
+                            <Select
+                                onChange={handleChange}
+                                name="eng_runrate"
+                                placeholder="Pick..."
+                                value={guesses['eng_runrate']}
+                            >
+                                {runRateOpts.map((opt, i) => (
+                                    <MenuItem key={i} value={opt.value}>{opt.label}</MenuItem>
+                                ))}
 
-                        <Grid item xs={12}>
-                            <FormControl fullWidth>
-                                <QuestionTitle 
-                                    title="500 out of the question?"
-                                    num="2"
-                                    question="What will England's run rate be?"
-                                    hint="Includes knockout games too"
-                                
-                                />
-                                <Select
-                                    onChange={handleChange}
-                                    name="eng_runrate"
-                                    placeholder="Pick..."
-                                    value={guesses['eng_runrate']}
-                                >
-                                    {runRateOpts.map((opt, i) => (
-                                        <MenuItem key={i} value={opt.value}>{opt.label}</MenuItem>
-                                    ))}
+                            </Select>
+                        </FormControl>
+                    </Grid>
 
-                                </Select>
-                            </FormControl>
-                        </Grid>
+                    <Grid item xs={12}>
+                        <FormControl fullWidth>
+                            <QuestionTitle 
+                                title="Yes Bank Maximums"
+                                num="3"
+                                question="Which bowler will concede the most sixes?"
+                                hint="Fairly simple..."
+                            
+                            />
+                            <Select
+                                name="eng_sixesconceded"
+                                onChange={handleChange}
+                                placeholder="Pick..."
+                                value={guesses['eng_sixesconceded']}
+                            >
+                                {getOptions(englandBowlers, 'name', 'name').map((opt, i) => (
+                                    <MenuItem key={i} value={opt.value}>{opt.label}</MenuItem>
+                                ))}
 
-                        <Grid item xs={12}>
-                            <FormControl fullWidth>
-                                <QuestionTitle 
-                                    title="Yes Bank Maximums"
-                                    num="3"
-                                    question="Which bowler will concede the most sixes?"
-                                    hint="Fairly simple..."
-                                
-                                />
-                                <Select
-                                    name="eng_sixesconceded"
-                                    onChange={handleChange}
-                                    placeholder="Pick..."
-                                    value={guesses['eng_sixesconceded']}
-                                >
-                                    {getOptions(englandBowlers, 'name', 'name').map((opt, i) => (
-                                        <MenuItem key={i} value={opt.value}>{opt.label}</MenuItem>
-                                    ))}
-
-                                </Select>
-                            </FormControl>
-                        </Grid>
+                            </Select>
+                        </FormControl>
+                    </Grid>
 
                         <Grid item xs={12}>
                             <FormControl fullWidth>
@@ -167,7 +166,7 @@ export const EnglandRound = () => {
             </Box>
 
         </CardContent>
-    </Card>
+    </RoundCard>
 
   )
 }

@@ -1,5 +1,6 @@
-import { Card, CardContent, Box, Grid, FormControl, TextField } from '@mui/material'
+import { CardContent, Box, Grid, FormControl, TextField } from '@mui/material'
 import { RoundTitle } from '../components/RoundTitle'
+import { RoundCard } from '../components/RoundCard'
 import { QuestionTitle } from '../components/QuestionTitle'
 import { useGuesses } from '../context/GuessContext'
 
@@ -12,7 +13,7 @@ export const NumbersRound = () => {
     }
 
   return (
-    <Card sx={{ py: 1 }}>
+    <RoundCard>
         <RoundTitle 
             num="2"
             name="Numbers"
@@ -143,6 +144,6 @@ export const NumbersRound = () => {
                 </Grid>
             </Box>
         </CardContent>
-    </Card>
+    </RoundCard>
   )
 }

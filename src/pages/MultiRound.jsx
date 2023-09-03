@@ -3,6 +3,7 @@ import React from 'react'
 import { Box, Card, CardContent, FormControl, Grid, InputLabel, MenuItem, Select, Toolbar, Typography } from '@mui/material'
 import { RoundTitle } from '../components/RoundTitle'
 import { QuestionTitle } from '../components/QuestionTitle'
+import { RoundCard } from '../components/RoundCard'
 import { useGuesses } from '../context/GuessContext'
 import squads from '../assets/data/squads.json'
 
@@ -14,14 +15,10 @@ export const MultiRound = () => {
         ...acc,
         
        }
-
     },[])
 
-
-    console.log('all players',allPlayers)
-
   return (
-    <Card sx={{ py: 1 }}>
+    <RoundCard>
         <RoundTitle 
             num="4"
             name="Randoms"
@@ -57,6 +54,6 @@ export const MultiRound = () => {
                 </Grid>
             </Box>
         </CardContent>
-    </Card>
+    </RoundCard>
   )
 }
