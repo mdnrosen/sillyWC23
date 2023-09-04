@@ -1,8 +1,9 @@
 import React from 'react'
 
-import { Box, Card, CardContent, FormControl, Grid, ToggleButton, ToggleButtonGroup } from '@mui/material'
+import { Box, CardContent, FormControl, Grid, ToggleButton, ToggleButtonGroup } from '@mui/material'
 
 import { RoundTitle } from '../components/RoundTitle'
+import { RoundCard } from '../components/RoundCard'
 import { QuestionTitle } from '../components/QuestionTitle'
 import { useGuesses } from '../context/GuessContext'
 
@@ -15,9 +16,8 @@ export const FiftyFiftyRound = () => {
         updateGuesses(name, value)
     }
 
-
     return (
-        <Card sx={{ py: 1 }}>
+        <RoundCard>
             <RoundTitle
                 num="3"
                 name="Fifty Fifty"
@@ -35,10 +35,10 @@ export const FiftyFiftyRound = () => {
                                     question="There will be a super over."
                                     hint=""
                                 />
-                                <Box alignSelf={'center'}>
+                                <Box alignSelf={'center'} width={'100%'} maxWidth={'600px'}>
                                     <ToggleButtonGroup
                                         fullWidth
-                                        value={guesses['super_over']}
+                                        value={['super_over']}
                                         exclusive
                                         onChange={handleChange}
                                         aria-label='true or false'
@@ -58,6 +58,18 @@ export const FiftyFiftyRound = () => {
                                     question="What will take more wickets?"
                                     hint=""
                                 />
+                                <Box alignSelf={'center'} width={'100%'} maxWidth={'600px'}>
+                                    <ToggleButtonGroup
+                                        fullWidth
+                                        value={['pace_or_spin']}
+                                        exclusive
+                                        onChange={handleChange}
+                                        aria-label='pace or spin'
+                                    >
+                                        <ToggleButton name="pace_or_spin" value="pace" aria-label='pace'>pace</ToggleButton>
+                                        <ToggleButton name="pace_or_spin" value="spin" aria-label='spin'>spin</ToggleButton>
+                                    </ToggleButtonGroup>
+                                </Box>
                             </FormControl>
                         </Grid>
 
@@ -69,6 +81,18 @@ export const FiftyFiftyRound = () => {
                                     question="Which will captains choose to do more?"
                                     hint=""
                                 />
+                                <Box alignSelf={'center'} width={'100%'} maxWidth={'600px'}>
+                                    <ToggleButtonGroup
+                                        fullWidth
+                                        value={['choose_bat_or_chase']}
+                                        exclusive
+                                        onChange={handleChange}
+                                        aria-label='chose to bat more or chase more'
+                                    >
+                                        <ToggleButton name="choose_bat_or_chase" value="bat" aria-label='bat more'>bat</ToggleButton>
+                                        <ToggleButton name="choose_bat_or_chase" value="chase" aria-label='chase more'>chase</ToggleButton>
+                                    </ToggleButtonGroup>
+                                </Box>
                             </FormControl>
                         </Grid>
 
@@ -80,30 +104,50 @@ export const FiftyFiftyRound = () => {
                                     question="Which will win more games?"
                                     hint=""
                                 />
+                                <Box alignSelf={'center'} width={'100%'} maxWidth={'600px'}>
+                                    <ToggleButtonGroup
+                                        fullWidth
+                                        value={['bat_versus_chase']}
+                                        exclusive
+                                        onChange={handleChange}
+                                        aria-label='bat wins more or chase wins more'
+                                    >
+                                        <ToggleButton name="bat_versus_chase" value="bat_wins" aria-label='bat first wins more'>bat first</ToggleButton>
+                                        <ToggleButton name="bat_versus_chase" value="chase_wins" aria-label='chase wins more'>chase total</ToggleButton>
+                                    </ToggleButtonGroup>
+                                </Box>
                             </FormControl>
                         </Grid>
 
                         <Grid item xs={12}>
                             <FormControl fullWidth>
                                 <QuestionTitle
-                                    title="Who wins. India or Pakistan or Game cancelled?"
+                                    title="Who wins"
                                     num="18"
-                                    question=""
+                                    question="India or Pakistan or Game Cancelled?"
                                     hint=""
                                 />
+                                <Box alignSelf={'center'} width={'100%'} maxWidth={'600px'}>
+                                    <ToggleButtonGroup
+                                        fullWidth
+                                        value={['india_v_pakistan']}
+                                        exclusive
+                                        onChange={handleChange}
+                                        aria-label='india, pakistan or game cancelled'
+                                    >
+                                        <ToggleButton name="india_v_pakistan" value="india" aria-label='India wins'>india</ToggleButton>
+                                        <ToggleButton name="india_v_pakistan" value="pakistan" aria-label='Pakistan wins'>pakistan</ToggleButton>
+                                        <ToggleButton name="india_v_pakistan" value="neither" aria-label='neither: game cancelled'>neither</ToggleButton>
+                                    </ToggleButtonGroup>
+                                </Box>
                             </FormControl>
                         </Grid>
 
                     </Grid>
                 </Box>
             </CardContent>
-        </Card>
+        </RoundCard>
     )
 }
-
-// TODO: update Card to RoundCard component on next PR
-// TODO: roll out ToggleButtonGroups for all Qs
-// TODO: format ToggleButton(Group)s: full width on mobile.
-    // ? set max width for desktop?
 
 // TODO: Miles/James - provide hint text, update hint props accordingly
