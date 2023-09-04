@@ -9,7 +9,7 @@ import { useGuesses } from '../context/GuessContext'
 
 export const FiftyFiftyRound = () => {
 
-    const { updateGuesses } = useGuesses()
+    const { updateGuesses, guesses } = useGuesses()
 
     const handleChange = (e) => {
         const { name, value } = e.target
