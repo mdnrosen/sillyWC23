@@ -150,9 +150,4 @@ export const FiftyFiftyRound = () => {
     )
 }
 
-// TODO: update Card to RoundCard component on next PR
-// TODO: roll out ToggleButtonGroups for all Qs
-// TODO: format ToggleButton(Group)s: full width on mobile.
-    // ? set max width for desktop?
-
 // TODO: Miles/James - provide hint text, update hint props accordingly
