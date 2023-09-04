@@ -61,13 +61,13 @@ export const FiftyFiftyRound = () => {
                                 <Box alignSelf={'center'} width={'100%'} maxWidth={'600px'}>
                                     <ToggleButtonGroup
                                         fullWidth
-                                        value={['super_over']}
+                                        value={['pace_or_spin']}
                                         exclusive
                                         onChange={handleChange}
-                                        aria-label='true or false'
+                                        aria-label='pace or spin'
                                     >
-                                        <ToggleButton name="super_over" value="true" aria-label='true'>true</ToggleButton>
-                                        <ToggleButton name="super_over" value="false" aria-label='false'>false</ToggleButton>
+                                        <ToggleButton name="pace_or_spin" value="pace" aria-label='pace'>pace</ToggleButton>
+                                        <ToggleButton name="pace_or_spin" value="spin" aria-label='spin'>spin</ToggleButton>
                                     </ToggleButtonGroup>
                                 </Box>
                             </FormControl>
@@ -84,13 +84,13 @@ export const FiftyFiftyRound = () => {
                                 <Box alignSelf={'center'} width={'100%'} maxWidth={'600px'}>
                                     <ToggleButtonGroup
                                         fullWidth
-                                        value={['super_over']}
+                                        value={['choose_bat_or_chase']}
                                         exclusive
                                         onChange={handleChange}
-                                        aria-label='true or false'
+                                        aria-label='chose to bat more or chase more'
                                     >
-                                        <ToggleButton name="super_over" value="true" aria-label='true'>true</ToggleButton>
-                                        <ToggleButton name="super_over" value="false" aria-label='false'>false</ToggleButton>
+                                        <ToggleButton name="choose_bat_or_chase" value="bat" aria-label='bat more'>bat</ToggleButton>
+                                        <ToggleButton name="choose_bat_or_chase" value="chase" aria-label='chase more'>chase</ToggleButton>
                                     </ToggleButtonGroup>
                                 </Box>
                             </FormControl>
@@ -107,13 +107,13 @@ export const FiftyFiftyRound = () => {
                                 <Box alignSelf={'center'} width={'100%'} maxWidth={'600px'}>
                                     <ToggleButtonGroup
                                         fullWidth
-                                        value={['super_over']}
+                                        value={['bat_versus_chase']}
                                         exclusive
                                         onChange={handleChange}
-                                        aria-label='true or false'
+                                        aria-label='bat wins more or chase wins more'
                                     >
-                                        <ToggleButton name="super_over" value="true" aria-label='true'>true</ToggleButton>
-                                        <ToggleButton name="super_over" value="false" aria-label='false'>false</ToggleButton>
+                                        <ToggleButton name="bat_versus_chase" value="bat_wins" aria-label='bat first wins more'>bat first</ToggleButton>
+                                        <ToggleButton name="bat_versus_chase" value="chase_wins" aria-label='chase wins more'>chase total</ToggleButton>
                                     </ToggleButtonGroup>
                                 </Box>
                             </FormControl>
@@ -122,21 +122,22 @@ export const FiftyFiftyRound = () => {
                         <Grid item xs={12}>
                             <FormControl fullWidth>
                                 <QuestionTitle
-                                    title="Who wins. India or Pakistan or Game cancelled?"
+                                    title="Who wins"
                                     num="18"
-                                    question=""
+                                    question="India or Pakistan or Game Cancelled?"
                                     hint=""
                                 />
                                 <Box alignSelf={'center'} width={'100%'} maxWidth={'600px'}>
                                     <ToggleButtonGroup
                                         fullWidth
-                                        value={['super_over']}
+                                        value={['india_v_pakistan']}
                                         exclusive
                                         onChange={handleChange}
-                                        aria-label='true or false'
+                                        aria-label='india, pakistan or game cancelled'
                                     >
-                                        <ToggleButton name="super_over" value="true" aria-label='true'>true</ToggleButton>
-                                        <ToggleButton name="super_over" value="false" aria-label='false'>false</ToggleButton>
+                                        <ToggleButton name="india_v_pakistan" value="india" aria-label='India wins'>india</ToggleButton>
+                                        <ToggleButton name="india_v_pakistan" value="pakistan" aria-label='Pakistan wins'>pakistan</ToggleButton>
+                                        <ToggleButton name="india_v_pakistan" value="neither" aria-label='neither: game cancelled'>neither</ToggleButton>
                                     </ToggleButtonGroup>
                                 </Box>
                             </FormControl>
