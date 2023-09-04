@@ -16,7 +16,6 @@ export const FiftyFiftyRound = () => {
         updateGuesses(name, value)
     }
 
-
     return (
         <RoundCard>
             <RoundTitle
@@ -36,7 +35,7 @@ export const FiftyFiftyRound = () => {
                                     question="There will be a super over."
                                     hint=""
                                 />
-                                <Box alignSelf={'center'}>
+                                <Box alignSelf={'center'} width={'100%'} maxWidth={'600px'}>
                                     <ToggleButtonGroup
                                         fullWidth
                                         value={['super_over']}
@@ -59,6 +58,18 @@ export const FiftyFiftyRound = () => {
                                     question="What will take more wickets?"
                                     hint=""
                                 />
+                                <Box alignSelf={'center'} width={'100%'} maxWidth={'600px'}>
+                                    <ToggleButtonGroup
+                                        fullWidth
+                                        value={['super_over']}
+                                        exclusive
+                                        onChange={handleChange}
+                                        aria-label='true or false'
+                                    >
+                                        <ToggleButton name="super_over" value="true" aria-label='true'>true</ToggleButton>
+                                        <ToggleButton name="super_over" value="false" aria-label='false'>false</ToggleButton>
+                                    </ToggleButtonGroup>
+                                </Box>
                             </FormControl>
                         </Grid>
 
@@ -70,6 +81,18 @@ export const FiftyFiftyRound = () => {
                                     question="Which will captains choose to do more?"
                                     hint=""
                                 />
+                                <Box alignSelf={'center'} width={'100%'} maxWidth={'600px'}>
+                                    <ToggleButtonGroup
+                                        fullWidth
+                                        value={['super_over']}
+                                        exclusive
+                                        onChange={handleChange}
+                                        aria-label='true or false'
+                                    >
+                                        <ToggleButton name="super_over" value="true" aria-label='true'>true</ToggleButton>
+                                        <ToggleButton name="super_over" value="false" aria-label='false'>false</ToggleButton>
+                                    </ToggleButtonGroup>
+                                </Box>
                             </FormControl>
                         </Grid>
 
@@ -81,6 +104,18 @@ export const FiftyFiftyRound = () => {
                                     question="Which will win more games?"
                                     hint=""
                                 />
+                                <Box alignSelf={'center'} width={'100%'} maxWidth={'600px'}>
+                                    <ToggleButtonGroup
+                                        fullWidth
+                                        value={['super_over']}
+                                        exclusive
+                                        onChange={handleChange}
+                                        aria-label='true or false'
+                                    >
+                                        <ToggleButton name="super_over" value="true" aria-label='true'>true</ToggleButton>
+                                        <ToggleButton name="super_over" value="false" aria-label='false'>false</ToggleButton>
+                                    </ToggleButtonGroup>
+                                </Box>
                             </FormControl>
                         </Grid>
 
@@ -92,6 +127,18 @@ export const FiftyFiftyRound = () => {
                                     question=""
                                     hint=""
                                 />
+                                <Box alignSelf={'center'} width={'100%'} maxWidth={'600px'}>
+                                    <ToggleButtonGroup
+                                        fullWidth
+                                        value={['super_over']}
+                                        exclusive
+                                        onChange={handleChange}
+                                        aria-label='true or false'
+                                    >
+                                        <ToggleButton name="super_over" value="true" aria-label='true'>true</ToggleButton>
+                                        <ToggleButton name="super_over" value="false" aria-label='false'>false</ToggleButton>
+                                    </ToggleButtonGroup>
+                                </Box>
                             </FormControl>
                         </Grid>
 
