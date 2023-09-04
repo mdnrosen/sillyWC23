@@ -1,8 +1,9 @@
 import React from 'react'
 
-import { Box, Card, CardContent, FormControl, Grid, ToggleButton, ToggleButtonGroup } from '@mui/material'
+import { Box, CardContent, FormControl, Grid, ToggleButton, ToggleButtonGroup } from '@mui/material'
 
 import { RoundTitle } from '../components/RoundTitle'
+import { RoundCard } from '../components/RoundCard'
 import { QuestionTitle } from '../components/QuestionTitle'
 import { useGuesses } from '../context/GuessContext'
 
@@ -17,7 +18,7 @@ export const FiftyFiftyRound = () => {
 
 
     return (
-        <Card sx={{ py: 1 }}>
+        <RoundCard>
             <RoundTitle
                 num="3"
                 name="Fifty Fifty"
@@ -38,7 +39,7 @@ export const FiftyFiftyRound = () => {
                                 <Box alignSelf={'center'}>
                                     <ToggleButtonGroup
                                         fullWidth
-                                        value={guesses['super_over']}
+                                        value={['super_over']}
                                         exclusive
                                         onChange={handleChange}
                                         aria-label='true or false'
@@ -97,7 +98,7 @@ export const FiftyFiftyRound = () => {
                     </Grid>
                 </Box>
             </CardContent>
-        </Card>
+        </RoundCard>
     )
 }
 
