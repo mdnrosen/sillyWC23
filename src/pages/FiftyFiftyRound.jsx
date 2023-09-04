@@ -8,7 +8,7 @@ import { useGuesses } from '../context/GuessContext'
 
 export const FiftyFiftyRound = () => {
 
-    const { guesses, updateGuesses } = useGuesses()
+    const { updateGuesses } = useGuesses()
 
     const handleChange = (e) => {
         const { name, value } = e.target
@@ -101,28 +101,9 @@ export const FiftyFiftyRound = () => {
     )
 }
 
-/*
+// TODO: update Card to RoundCard component on next PR
+// TODO: roll out ToggleButtonGroups for all Qs
+// TODO: format ToggleButton(Group)s: full width on mobile.
+    // ? set max width for desktop?
 
-TODO: populate hints
-TODO: update <QuestionTitle> title and/or question props
-
-QUESTIONS:
-
-True or false. There will be a super over.
-Pace or spin. What will take more wickets?
-Bat or chase. Captains will choose to do either more?
-Bat first or chase. Which will win more games?
-Who wins. India or Pakistan or Game cancelled? 
-
-Consider using radio buttons or an even more preferable alternative like:
--> https://mui.com/material-ui/react-toggle-button/
-
-Two components available:
-
-1. **RoundTitle Component**
-2. **QuestionTitle Component**
-
-The "Round" should be implemented as a <Card /> component. 
-Apply sx={{ my: 2 }} styling to it, similar to how it's done for the "EnglandRound" and "StandingsRound".
-
-*/
+// TODO: Miles/James - provide hint text, update hint props accordingly
