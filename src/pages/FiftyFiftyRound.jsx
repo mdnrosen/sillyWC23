@@ -38,7 +38,7 @@ export const FiftyFiftyRound = () => {
                                 <Box alignSelf={'center'} width={'100%'} maxWidth={'600px'}>
                                     <ToggleButtonGroup
                                         fullWidth
-                                        value={['super_over']}
+                                        value={guesses['super_over']}
                                         exclusive
                                         onChange={handleChange}
                                         aria-label='true or false'
@@ -61,7 +61,7 @@ export const FiftyFiftyRound = () => {
                                 <Box alignSelf={'center'} width={'100%'} maxWidth={'600px'}>
                                     <ToggleButtonGroup
                                         fullWidth
-                                        value={['pace_or_spin']}
+                                        value={guesses['pace_or_spin']}
                                         exclusive
                                         onChange={handleChange}
                                         aria-label='pace or spin'
@@ -84,7 +84,7 @@ export const FiftyFiftyRound = () => {
                                 <Box alignSelf={'center'} width={'100%'} maxWidth={'600px'}>
                                     <ToggleButtonGroup
                                         fullWidth
-                                        value={['choose_bat_or_chase']}
+                                        value={guesses['choose_bat_or_chase']}
                                         exclusive
                                         onChange={handleChange}
                                         aria-label='chose to bat more or chase more'
@@ -107,7 +107,7 @@ export const FiftyFiftyRound = () => {
                                 <Box alignSelf={'center'} width={'100%'} maxWidth={'600px'}>
                                     <ToggleButtonGroup
                                         fullWidth
-                                        value={['bat_versus_chase']}
+                                        value={guesses['bat_versus_chase']}
                                         exclusive
                                         onChange={handleChange}
                                         aria-label='bat wins more or chase wins more'
@@ -130,7 +130,7 @@ export const FiftyFiftyRound = () => {
                                 <Box alignSelf={'center'} width={'100%'} maxWidth={'600px'}>
                                     <ToggleButtonGroup
                                         fullWidth
-                                        value={['india_v_pakistan']}
+                                        value={guesses['india_v_pakistan']}
                                         exclusive
                                         onChange={handleChange}
                                         aria-label='india, pakistan or game cancelled'
