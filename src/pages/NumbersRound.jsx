@@ -88,7 +88,7 @@ export const NumbersRound = () => {
                                 title="Michael Gough ftw"
                                 num="11"
                                 question="How many umpires decisions will be overturned?"
-                                hint="NOT umpires call. Umpire got it wrong"
+                                hint="NOT umpires call. Umpire got it wrong. (93 games total)"
                             />
                             <TextField 
                                 fullWidth 
@@ -128,7 +128,7 @@ export const NumbersRound = () => {
                                 title="ANOTHER UNACADEMY CRACKING SIX"
                                 num="13"
                                 question="How many sixes will be hit?"
-                                hint="By anyone, in any game"
+                                hint="By anyone, in any game. 93 games to be played"
                             />
                             <TextField 
                                 fullWidth 
