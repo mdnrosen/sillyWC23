@@ -30,21 +30,21 @@ export const FiftyFiftyRound = () => {
                         <Grid item xs={12}>
                             <FormControl fullWidth>
                                 <QuestionTitle
-                                    title="True or false"
+                                    title="Oh no, not another one!?"
                                     num="14"
                                     question="There will be a super over."
-                                    hint=""
+                                    hint="Only the semis or final are candidates"
                                 />
                                 <Box alignSelf={'center'} width={'100%'} maxWidth={'600px'}>
                                     <ToggleButtonGroup
                                         fullWidth
-                                        value={guesses['super_over']}
+                                        value={guesses['h2h_superover']}
                                         exclusive
                                         onChange={handleChange}
                                         aria-label='true or false'
                                     >
-                                        <ToggleButton name="super_over" value="true" aria-label='true'>true</ToggleButton>
-                                        <ToggleButton name="super_over" value="false" aria-label='false'>false</ToggleButton>
+                                        <ToggleButton name="h2h_superover" value="true" aria-label='true'>true</ToggleButton>
+                                        <ToggleButton name="h2h_superover" value="false" aria-label='false'>false</ToggleButton>
                                     </ToggleButtonGroup>
                                 </Box>
                             </FormControl>
@@ -53,7 +53,7 @@ export const FiftyFiftyRound = () => {
                         <Grid item xs={12}>
                             <FormControl fullWidth>
                                 <QuestionTitle
-                                    title="Pace or spin"
+                                    title="let it turn"
                                     num="15"
                                     question="What will take more wickets?"
                                     hint=""
@@ -61,13 +61,13 @@ export const FiftyFiftyRound = () => {
                                 <Box alignSelf={'center'} width={'100%'} maxWidth={'600px'}>
                                     <ToggleButtonGroup
                                         fullWidth
-                                        value={guesses['pace_or_spin']}
+                                        value={guesses['h2h_pacespin']}
                                         exclusive
                                         onChange={handleChange}
                                         aria-label='pace or spin'
                                     >
-                                        <ToggleButton name="pace_or_spin" value="pace" aria-label='pace'>pace</ToggleButton>
-                                        <ToggleButton name="pace_or_spin" value="spin" aria-label='spin'>spin</ToggleButton>
+                                        <ToggleButton name="h2h_pacespin" value="pace" aria-label='pace'>pace</ToggleButton>
+                                        <ToggleButton name="h2h_pacespin" value="spin" aria-label='spin'>spin</ToggleButton>
                                     </ToggleButtonGroup>
                                 </Box>
                             </FormControl>
@@ -76,21 +76,21 @@ export const FiftyFiftyRound = () => {
                         <Grid item xs={12}>
                             <FormControl fullWidth>
                                 <QuestionTitle
-                                    title="Bat or chase"
+                                    title="Win the toss and..."
                                     num="16"
-                                    question="Which will captains choose to do more?"
+                                    question="What will teams opt to do more?"
                                     hint=""
                                 />
                                 <Box alignSelf={'center'} width={'100%'} maxWidth={'600px'}>
                                     <ToggleButtonGroup
                                         fullWidth
-                                        value={guesses['choose_bat_or_chase']}
+                                        value={guesses['h2h_tossDecision']}
                                         exclusive
                                         onChange={handleChange}
                                         aria-label='chose to bat more or chase more'
                                     >
-                                        <ToggleButton name="choose_bat_or_chase" value="bat" aria-label='bat more'>bat</ToggleButton>
-                                        <ToggleButton name="choose_bat_or_chase" value="chase" aria-label='chase more'>chase</ToggleButton>
+                                        <ToggleButton name="h2h_tossDecision" value="bat" aria-label='bat more'>Bat first</ToggleButton>
+                                        <ToggleButton name="h2h_tossDecision" value="bowl" aria-label='chase more'>Bowl first</ToggleButton>
                                     </ToggleButtonGroup>
                                 </Box>
                             </FormControl>
@@ -99,7 +99,7 @@ export const FiftyFiftyRound = () => {
                         <Grid item xs={12}>
                             <FormControl fullWidth>
                                 <QuestionTitle
-                                    title="Bat first or chase"
+                                    title="runs on the board?"
                                     num="17"
                                     question="Which will win more games?"
                                     hint=""
@@ -107,13 +107,13 @@ export const FiftyFiftyRound = () => {
                                 <Box alignSelf={'center'} width={'100%'} maxWidth={'600px'}>
                                     <ToggleButtonGroup
                                         fullWidth
-                                        value={guesses['bat_versus_chase']}
+                                        value={guesses['h2h_bat-v-chase']}
                                         exclusive
                                         onChange={handleChange}
                                         aria-label='bat wins more or chase wins more'
                                     >
-                                        <ToggleButton name="bat_versus_chase" value="bat_wins" aria-label='bat first wins more'>bat first</ToggleButton>
-                                        <ToggleButton name="bat_versus_chase" value="chase_wins" aria-label='chase wins more'>chase total</ToggleButton>
+                                        <ToggleButton name="h2h_bat-v-chase" value="bat_wins" aria-label='bat first wins more'>bat first</ToggleButton>
+                                        <ToggleButton name="h2h_bat-v-chase" value="chase_wins" aria-label='chase wins more'>chase total</ToggleButton>
                                     </ToggleButtonGroup>
                                 </Box>
                             </FormControl>
@@ -122,22 +122,22 @@ export const FiftyFiftyRound = () => {
                         <Grid item xs={12}>
                             <FormControl fullWidth>
                                 <QuestionTitle
-                                    title="Who wins"
+                                    title="This is it. The big one."
                                     num="18"
                                     question="India or Pakistan or Game Cancelled?"
-                                    hint=""
+                                    hint="Neither can mean rain or politics..."
                                 />
                                 <Box alignSelf={'center'} width={'100%'} maxWidth={'600px'}>
                                     <ToggleButtonGroup
                                         fullWidth
-                                        value={guesses['india_v_pakistan']}
+                                        value={guesses['h2h_india_v_pakistan']}
                                         exclusive
                                         onChange={handleChange}
                                         aria-label='india, pakistan or game cancelled'
                                     >
-                                        <ToggleButton name="india_v_pakistan" value="india" aria-label='India wins'>india</ToggleButton>
-                                        <ToggleButton name="india_v_pakistan" value="pakistan" aria-label='Pakistan wins'>pakistan</ToggleButton>
-                                        <ToggleButton name="india_v_pakistan" value="neither" aria-label='neither: game cancelled'>neither</ToggleButton>
+                                        <ToggleButton name="h2h_india_v_pakistan" value="india" aria-label='India wins'>india</ToggleButton>
+                                        <ToggleButton name="h2h_india_v_pakistan" value="pakistan" aria-label='Pakistan wins'>pakistan</ToggleButton>
+                                        <ToggleButton name="h2h_india_v_pakistan" value="neither" aria-label='neither: game cancelled'>neither</ToggleButton>
                                     </ToggleButtonGroup>
                                 </Box>
                             </FormControl>

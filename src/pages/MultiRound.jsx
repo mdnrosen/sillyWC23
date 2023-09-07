@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 
-import { Box, Card, CardContent, FormControl, Grid, InputLabel, MenuItem, Select, Toolbar, Typography } from '@mui/material'
+import { Box, CardContent, Grid } from '@mui/material'
 import { RoundTitle } from '../components/RoundTitle'
 import { QuestionTitle } from '../components/QuestionTitle'
 import { RoundCard } from '../components/RoundCard'
@@ -13,7 +13,7 @@ import { DragAndDrop } from '../components/DragAndDrop'
 import bigFour from '../assets/data/bigFour.json'
 
 export const MultiRound = () => {
-    const { guesses, updateGuesses, updateArrayAnswer } = useGuesses()
+    const { updateGuesses } = useGuesses()
     const allPlayers = squads.map(squad => squad.players).flat()
     const bowlers = allPlayers.filter(p => p.bowler)
 

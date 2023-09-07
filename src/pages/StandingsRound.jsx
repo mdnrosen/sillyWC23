@@ -1,16 +1,13 @@
 import React from 'react'
 import { Box, CardContent, FormControl, Grid } from '@mui/material'
 
-import { useGuesses} from '../context/GuessContext'
 import teamData from '../assets/data/teams.json'
 import { RoundTitle } from '../components/RoundTitle'
 import { QuestionTitle } from '../components/QuestionTitle'
 import { RoundCard } from '../components/RoundCard'
-import { TeamList } from '../components/TeamList'
 import { DragAndDrop } from '../components/DragAndDrop'
 
 export const StandingsRound = () => {
-const { updateArrayAnswer } = useGuesses()
 
   return (
     <RoundCard>
