@@ -1,15 +1,14 @@
 import React from 'react'
 import { ToggleButton, ToggleButtonGroup } from '@mui/material'
-import { useGuesses } from '../context/GuessContext'
+import { useGuesses } from '../context/GuessContext' // see line 11
 
 
-export const ToggleGroup = ({ name, values, arias, handleChange }) => {
+export const ToggleGroup = ({ values, labels, handleChange }) => {
 
-    const { value1, value2 } = values, value3 = values.value3 || null
-    const { groupLabel, buttonLabel1, buttonLabel2 } = arias, buttonLabel3 = arias.buttonLabel3 || null
+    const { name, value1, value2, value3 } = values
+    const { groupLabel, buttonLabel1, buttonLabel2, buttonLabel3 } = labels
 
-    const { guesses } = useGuesses()
-
+    const { guesses } = useGuesses() // ? pass as prop from parent [also has useGuesses()] instead?
 
     return (
         <ToggleButtonGroup

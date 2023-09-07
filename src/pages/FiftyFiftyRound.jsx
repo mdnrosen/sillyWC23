@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Box, CardContent, FormControl, Grid, ToggleButton, ToggleButtonGroup } from '@mui/material'
+import { Box, CardContent, FormControl, Grid } from '@mui/material'
 
 import { RoundTitle } from '../components/RoundTitle'
 import { RoundCard } from '../components/RoundCard'
@@ -38,21 +38,9 @@ export const FiftyFiftyRound = () => {
                                     hint="Only the semis or final are candidates"
                                 />
                                 <Box alignSelf={'center'} width={'100%'} maxWidth={'600px'}>
-                                    {/* <ToggleButtonGroup
-                                        fullWidth
-                                        value={guesses['h2h_superover']}
-                                        exclusive
-                                        color="warning"
-                                        onChange={handleChange}
-                                        aria-label='true or false'
-                                    >
-                                        <ToggleButton name="h2h_superover" value="true" aria-label='true'>true</ToggleButton>
-                                        <ToggleButton name="h2h_superover" value="false" aria-label='false'>false</ToggleButton>
-                                    </ToggleButtonGroup> */}
-                                    <ToggleGroup 
-                                        name="h2h_superover"
-                                        values={{value1: "true", value2: "false", value3: "banana"}}
-                                        arias={{groupLabel: "true or false", buttonLabel1: "true", buttonLabel2: "false"}}
+                                    <ToggleGroup
+                                        values={{ name: "h2h_superover", value1: "true", value2: "false" }}
+                                        labels={{ groupLabel: "true or false", buttonLabel1: "true", buttonLabel2: "false" }}
                                         handleChange={handleChange}
                                     />
                                 </Box>
@@ -68,17 +56,11 @@ export const FiftyFiftyRound = () => {
                                     hint=""
                                 />
                                 <Box alignSelf={'center'} width={'100%'} maxWidth={'600px'}>
-                                    <ToggleButtonGroup
-                                        fullWidth
-                                        value={guesses['h2h_pacespin']}
-                                        exclusive
-                                        color="warning"
-                                        onChange={handleChange}
-                                        aria-label='pace or spin'
-                                    >
-                                        <ToggleButton name="h2h_pacespin" value="pace" aria-label='pace'>pace</ToggleButton>
-                                        <ToggleButton name="h2h_pacespin" value="spin" aria-label='spin'>spin</ToggleButton>
-                                    </ToggleButtonGroup>
+                                    <ToggleGroup
+                                        values={{ name: "h2h_pacespin", value1: "pace", value2: "spin" }}
+                                        labels={{ groupLabel: "pace or spin", buttonLabel1: "pace", buttonLabel2: "spin" }}
+                                        handleChange={handleChange}
+                                    />
                                 </Box>
                             </FormControl>
                         </Grid>
@@ -92,17 +74,11 @@ export const FiftyFiftyRound = () => {
                                     hint=""
                                 />
                                 <Box alignSelf={'center'} width={'100%'} maxWidth={'600px'}>
-                                    <ToggleButtonGroup
-                                        fullWidth
-                                        value={guesses['h2h_tossDecision']}
-                                        exclusive
-                                        color="warning"
-                                        onChange={handleChange}
-                                        aria-label='chose to bat more or chase more'
-                                    >
-                                        <ToggleButton name="h2h_tossDecision" value="bat" aria-label='bat more'>Bat first</ToggleButton>
-                                        <ToggleButton name="h2h_tossDecision" value="bowl" aria-label='chase more'>Bowl first</ToggleButton>
-                                    </ToggleButtonGroup>
+                                    <ToggleGroup
+                                        values={{ name: "h2h_tossDecision", value1: "bat first", value2: "bowl first" }}
+                                        labels={{ groupLabel: "true or false", buttonLabel1: "bat more", buttonLabel2: "chase more" }}
+                                        handleChange={handleChange}
+                                    />
                                 </Box>
                             </FormControl>
                         </Grid>
@@ -116,17 +92,11 @@ export const FiftyFiftyRound = () => {
                                     hint=""
                                 />
                                 <Box alignSelf={'center'} width={'100%'} maxWidth={'600px'}>
-                                    <ToggleButtonGroup
-                                        fullWidth
-                                        value={guesses['h2h_bat-v-chase']}
-                                        exclusive
-                                        color="warning"
-                                        onChange={handleChange}
-                                        aria-label='bat wins more or chase wins more'
-                                    >
-                                        <ToggleButton name="h2h_bat-v-chase" value="bat_wins" aria-label='bat first wins more'>bat first</ToggleButton>
-                                        <ToggleButton name="h2h_bat-v-chase" value="chase_wins" aria-label='chase wins more'>chase total</ToggleButton>
-                                    </ToggleButtonGroup>
+                                    <ToggleGroup
+                                        values={{ name: "h2h_bat-v-chase", value1: "bat first", value2: "chase total" }}
+                                        labels={{ groupLabel: "bat wins more or chase wins more", buttonLabel1: "bat first wins more", buttonLabel2: "chase wins more" }}
+                                        handleChange={handleChange}
+                                    />
                                 </Box>
                             </FormControl>
                         </Grid>
@@ -140,18 +110,20 @@ export const FiftyFiftyRound = () => {
                                     hint="Neither can mean rain or politics..."
                                 />
                                 <Box alignSelf={'center'} width={'100%'} maxWidth={'600px'}>
-                                    <ToggleButtonGroup
-                                        fullWidth
-                                        value={guesses['h2h_india_v_pakistan']}
-                                        exclusive
-                                        color="warning"
-                                        onChange={handleChange}
-                                        aria-label='india, pakistan or game cancelled'
-                                    >
-                                        <ToggleButton name="h2h_india_v_pakistan" value="india" aria-label='India wins'>india</ToggleButton>
-                                        <ToggleButton name="h2h_india_v_pakistan" value="pakistan" aria-label='Pakistan wins'>pakistan</ToggleButton>
-                                        <ToggleButton name="h2h_india_v_pakistan" value="neither" aria-label='neither: game cancelled'>neither</ToggleButton>
-                                    </ToggleButtonGroup>
+                                    <ToggleGroup
+                                        values={{
+                                            name: "h2h_india_v_pakistan",
+                                            value1: "india",
+                                            value2: "pakistan",
+                                            value3: "neither"
+                                        }}
+                                        labels={{
+                                            groupLabel: "india, pakistan or game cancelled",
+                                            buttonLabel1: "India wins", buttonLabel2: "Pakistan wins",
+                                            buttonLabel3: "neither: game cancelled"
+                                        }}
+                                        handleChange={handleChange}
+                                    />
                                 </Box>
                             </FormControl>
                         </Grid>
