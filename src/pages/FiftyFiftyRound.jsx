@@ -10,12 +10,11 @@ import { ToggleGroup } from '../components/ToggleGroup'
 
 export const FiftyFiftyRound = () => {
 
-    const { updateGuesses, guesses } = useGuesses()
+    const { updateGuesses } = useGuesses()
 
     const handleChange = (e) => {
         const { name, value } = e.target
         updateGuesses(name, value)
-        console.log(guesses);
     }
 
     return (
