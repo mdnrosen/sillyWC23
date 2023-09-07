@@ -6,6 +6,7 @@ import { RoundTitle } from '../components/RoundTitle'
 import { RoundCard } from '../components/RoundCard'
 import { QuestionTitle } from '../components/QuestionTitle'
 import { useGuesses } from '../context/GuessContext'
+import { ToggleGroup } from '../components/ToggleGroup'
 
 export const FiftyFiftyRound = () => {
 
@@ -14,6 +15,7 @@ export const FiftyFiftyRound = () => {
     const handleChange = (e) => {
         const { name, value } = e.target
         updateGuesses(name, value)
+        console.log(guesses);
     }
 
     return (
@@ -36,7 +38,7 @@ export const FiftyFiftyRound = () => {
                                     hint="Only the semis or final are candidates"
                                 />
                                 <Box alignSelf={'center'} width={'100%'} maxWidth={'600px'}>
-                                    <ToggleButtonGroup
+                                    {/* <ToggleButtonGroup
                                         fullWidth
                                         value={guesses['h2h_superover']}
                                         exclusive
@@ -46,7 +48,13 @@ export const FiftyFiftyRound = () => {
                                     >
                                         <ToggleButton name="h2h_superover" value="true" aria-label='true'>true</ToggleButton>
                                         <ToggleButton name="h2h_superover" value="false" aria-label='false'>false</ToggleButton>
-                                    </ToggleButtonGroup>
+                                    </ToggleButtonGroup> */}
+                                    <ToggleGroup 
+                                        name="h2h_superover"
+                                        values={{value1: "true", value2: "false"}}
+                                        arias={{groupLabel: "true or false", buttonLabel1: "true", buttonLabel2: "false"}}
+                                        handleChange={handleChange}
+                                    />
                                 </Box>
                             </FormControl>
                         </Grid>
