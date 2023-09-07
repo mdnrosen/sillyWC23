@@ -26,8 +26,8 @@ export function GuessesProvider({ children }){
         setGuesses({...guesses, [name]: value});
     }
 
-    const updateStandings = (arr) => {
-      setGuesses({...guesses, standings: arr});
+    const updateArrayAnswer = (key, arr) => {
+      setGuesses({...guesses, [key]: arr});
     }
 
     return (
@@ -35,7 +35,7 @@ export function GuessesProvider({ children }){
           value={{ 
             guesses, 
             updateGuesses,
-            updateStandings
+            updateArrayAnswer
           }}>
             {children}
         </GuessContext.Provider>

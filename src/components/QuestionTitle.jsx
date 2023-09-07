@@ -4,7 +4,7 @@ import React from 'react'
 
 export const QuestionTitle = ({ num, title, question, hint }) => {
   return (
-    <Toolbar sx={{ py: 1, display: 'flex', justifyContent: 'space-between' , alignItems: 'center' }} disableGutters>
+    <Toolbar sx={{ py: 1, display: 'flex', justifyContent: 'space-between' , alignItems: 'center', pt: 2 }} disableGutters>
         <ListItem
             secondaryAction={
                 <Tooltip title={hint}>

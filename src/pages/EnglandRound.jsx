@@ -75,17 +75,17 @@ export const EnglandRound = () => {
                     <Grid item xs={12}>
                         <FormControl fullWidth>
                             <QuestionTitle 
-                                title="Yes Bank Maximums"
+                                title="Keep it tight, or not..."
                                 num="3"
-                                question="Which bowler will concede the most sixes?"
-                                hint="Fairly simple..."
+                                question="Which bowler will have the worst economy rate?"
+                                hint="Minimum overs bowled is 10"
                             
                             />
                             <Select
-                                name="eng_sixesconceded"
+                                name="eng_expensiveBowling"
                                 onChange={handleChange}
                                 placeholder="Pick..."
-                                value={guesses['eng_sixesconceded']}
+                                value={guesses['eng_expensiveBowling']}
                             >
                                 {getOptions(englandBowlers, 'name', 'name').map((opt, i) => (
                                     <MenuItem key={i} value={opt.value}>{opt.label}</MenuItem>
