@@ -38,8 +38,9 @@ export const FiftyFiftyRound = () => {
                                 />
                                 <Box alignSelf={'center'} width={'100%'} maxWidth={'600px'}>
                                     <ToggleGroup
-                                        values={{ name: "h2h_superover", value1: "true", value2: "false" }}
-                                        labels={{ groupLabel: "true or false", buttonLabel1: "true", buttonLabel2: "false" }}
+                                        name="h2h_superover"
+                                        values={["true", "false"]}
+                                        labels={["true or false", "true", "false" ]}
                                         handleChange={handleChange}
                                     />
                                 </Box>
