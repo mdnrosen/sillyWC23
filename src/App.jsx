@@ -20,7 +20,7 @@ import { MultiRound } from './pages/MultiRound'
 
 function App() {
   return (
-    <Container maxWidth='md'>
+    <Container maxWidth='md' disableGutters>
       <ThemeProvider theme={theme}>
         <CssBaseline />
           <BrowserRouter>
