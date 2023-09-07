@@ -1,12 +1,12 @@
 import React from 'react'
 import { Grid, FormControl, Select, MenuItem } from '@mui/material'
 
-
 import { useGuesses } from '../context/GuessContext'
 
+import squads from '../assets/data/squads.json'
 
 export const DoubleSelect = ({ placeholders, options, names }) => {
-    console.log(options)
+
     const { guesses, updateGuesses } = useGuesses()
 
     const handleChange = (e) => {

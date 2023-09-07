@@ -40,6 +40,7 @@ export const FiftyFiftyRound = () => {
                                         fullWidth
                                         value={guesses['h2h_superover']}
                                         exclusive
+                                        color="warning"
                                         onChange={handleChange}
                                         aria-label='true or false'
                                     >
@@ -63,6 +64,7 @@ export const FiftyFiftyRound = () => {
                                         fullWidth
                                         value={guesses['h2h_pacespin']}
                                         exclusive
+                                        color="warning"
                                         onChange={handleChange}
                                         aria-label='pace or spin'
                                     >
@@ -86,6 +88,7 @@ export const FiftyFiftyRound = () => {
                                         fullWidth
                                         value={guesses['h2h_tossDecision']}
                                         exclusive
+                                        color="warning"
                                         onChange={handleChange}
                                         aria-label='chose to bat more or chase more'
                                     >
@@ -109,6 +112,7 @@ export const FiftyFiftyRound = () => {
                                         fullWidth
                                         value={guesses['h2h_bat-v-chase']}
                                         exclusive
+                                        color="warning"
                                         onChange={handleChange}
                                         aria-label='bat wins more or chase wins more'
                                     >
@@ -132,6 +136,7 @@ export const FiftyFiftyRound = () => {
                                         fullWidth
                                         value={guesses['h2h_india_v_pakistan']}
                                         exclusive
+                                        color="warning"
                                         onChange={handleChange}
                                         aria-label='india, pakistan or game cancelled'
                                     >
