@@ -51,7 +51,7 @@ export const FiftyFiftyRound = () => {
                                     </ToggleButtonGroup> */}
                                     <ToggleGroup 
                                         name="h2h_superover"
-                                        values={{value1: "true", value2: "false"}}
+                                        values={{value1: "true", value2: "false", value3: "banana"}}
                                         arias={{groupLabel: "true or false", buttonLabel1: "true", buttonLabel2: "false"}}
                                         handleChange={handleChange}
                                     />

@@ -5,10 +5,10 @@ import { useGuesses } from '../context/GuessContext'
 
 export const ToggleGroup = ({ name, values, arias, handleChange }) => {
 
-    const {value1, value2  } = values
-    const { groupLabel, buttonLabel1, buttonLabel2 } = arias
+    const { value1, value2 } = values, value3 = values.value3 || null
+    const { groupLabel, buttonLabel1, buttonLabel2 } = arias, buttonLabel3 = arias.buttonLabel3 || null
 
-    const { updateGuesses, guesses } = useGuesses()
+    const { guesses } = useGuesses()
 
 
     return (
@@ -22,6 +22,9 @@ export const ToggleGroup = ({ name, values, arias, handleChange }) => {
         >
             <ToggleButton name={name} value={value1} aria-label={buttonLabel1}>{value1}</ToggleButton>
             <ToggleButton name={name} value={value2} aria-label={buttonLabel2} >{value2}</ToggleButton>
+            {value3 &&
+            <ToggleButton name={name} value={value3} aria-label={buttonLabel3} >{value3}</ToggleButton>
+            }
         </ToggleButtonGroup>
     )
 }
