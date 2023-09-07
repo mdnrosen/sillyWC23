@@ -40,7 +40,7 @@ export const FiftyFiftyRound = () => {
                                     <ToggleGroup
                                         name="h2h_superover"
                                         values={["true", "false"]}
-                                        labels={["true or false", "true", "false" ]}
+                                        labels={["true or false", "true", "false"]}
                                         handleChange={handleChange}
                                     />
                                 </Box>
@@ -57,8 +57,9 @@ export const FiftyFiftyRound = () => {
                                 />
                                 <Box alignSelf={'center'} width={'100%'} maxWidth={'600px'}>
                                     <ToggleGroup
-                                        values={{ name: "h2h_pacespin", value1: "pace", value2: "spin" }}
-                                        labels={{ groupLabel: "pace or spin", buttonLabel1: "pace", buttonLabel2: "spin" }}
+                                        name="h2h_pacespin"
+                                        values={["pace", "spin"]}
+                                        labels={["pace or spin", "pace", "spin"]}
                                         handleChange={handleChange}
                                     />
                                 </Box>
@@ -75,8 +76,9 @@ export const FiftyFiftyRound = () => {
                                 />
                                 <Box alignSelf={'center'} width={'100%'} maxWidth={'600px'}>
                                     <ToggleGroup
-                                        values={{ name: "h2h_tossDecision", value1: "bat first", value2: "bowl first" }}
-                                        labels={{ groupLabel: "true or false", buttonLabel1: "bat more", buttonLabel2: "chase more" }}
+                                        name="h2h_tossDecision"
+                                        values={["bat first", "bowl first"]}
+                                        labels={["true or false", "bat more", "chase more"]}
                                         handleChange={handleChange}
                                     />
                                 </Box>
@@ -93,8 +95,9 @@ export const FiftyFiftyRound = () => {
                                 />
                                 <Box alignSelf={'center'} width={'100%'} maxWidth={'600px'}>
                                     <ToggleGroup
-                                        values={{ name: "h2h_bat-v-chase", value1: "bat first", value2: "chase total" }}
-                                        labels={{ groupLabel: "bat wins more or chase wins more", buttonLabel1: "bat first wins more", buttonLabel2: "chase wins more" }}
+                                        name="h2h_bat-v-chase"
+                                        values={["bat first", "chase total"]}
+                                        labels={["bat wins more or chase wins more", "bat first wins more", "chase wins more"]}
                                         handleChange={handleChange}
                                     />
                                 </Box>
@@ -111,17 +114,9 @@ export const FiftyFiftyRound = () => {
                                 />
                                 <Box alignSelf={'center'} width={'100%'} maxWidth={'600px'}>
                                     <ToggleGroup
-                                        values={{
-                                            name: "h2h_india_v_pakistan",
-                                            value1: "india",
-                                            value2: "pakistan",
-                                            value3: "neither"
-                                        }}
-                                        labels={{
-                                            groupLabel: "india, pakistan or game cancelled",
-                                            buttonLabel1: "India wins", buttonLabel2: "Pakistan wins",
-                                            buttonLabel3: "neither: game cancelled"
-                                        }}
+                                        name="h2h_india_v_pakistan"
+                                        values={["india", "pakistan", "neither"]}
+                                        labels={["india, pakistan or game cancelled", "India wins", "Pakistan wins", "neither: game cancelled"]}
                                         handleChange={handleChange}
                                     />
                                 </Box>
