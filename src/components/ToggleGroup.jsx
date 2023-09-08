@@ -17,9 +17,7 @@ export const ToggleGroup = ({ name, values, labels, handleChange }) => {
             onChange={handleChange}
             aria-label={labels[0]}
         >
-            {values.map((value, index) => (
-                <ToggleButton key={name + index} name={name} value={value} aria-label={labels[index + 1]}>{value}</ToggleButton>
-            ))}
+            {values.map((val, i) => <ToggleButton key={name + i} name={name} value={val} aria-label={labels[i + 1]}>{val}</ToggleButton>)}
         </ToggleButtonGroup>
     )
 }
