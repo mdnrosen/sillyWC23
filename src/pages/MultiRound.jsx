@@ -96,6 +96,27 @@ export const MultiRound = () => {
 
 
                     <Grid item xs={12}>
+                        <QuestionTitle 
+                            title="Top run getters"
+                            num="22"
+                            question="Pick 2 players. +10pts for 1st, +9pts for 2nd, etc..."
+                            hint="1st = 10pts, 2nd = 9pts, .... , 10th = 1pt"
+                        />
+                        <DoubleSelect 
+                            placeholders={[
+                                'First Choice', 
+                                'Second Choice'
+                            ]}
+                            names={[
+                                'multi_mostruns_1',
+                                'multi_mostruns_2'
+                            ]}
+                            options={getOptions(allPlayers, 'name', 'name')}
+                        />
+                    </Grid>
+
+
+                    <Grid item xs={12}>
                         <QuestionTitle
                             title="Last WC?"
                             num="23"
