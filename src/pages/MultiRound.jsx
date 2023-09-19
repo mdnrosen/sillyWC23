@@ -16,6 +16,7 @@ export const MultiRound = () => {
     const { updateGuesses } = useGuesses()
     const allPlayers = squads.map(squad => squad.players).flat()
     const bowlers = allPlayers.filter(p => p.bowler)
+    const batters = allPlayers.filter(p => p.batter)
 
     const handleChange = (e) => {
         const { name, value } = e.target
@@ -36,7 +37,7 @@ export const MultiRound = () => {
                     <Grid item xs={12}>
                         <QuestionTitle 
                             title="Bigus Hittus"
-                            num="19"
+                            num="18"
                             question="Pick 2 players. +1 point for each six they hit."
                             hint="In 2019, Eoin Morgan hit the most (22)."
                         />
@@ -56,7 +57,7 @@ export const MultiRound = () => {
                     <Grid item xs={12}>
                         <QuestionTitle 
                             title="Gun fielding"
-                            num="20"
+                            num="19"
                             question="Pick 2 players. +10 point for each run out"
                             hint="Fielder points, bowler or keeper assists don't count"
                         />
@@ -77,7 +78,7 @@ export const MultiRound = () => {
                     <Grid item xs={12}>
                         <QuestionTitle 
                             title="Howzat!?"
-                            num="21"
+                            num="20"
                             question="Pick 2 bowlers. +1 point for every wicket they take"
                             hint="In 2019, Mitchell Starc took the most (27)"
                         />
@@ -98,7 +99,7 @@ export const MultiRound = () => {
                     <Grid item xs={12}>
                         <QuestionTitle 
                             title="Top run getters"
-                            num="22"
+                            num="21"
                             question="Pick 2 players. +10pts for 1st, +9pts for 2nd, etc..."
                             hint="1st = 10pts, 2nd = 9pts, .... , 10th = 1pt"
                         />
@@ -111,7 +112,7 @@ export const MultiRound = () => {
                                 'multi_mostruns_1',
                                 'multi_mostruns_2'
                             ]}
-                            options={getOptions(allPlayers, 'name', 'name')}
+                            options={getOptions(batters, 'name', 'name')}
                         />
                     </Grid>
 
@@ -119,7 +120,7 @@ export const MultiRound = () => {
                     <Grid item xs={12}>
                         <QuestionTitle
                             title="Last WC?"
-                            num="23"
+                            num="22"
                             question="Place the 'Big 4' in order of runs scored. +2 for each correct"
                         />
                         <DragAndDrop 

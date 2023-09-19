@@ -66,7 +66,7 @@ export const NumbersRound = () => {
                         <FormControl fullWidth>
                             <QuestionTitle 
                                 title="Giant killers?"
-                                num="10"
+                                num="9"
                                 question="How many wickets will the Netherlands take?"
                                 hint="Across the entire tournament, so 9 games at least..."
                             />
@@ -86,7 +86,7 @@ export const NumbersRound = () => {
                         <FormControl fullWidth>
                             <QuestionTitle 
                                 title="Michael Gough ftw"
-                                num="11"
+                                num="10"
                                 question="How many umpires decisions will be overturned?"
                                 hint="NOT umpires call. Umpire got it wrong. (93 games total)"
                             />
@@ -106,7 +106,7 @@ export const NumbersRound = () => {
                         <FormControl fullWidth>
                             <QuestionTitle 
                                 title="Sting in the tail"
-                                num="12"
+                                num="11"
                                 question="What will be the top score made by a tailender (9 - 11)?"
                                 hint="Chasing, batting first, doesn't matter"
                             />
@@ -126,7 +126,7 @@ export const NumbersRound = () => {
                         <FormControl fullWidth>
                             <QuestionTitle 
                                 title="ANOTHER UNACADEMY CRACKING SIX"
-                                num="13"
+                                num="12"
                                 question="How many sixes will be hit?"
                                 hint="By anyone, in any game. 93 games to be played"
                             />

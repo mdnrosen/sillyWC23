@@ -32,7 +32,7 @@ export const FiftyFiftyRound = () => {
                             <FormControl fullWidth>
                                 <QuestionTitle
                                     title="Oh no, not another one!?"
-                                    num="14"
+                                    num="13"
                                     question="There will be a super over."
                                     hint="Only the semis or final are candidates"
                                 />
@@ -51,7 +51,7 @@ export const FiftyFiftyRound = () => {
                             <FormControl fullWidth>
                                 <QuestionTitle
                                     title="let it turn"
-                                    num="15"
+                                    num="14"
                                     question="What will take more wickets?"
                                     hint=""
                                 />
@@ -70,7 +70,7 @@ export const FiftyFiftyRound = () => {
                             <FormControl fullWidth>
                                 <QuestionTitle
                                     title="Win the toss and..."
-                                    num="16"
+                                    num="15"
                                     question="What will teams opt to do more?"
                                     hint=""
                                 />
@@ -89,7 +89,7 @@ export const FiftyFiftyRound = () => {
                             <FormControl fullWidth>
                                 <QuestionTitle
                                     title="runs on the board?"
-                                    num="17"
+                                    num="16"
                                     question="Which will win more games?"
                                     hint=""
                                 />
@@ -108,7 +108,7 @@ export const FiftyFiftyRound = () => {
                             <FormControl fullWidth>
                                 <QuestionTitle
                                     title="This is it. The big one."
-                                    num="18"
+                                    num="17"
                                     question="India or Pakistan or Game Cancelled?"
                                     hint="Neither can mean rain or politics..."
                                 />
@@ -130,4 +130,3 @@ export const FiftyFiftyRound = () => {
     )
 }
 
-// TODO: Miles/James - provide hint text, update hint props accordingly

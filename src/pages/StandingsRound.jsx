@@ -23,7 +23,7 @@ export const StandingsRound = () => {
                         <FormControl fullWidth>
                             <QuestionTitle 
                                 title="Group Standings"
-                                num="1"
+                                num="23"
                                 hint="Just drag and drop"
                                 question="Select your final group standings"                    
                             />
