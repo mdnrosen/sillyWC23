@@ -1,7 +1,98 @@
 [
     {
         "team": "England",
-        "players": [{"id":"19800d46-2bf0-40f2-ad9a-f5a82bbf9297","name":"Adil Rashid","batter":false,"bowler":true},{"id":"7d4d15a3-b71b-40a5-a1a1-70c40b33a2ef","name":"Ben Stokes","batter":true,"bowler":true},{"id":"b084b9a4-56cf-4d52-aa04-2a24431dcfca","name":"Chris Woakes","batter":false,"bowler":true},{"id":"a630af38-bfe4-4f16-a8dc-2be2a723e14d","name":"David Willey","batter":false,"bowler":true},{"id":"32681fb0-8d89-49b6-8a5e-43e8cd6d2e01","name":"Dawid Malan","batter":true,"bowler":false},{"id":"bd7b2ad8-3919-4669-9887-dc590c1db73b","name":"Gus Atkinson","batter":false,"bowler":true},{"id":"9debdcd3-2e5d-4552-befc-cb746711bc1d","name":"Jason Roy","batter":true,"bowler":false},{"id":"bd4d9e62-cae6-45d5-8c0f-0fc59bbb4fcd","name":"Joe Root","batter":true,"bowler":true},{"id":"f147eb26-cf68-4145-8699-d22805877899","name":"Jonny Bairstow","batter":true,"bowler":false},{"id":"b428de6d-3e60-4ccc-8a4b-c0bef04f1181","name":"Jos Buttler","batter":true,"bowler":false},{"id":"86fad7a5-0d32-41ac-a05c-28a1a44e6dd4","name":"Liam Livingstone","batter":true,"bowler":true},{"id":"11a15114-51e5-48f7-8ca3-414f956c23b7","name":"Mark Wood","batter":false,"bowler":true},{"id":"9c359a8c-6a2e-4880-b314-a9d04641c479","name":"Moeen Ali","batter":true,"bowler":true},{"id":"5b425cac-424c-4b35-b58d-dfc361ba6765","name":"Reece Topley","batter":false,"bowler":true},{"id":"2a29a138-bd1f-40c4-b91f-320f36afbec2","name":"Sam Curran","batter":false,"bowler":true}]
+        "players": [
+            {
+                "id": "19800d46-2bf0-40f2-ad9a-f5a82bbf9297",
+                "name": "Adil Rashid",
+                "batter": false,
+                "bowler": true
+            },
+            {
+                "id": "7d4d15a3-b71b-40a5-a1a1-70c40b33a2ef",
+                "name": "Ben Stokes",
+                "batter": true,
+                "bowler": true
+            },
+            {
+                "id": "b084b9a4-56cf-4d52-aa04-2a24431dcfca",
+                "name": "Chris Woakes",
+                "batter": false,
+                "bowler": true
+            },
+            {
+                "id": "a630af38-bfe4-4f16-a8dc-2be2a723e14d",
+                "name": "David Willey",
+                "batter": false,
+                "bowler": true
+            },
+            {
+                "id": "32681fb0-8d89-49b6-8a5e-43e8cd6d2e01",
+                "name": "Dawid Malan",
+                "batter": true,
+                "bowler": false
+            },
+            {
+                "id": "bd7b2ad8-3919-4669-9887-dc590c1db73b",
+                "name": "Gus Atkinson",
+                "batter": false,
+                "bowler": true
+            },
+            {
+                "id": "9debdcd3-2e5d-4552-befc-cb746711bc1d",
+                "name": "Harry Brook",
+                "batter": true,
+                "bowler": false
+            },
+            {
+                "id": "bd4d9e62-cae6-45d5-8c0f-0fc59bbb4fcd",
+                "name": "Joe Root",
+                "batter": true,
+                "bowler": true
+            },
+            {
+                "id": "f147eb26-cf68-4145-8699-d22805877899",
+                "name": "Jonny Bairstow",
+                "batter": true,
+                "bowler": false
+            },
+            {
+                "id": "b428de6d-3e60-4ccc-8a4b-c0bef04f1181",
+                "name": "Jos Buttler",
+                "batter": true,
+                "bowler": false
+            },
+            {
+                "id": "86fad7a5-0d32-41ac-a05c-28a1a44e6dd4",
+                "name": "Liam Livingstone",
+                "batter": true,
+                "bowler": true
+            },
+            {
+                "id": "11a15114-51e5-48f7-8ca3-414f956c23b7",
+                "name": "Mark Wood",
+                "batter": false,
+                "bowler": true
+            },
+            {
+                "id": "9c359a8c-6a2e-4880-b314-a9d04641c479",
+                "name": "Moeen Ali",
+                "batter": true,
+                "bowler": true
+            },
+            {
+                "id": "5b425cac-424c-4b35-b58d-dfc361ba6765",
+                "name": "Reece Topley",
+                "batter": false,
+                "bowler": true
+            },
+            {
+                "id": "2a29a138-bd1f-40c4-b91f-320f36afbec2",
+                "name": "Sam Curran",
+                "batter": false,
+                "bowler": true
+            }
+        ]
     },
     {
         "team": "Australia",
@@ -100,7 +191,98 @@
     },
     {
         "team": "India",
-        "players": [{"name":"Axar Patel","batter":false,"bowler":true,"id":"a7a65755-588e-4db7-b27f-376d5656742b"},{"name":"Hardik Pandya","batter":true,"bowler":true,"id":"5295bebc-c8e4-4907-8278-d5ed044d168f"},{"name":"Ishan Kishan","batter":true,"bowler":false,"id":"5deace04-1dc5-4267-9365-d17c0f0a7ad6"},{"name":"Jasprit Bumrah","batter":false,"bowler":true,"id":"c613afd2-96c0-4f32-af0e-bdf3e12a30e5"},{"name":"KL Rahul","batter":true,"bowler":false,"id":"0a6d19ea-57b0-4c80-9dd3-70dd4e4ef8fa"},{"name":"Kuldeep Yadav","batter":false,"bowler":true,"id":"9cf52b19-523f-419b-8928-5c0f94520d12"},{"name":"Mohammed Shami","batter":false,"bowler":true,"id":"0f2ddd3a-3f2f-47a3-aacf-b66b3fa42227"},{"name":"Mohammed Siraj","batter":false,"bowler":true,"id":"9f9467bf-db47-40db-8ded-986c1f424066"},{"name":"Ravindra Jadeja","batter":true,"bowler":true,"id":"7314bd53-4d50-4fae-baa2-32299f332303"},{"name":"Rohit Sharma","batter":true,"bowler":false,"id":"db5c5fc7-c1f5-46b8-8964-c23b0e5d578f"},{"name":"Shardul Thakur","batter":false,"bowler":true,"id":"b4cc15ea-dd67-4068-9290-6e41aefd1ae7"},{"name":"Shreyas Iyer","batter":true,"bowler":false,"id":"edf9102d-3146-4adc-82d8-a665a3373390"},{"name":"Shubman Gill","batter":true,"bowler":false,"id":"4c02e935-4d20-40d2-9ed3-7cad3cebbf89"},{"name":"Suryakumar Yadav","batter":true,"bowler":false,"id":"2dee5e8a-052a-402d-aaf3-52327eed62d9"},{"name":"Virat Kohli","batter":true,"bowler":false,"id":"37d4e3ec-d517-4e66-aad7-7c30765ba1ad"}]
+        "players": [
+            {
+                "name": "Axar Patel",
+                "batter": false,
+                "bowler": true,
+                "id": "a7a65755-588e-4db7-b27f-376d5656742b"
+            },
+            {
+                "name": "Hardik Pandya",
+                "batter": true,
+                "bowler": true,
+                "id": "5295bebc-c8e4-4907-8278-d5ed044d168f"
+            },
+            {
+                "name": "Ishan Kishan",
+                "batter": true,
+                "bowler": false,
+                "id": "5deace04-1dc5-4267-9365-d17c0f0a7ad6"
+            },
+            {
+                "name": "Jasprit Bumrah",
+                "batter": false,
+                "bowler": true,
+                "id": "c613afd2-96c0-4f32-af0e-bdf3e12a30e5"
+            },
+            {
+                "name": "KL Rahul",
+                "batter": true,
+                "bowler": false,
+                "id": "0a6d19ea-57b0-4c80-9dd3-70dd4e4ef8fa"
+            },
+            {
+                "name": "Kuldeep Yadav",
+                "batter": false,
+                "bowler": true,
+                "id": "9cf52b19-523f-419b-8928-5c0f94520d12"
+            },
+            {
+                "name": "Mohammed Shami",
+                "batter": false,
+                "bowler": true,
+                "id": "0f2ddd3a-3f2f-47a3-aacf-b66b3fa42227"
+            },
+            {
+                "name": "Mohammed Siraj",
+                "batter": false,
+                "bowler": true,
+                "id": "9f9467bf-db47-40db-8ded-986c1f424066"
+            },
+            {
+                "name": "Ravindra Jadeja",
+                "batter": true,
+                "bowler": true,
+                "id": "7314bd53-4d50-4fae-baa2-32299f332303"
+            },
+            {
+                "name": "Rohit Sharma",
+                "batter": true,
+                "bowler": false,
+                "id": "db5c5fc7-c1f5-46b8-8964-c23b0e5d578f"
+            },
+            {
+                "name": "Shardul Thakur",
+                "batter": false,
+                "bowler": true,
+                "id": "b4cc15ea-dd67-4068-9290-6e41aefd1ae7"
+            },
+            {
+                "name": "Shreyas Iyer",
+                "batter": true,
+                "bowler": false,
+                "id": "edf9102d-3146-4adc-82d8-a665a3373390"
+            },
+            {
+                "name": "Shubman Gill",
+                "batter": true,
+                "bowler": false,
+                "id": "4c02e935-4d20-40d2-9ed3-7cad3cebbf89"
+            },
+            {
+                "name": "Suryakumar Yadav",
+                "batter": true,
+                "bowler": false,
+                "id": "2dee5e8a-052a-402d-aaf3-52327eed62d9"
+            },
+            {
+                "name": "Virat Kohli",
+                "batter": true,
+                "bowler": false,
+                "id": "37d4e3ec-d517-4e66-aad7-7c30765ba1ad"
+            }
+        ]
     },
     {
         "team": "Pakistan",
@@ -157,10 +339,382 @@
     },
     {
         "team": "South Africa",
-        "players": [{"name":"Aiden Markram","batter":true,"bowler":false,"id":"65377934-ab1b-43e0-bc1c-58c2da8ac0c5"},{"name":"Anrich Nortje","batter":false,"bowler":true,"id":"c9ba7272-6d3e-40e8-bb5c-a683a540fb24"},{"name":"David Miller","batter":true,"bowler":false,"id":"8868cbb7-4035-4f5d-af66-11337e50e9ba"},{"name":"Gerald Coetzee","batter":false,"bowler":true,"id":"74033a5d-b324-44ad-b48d-03c587e89a70"},{"name":"Kagiso Rabada","batter":false,"bowler":true,"id":"305f28ac-0ed5-48a9-af24-2484fc29458a"},{"name":"Keshav Maharaj","batter":false,"bowler":true,"id":"7b3668a5-d69f-436b-9ac3-206f80839f1b"},{"name":"Lungi Ngidi","batter":false,"bowler":true,"id":"1662d424-fd2d-4e18-a42a-8d55390bce3a"},{"name":"Marco Janses","batter":true,"bowler":false,"id":"32a15f76-46b6-45a4-8a5c-4b647a462c37"},{"name":"Quinton de Kock","batter":true,"bowler":false,"id":"c35279ac-275f-4342-a29f-9356b9134535"},{"name":"Rassie van der Dussen","batter":true,"bowler":false,"id":"9a7c2c33-d975-428e-ac96-e7f87e041dce"},{"name":"Reeza Hendricks","batter":true,"bowler":false,"id":"62eb6b4b-4044-41a9-8ae9-8bab1f9d2ccf"},{"name":"Sisanda Magala","batter":false,"bowler":true,"id":"fc4fb954-69cd-4e3f-9f4e-1c479c5f51d1"},{"name":"Tabraiz Shamsi","batter":false,"bowler":true,"id":"6af372e2-fb55-42ec-886d-5ef2af795ab5"},{"name":"Temba Bavuma","batter":true,"bowler":false,"id":"48be0717-895d-44ec-9a2d-cb694abe2013"}]
+        "players": [
+            {
+                "name": "Aiden Markram",
+                "batter": true,
+                "bowler": false,
+                "id": "65377934-ab1b-43e0-bc1c-58c2da8ac0c5"
+            },
+            {
+                "name": "Anrich Nortje",
+                "batter": false,
+                "bowler": true,
+                "id": "c9ba7272-6d3e-40e8-bb5c-a683a540fb24"
+            },
+            {
+                "name": "David Miller",
+                "batter": true,
+                "bowler": false,
+                "id": "8868cbb7-4035-4f5d-af66-11337e50e9ba"
+            },
+            {
+                "name": "Gerald Coetzee",
+                "batter": false,
+                "bowler": true,
+                "id": "74033a5d-b324-44ad-b48d-03c587e89a70"
+            },
+            {
+                "name": "Henrik Klaasen",
+                "batter": true,
+                "bowler": false,
+                "id": "74033a5d-b324-44ad-b48d-03c587e89a70"
+            },
+            {
+                "name": "Kagiso Rabada",
+                "batter": false,
+                "bowler": true,
+                "id": "305f28ac-0ed5-48a9-af24-2484fc29458a"
+            },
+            {
+                "name": "Keshav Maharaj",
+                "batter": false,
+                "bowler": true,
+                "id": "7b3668a5-d69f-436b-9ac3-206f80839f1b"
+            },
+            {
+                "name": "Lungi Ngidi",
+                "batter": false,
+                "bowler": true,
+                "id": "1662d424-fd2d-4e18-a42a-8d55390bce3a"
+            },
+            {
+                "name": "Marco Jansen",
+                "batter": true,
+                "bowler": false,
+                "id": "32a15f76-46b6-45a4-8a5c-4b647a462c37"
+            },
+            {
+                "name": "Quinton de Kock",
+                "batter": true,
+                "bowler": false,
+                "id": "c35279ac-275f-4342-a29f-9356b9134535"
+            },
+            {
+                "name": "Rassie van der Dussen",
+                "batter": true,
+                "bowler": false,
+                "id": "9a7c2c33-d975-428e-ac96-e7f87e041dce"
+            },
+            {
+                "name": "Reeza Hendricks",
+                "batter": true,
+                "bowler": false,
+                "id": "62eb6b4b-4044-41a9-8ae9-8bab1f9d2ccf"
+            },
+            {
+                "name": "Sisanda Magala",
+                "batter": false,
+                "bowler": true,
+                "id": "fc4fb954-69cd-4e3f-9f4e-1c479c5f51d1"
+            },
+            {
+                "name": "Tabraiz Shamsi",
+                "batter": false,
+                "bowler": true,
+                "id": "6af372e2-fb55-42ec-886d-5ef2af795ab5"
+            },
+            {
+                "name": "Temba Bavuma",
+                "batter": true,
+                "bowler": false,
+                "id": "48be0717-895d-44ec-9a2d-cb694abe2013"
+            }
+        ]
     },
     {
-        "team" : "Netherlands",
-        "players" : [{"name":"Aryan Dutt","batter":false,"bowler":true,"id":"35c18f3b-663d-4765-89a1-c5d165db7031"},{"name":"Bas de Leede","batter":true,"bowler":true,"id":"3321cbfd-813f-4ff0-903e-a05ba394576d"},{"name":"Colin Ackermann","batter":true,"bowler":true,"id":"75b08e3c-5f19-4c62-8e0e-92bad30cee5f"},{"name":"Logan van Beek","batter":true,"bowler":true,"id":"bcc11188-4929-4c35-8643-4c3636bc8af0"},{"name":"Max O'Dowd","batter":true,"bowler":false,"id":"7a0a3dff-2fbe-4d56-b709-a73e75f2c58d"},{"name":"Paul van Meekeren","batter":false,"bowler":true,"id":"87f66718-1bdd-44a8-9d0e-8b8e913e3639"},{"name":"Roelof van der Merwe","batter":true,"bowler":true,"id":"7e9deaea-489c-4c10-8519-67d6da1994e6"},{"name":"Ryan Klein","batter":false,"bowler":true,"id":"eb28916b-fca1-4323-a9ed-eae29f0fdad3"},{"name":"Saqib Zulfiqar","batter":true,"bowler":true,"id":"137ad630-b5c9-441f-90d3-7bf8dd0aec71"},{"name":"Scott Edwards","batter":true,"bowler":false,"id":"f8d491fe-d46c-4fce-bac7-98408657a17d"},{"name":"Shariz Ahmad","batter":false,"bowler":true,"id":"c06c9889-89f4-4440-8549-75aa1ca0e5f1"},{"name":"Sybrand Engelbrecht","batter":true,"bowler":true,"id":"fad291e9-b999-47af-93ee-337de4d0bb23"},{"name":"Teja Nidamanuru","batter":true,"bowler":true,"id":"01a72ba4-9a7d-45f2-a189-4651321a1cc6"},{"name":"Vikramjit Singh","batter":true,"bowler":false,"id":"78bc8f95-8059-43ff-b888-d36443152b7f"},{"name":"Wesley Barresi","batter":true,"bowler":false,"id":"759b5f9a-3bba-46e0-8a73-af2b4fb74999"}]
+        "team": "Netherlands",
+        "players": [
+            {
+                "name": "Aryan Dutt",
+                "batter": false,
+                "bowler": true,
+                "id": "35c18f3b-663d-4765-89a1-c5d165db7031"
+            },
+            {
+                "name": "Bas de Leede",
+                "batter": true,
+                "bowler": true,
+                "id": "3321cbfd-813f-4ff0-903e-a05ba394576d"
+            },
+            {
+                "name": "Colin Ackermann",
+                "batter": true,
+                "bowler": true,
+                "id": "75b08e3c-5f19-4c62-8e0e-92bad30cee5f"
+            },
+            {
+                "name": "Logan van Beek",
+                "batter": true,
+                "bowler": true,
+                "id": "bcc11188-4929-4c35-8643-4c3636bc8af0"
+            },
+            {
+                "name": "Max O'Dowd",
+                "batter": true,
+                "bowler": false,
+                "id": "7a0a3dff-2fbe-4d56-b709-a73e75f2c58d"
+            },
+            {
+                "name": "Paul van Meekeren",
+                "batter": false,
+                "bowler": true,
+                "id": "87f66718-1bdd-44a8-9d0e-8b8e913e3639"
+            },
+            {
+                "name": "Roelof van der Merwe",
+                "batter": true,
+                "bowler": true,
+                "id": "7e9deaea-489c-4c10-8519-67d6da1994e6"
+            },
+            {
+                "name": "Ryan Klein",
+                "batter": false,
+                "bowler": true,
+                "id": "eb28916b-fca1-4323-a9ed-eae29f0fdad3"
+            },
+            {
+                "name": "Saqib Zulfiqar",
+                "batter": true,
+                "bowler": true,
+                "id": "137ad630-b5c9-441f-90d3-7bf8dd0aec71"
+            },
+            {
+                "name": "Scott Edwards",
+                "batter": true,
+                "bowler": false,
+                "id": "f8d491fe-d46c-4fce-bac7-98408657a17d"
+            },
+            {
+                "name": "Shariz Ahmad",
+                "batter": false,
+                "bowler": true,
+                "id": "c06c9889-89f4-4440-8549-75aa1ca0e5f1"
+            },
+            {
+                "name": "Sybrand Engelbrecht",
+                "batter": true,
+                "bowler": true,
+                "id": "fad291e9-b999-47af-93ee-337de4d0bb23"
+            },
+            {
+                "name": "Teja Nidamanuru",
+                "batter": true,
+                "bowler": true,
+                "id": "01a72ba4-9a7d-45f2-a189-4651321a1cc6"
+            },
+            {
+                "name": "Vikramjit Singh",
+                "batter": true,
+                "bowler": false,
+                "id": "78bc8f95-8059-43ff-b888-d36443152b7f"
+            },
+            {
+                "name": "Wesley Barresi",
+                "batter": true,
+                "bowler": false,
+                "id": "759b5f9a-3bba-46e0-8a73-af2b4fb74999"
+            }
+        ]
+    },
+    {
+        "team": "New Zealand",
+        "players": [
+            {
+                "name": "Daryl Mitchell",
+                "batter": true,
+                "bowler": true,
+                "id": "13496de0-2dd5-499c-b839-ebcb3b3ddad5"
+            },
+            {
+                "name": "Devon Conway",
+                "batter": true,
+                "bowler": false,
+                "id": "8a2450d6-0e93-4ae7-b958-b93cc1a0f634"
+            },
+            {
+                "name": "Glenn Phillips",
+                "batter": true,
+                "bowler": true,
+                "id": "41fc672c-ee65-41fe-8d26-7309e12a2246"
+            },
+            {
+                "name": "Ish Sodhi",
+                "batter": false,
+                "bowler": true,
+                "id": "ad805e88-bfeb-4c1f-93ab-fe4262b9980c"
+            },
+            {
+                "name": "Jimmy Neesham",
+                "batter": true,
+                "bowler": true,
+                "id": "7af48649-49c7-42e6-86dd-c4fc8b96f6a7"
+            },
+            {
+                "name": "Kane Williamson",
+                "batter": true,
+                "bowler": false,
+                "id": "4618b1df-5f58-4ce0-8fa4-c846aed98ef5"
+            },
+            {
+                "name": "Lockie Ferguson",
+                "batter": false,
+                "bowler": true,
+                "id": "3ed047a0-200d-4692-822e-53a0020b9f62"
+            },
+            {
+                "name": "Mark Chapman",
+                "batter": true,
+                "bowler": false,
+                "id": "5155838a-ed95-412b-a3bd-a530f593f979"
+            },
+            {
+                "name": "Matt Henry",
+                "batter": false,
+                "bowler": true,
+                "id": "a7d8317a-552a-4376-a1dc-bae9841722bb"
+            },
+            {
+                "name": "Mitch Santner",
+                "batter": false,
+                "bowler": true,
+                "id": "982cde29-7e94-4bf2-81c9-38081998b177"
+            },
+            {
+                "name": "Rachin Ravindra",
+                "batter": false,
+                "bowler": true,
+                "id": "7b3dd35c-ac09-4cd4-8fe2-272b6ec254cb"
+            },
+            {
+                "name": "Tim Southee",
+                "batter": false,
+                "bowler": true,
+                "id": "2dafcf14-0228-425e-b014-3aa8253f8c49"
+            },
+            {
+                "name": "Tom Latham",
+                "batter": true,
+                "bowler": false,
+                "id": "509520ae-838a-42ba-8a00-4303272947e2"
+            },
+            {
+                "name": "Trent Boult",
+                "batter": false,
+                "bowler": true,
+                "id": "9ea4e207-7f2f-4455-bead-967e41d9c581"
+            },
+            {
+                "name": "Will Young",
+                "batter": true,
+                "bowler": false,
+                "id": "61b03233-2e01-422d-b12b-edcfda15c9d4"
+            }
+        ]
+    },
+    {
+        "team": "Afghanistan",
+        "players": [
+            {
+                "name": "Abdul Rahman",
+                "batter": false,
+                "bowler": true,
+                "id": "08ec89ca-1d12-4c2f-be75-70a22d11430f"
+            },
+            {
+                "name": "Azmatullah Omarzai",
+                "batter": true,
+                "bowler": true,
+                "id": "bf796764-03ef-45c6-af2d-47fa4a76cc54"
+            },
+            {
+                "name": "Fazalhaq Farooqi",
+                "batter": false,
+                "bowler": true,
+                "id": "7639c373-b2a8-4e60-925d-dadf58f62c4d"
+            },
+            {
+                "name": "Hashmatullah Shahidi",
+                "batter": true,
+                "bowler": false,
+                "id": "29765a14-da76-436a-9e2f-45d768eecc62"
+            },
+            {
+                "name": "Ibrahim Zadran",
+                "batter": true,
+                "bowler": false,
+                "id": "1223cc71-b438-4e28-9b3b-2baa86d97ffa"
+            },
+            {
+                "name": "Ikram Alikhil",
+                "batter": false,
+                "bowler": true,
+                "id": "f6ee5d51-7c94-478f-aaa0-883cb8eaa0cd"
+            },
+            {
+                "name": "Mohammad Nabi",
+                "batter": true,
+                "bowler": true,
+                "id": "02e1023e-111f-4ff4-a80e-fd49800fec23"
+            },
+            {
+                "name": "Mujeeb ur Rahman",
+                "batter": false,
+                "bowler": true,
+                "id": "3f0b6df5-9111-4b3e-abd8-ece12bd51fe7"
+            },
+            {
+                "name": "Najibullah Zadran",
+                "batter": true,
+                "bowler": false,
+                "id": "939b5cb4-5f06-4ecc-87c7-f17e6898ee4b"
+            },
+            {
+                "name": "Naveen ul Haq",
+                "batter": false,
+                "bowler": true,
+                "id": "6ebc4fc6-e1c4-4092-925e-098d822fc36f"
+            },
+            {
+                "name": "Noor Ahmad",
+                "batter": false,
+                "bowler": true,
+                "id": "61179414-557f-4cbe-8912-caa838096cd0"
+            },
+            {
+                "name": "Rahmanullah Gurbaz",
+                "batter": true,
+                "bowler": false,
+                "id": "81ac119f-15e0-4cb2-b0b5-6fecb2a07027"
+            },
+            {
+                "name": "Rahmat Shah",
+                "batter": true,
+                "bowler": true,
+                "id": "19acc11c-802f-4ecf-b7d7-e1238c674a28"
+            },
+            {
+                "name": "Rashid Khan",
+                "batter": false,
+                "bowler": true,
+                "id": "ba10cf98-9c1e-4bf7-b063-7f3007f98178"
+            },
+            {
+                "name": "Riaz Hassan",
+                "batter": true,
+                "bowler": false,
+                "id": "b01792af-2732-44fe-851b-500a9106c437"
+            }
+        ]
     }
 ]
