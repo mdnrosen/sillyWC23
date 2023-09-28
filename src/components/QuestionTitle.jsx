@@ -7,7 +7,7 @@ export const QuestionTitle = ({ num, title, question, hint }) => {
     <Toolbar sx={{ py: 1, display: 'flex', justifyContent: 'space-between' , alignItems: 'center', pt: 2 }} disableGutters>
         <ListItem
             secondaryAction={
-                <Tooltip title={hint}>
+                <Tooltip title={hint} enterTouchDelay={0}>
                     <IconButton>
                         <HelpOutline />
                     </IconButton>

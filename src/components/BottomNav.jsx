@@ -30,7 +30,7 @@ export const BottomNav = () => {
   
   if (location.pathname === '/' || location.pathname === '/submit') return null // don't render bottom nav on home page
   return (
-    <Card sx={{ pb: 2}}>
+    <Card sx={{ pb: 2 , px: { xs: 2 }}}>
       <Toolbar>
         <Grid container>
           <Grid item xs={6} textAlign="left">

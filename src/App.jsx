@@ -19,13 +19,17 @@ import { Submitted } from './pages/Submitted';
 
 import { GuessesProvider } from './context/GuessContext'
 import { MultiRound } from './pages/MultiRound'
+import ScrollToTop from './components/ScrollToTop'
 
 function App() {
+
+
   return (
     <Container maxWidth='md' disableGutters>
       <ThemeProvider theme={theme}>
         <CssBaseline />
           <BrowserRouter>
+            <ScrollToTop />
             <Navbar />
             <GuessesProvider>
               <Routes>

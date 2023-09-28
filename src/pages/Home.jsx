@@ -4,7 +4,7 @@ import { RoundCard } from '../components/RoundCard'
 
 export const Home = () => {
   return (
-    <RoundCard>
+    <RoundCard fullHeight={true}>
     <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', m: 2 }}>
         <Box 
             component="img" 
