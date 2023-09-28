@@ -15,15 +15,24 @@ export const Home = () => {
         <Typography variant="h5" sx={{ mt: 2 }} color="secondary">
             CWC - Silly Predictions
         </Typography>
-        <Typography variant="body1" sx={{ mt: 2 }} color="secondary">
-          Unless stating, all questions refer to the round-robin group stage of the tournament
+        ________________________________________
+        <Typography variant="body1" sx={{ mt: 2 }} color="primary">
+            Welcome to the silly predictions quiz!
         </Typography>
         <Typography variant="body1" sx={{ mt: 2 }} color="secondary">
-          Unless stating, all questions refer to the round-robin group stage of the tournament
+          Take your time. As long as you are on the same device, your progress will be saved.
         </Typography>
         <Typography variant="body1" sx={{ mt: 2 }} color="secondary">
-          Unless stating, all questions refer to the round-robin group stage of the tournament
+          Hover or tap (mobile) on the '?' for help with any question
         </Typography>
+        <Typography variant="body1" sx={{ mt: 2 }} color="secondary">
+          For the questions with lots of options, you can type to search a player
+        </Typography>
+        <Typography variant="body1" sx={{ mt: 2 }} color="primary">
+          As always, no prizes. Just a bit of fun. Enjoy.
+        </Typography>
+        ________________________________________
+
         <Button variant="contained" color="secondary" href="/england" sx={{ mt: 2}}>
             start quiz
         </Button>

@@ -20,7 +20,7 @@
         "path" : "/standings"
     },
     {
-        "label" : "Summary",
-        "path" : "/summary"
+        "label" : "Submit",
+        "path" : "/submit"
     }
 ]

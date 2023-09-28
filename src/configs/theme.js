@@ -18,19 +18,11 @@ const theme = createTheme({
         }
     },
     typography: {
-        fontSize: '1.2rem',
-        '@media (min-width:600px)': {
-          fontSize: '1.5rem',
-        },
-        [theme.breakpoints.up('md')]: {
-          fontSize: '2rem',
-        },
+        fontSize: 13,
         fontFamily: [
             'Source Code Pro', 'monospace'
         ].join(','),
     },
-
-
 })
 
 export default theme;

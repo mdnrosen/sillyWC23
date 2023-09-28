@@ -108,7 +108,7 @@ export const NumbersRound = () => {
                                 title="Sting in the tail"
                                 num="11"
                                 question="What will be the top score made by a tailender (9 - 11)?"
-                                hint="Chasing, batting first, doesn't matter"
+                                hint="Out or not out. Doesn't matter"
                             />
                             <TextField 
                                 fullWidth 

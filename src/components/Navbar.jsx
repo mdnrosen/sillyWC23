@@ -1,6 +1,6 @@
 import React, { useState} from 'react'
 import { Box, IconButton, Card, Menu, MenuItem, Toolbar, Typography } from '@mui/material'
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 
 import MenuIcon from '@mui/icons-material/Menu';
 import pages from '../assets/data/pages.json'
@@ -10,7 +10,6 @@ export const Navbar = () => {
     const open = Boolean(anchorEl);
 
     const navigate = useNavigate();
-    
     const handleClick = (event) => {
         setAnchorEl(event.currentTarget);
     }
@@ -21,14 +20,18 @@ export const Navbar = () => {
 
     const handleNavigate = (path) => {
         handleMenuClose()
-        navigate(path)    
+        navigate(path)   
     }
+
+    const IS_LOCKED = localStorage.getItem('sillywc_submitted')
 
     return (
         <Card>
             <Toolbar sx={{ display: 'flex', justifyContent: 'space-between'}}>
                 <Typography variant="h6" color="primary" sx={{ flexGrow: 1 }}>
-                    SILLY WORLD CUP 2023
+                    <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
+                        SILLY ODI WORLD CUP 2023
+                    </Link>
                 </Typography>
                 <Box>
                     <IconButton
@@ -47,6 +50,7 @@ export const Navbar = () => {
                     >
                         {pages.map((page, i) => (
                             <MenuItem
+                                disabled={IS_LOCKED}
                                 key={i}
                                 onClick={() => handleNavigate(page.path)}
                             >

@@ -14,19 +14,21 @@ export const BottomNav = () => {
         '/numbers',
         '/fiftyfifty',
         '/multis',
-        '/standings'
+        '/standings',
+        '/submit'
+        
     ]
 
     useEffect(() => {
       const current = location.pathname
       const index = rounds.indexOf(current)
 
-      setNext(index === 4 ? null : rounds[index+1])
+      setNext(index === 5 ? null : rounds[index+1])
       setPrev(index === 0 ? null : rounds[index-1])
     },[location])
 
   
-  if (location.pathname === '/') return null // don't render bottom nav on home page
+  if (location.pathname === '/' || location.pathname === '/submit') return null // don't render bottom nav on home page
   return (
     <Card sx={{ pb: 2}}>
       <Toolbar>

@@ -5,7 +5,7 @@ export const RoundTitle = ({ num, name, marking }) => {
   return (
     <Toolbar sx={{ backgroundColor: 'secondary.main', color: 'black', py: 4, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' , alignItems: 'flex-start' }}>
         <Typography color="black" variant="h4">
-            ROUND {num} - {name.toUpperCase()}
+            {num && `ROUND ${num} - `} {name.toUpperCase()}
         </Typography>
         <Typography color="black" variant="body2">
           {marking}

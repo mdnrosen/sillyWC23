@@ -59,7 +59,7 @@ export const MultiRound = () => {
                             title="Gun fielding"
                             num="19"
                             question="Pick 2 players. +10 point for each run out"
-                            hint="Fielder points, bowler or keeper assists don't count"
+                            hint="Assists from keeper or bowler don't count."
                         />
                         <DoubleSelect 
                             placeholders={[
@@ -101,7 +101,7 @@ export const MultiRound = () => {
                             title="Top run getters"
                             num="21"
                             question="Pick 2 players. +10pts for 1st, +9pts for 2nd, etc..."
-                            hint="1st = 10pts, 2nd = 9pts, .... , 10th = 1pt"
+                            hint="Includes knockout stages"
                         />
                         <DoubleSelect 
                             placeholders={[
@@ -121,6 +121,7 @@ export const MultiRound = () => {
                         <QuestionTitle
                             title="Last WC?"
                             num="22"
+                            hint="Could be easy this if Kane doesn't play"
                             question="Place the 'Big 4' in order of runs scored. +2 for each correct"
                         />
                         <DragAndDrop 

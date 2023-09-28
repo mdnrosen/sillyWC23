@@ -126,7 +126,7 @@ export const EnglandRound = () => {
                                 <QuestionTitle 
                                     title="Get on with it"
                                     num="5"
-                                    question="WWho will have the lowest batting strike rate?"
+                                    question="Who will have the lowest batting strike rate?"
                                     hint="Minimum 50 balls faced"
                                 
                                 />
