@@ -110,9 +110,9 @@
                 "id": "fa0cc539-e048-47d2-a230-b2f8b3577b94"
             },
             {
-                "name": "Ashton Agar",
-                "batter": false,
-                "bowler": true,
+                "name": "Marnus Labuschagne",
+                "batter": true,
+                "bowler": false,
                 "id": "ea7c8435-fd09-4859-bc06-8cb3fad3ea53"
             },
             {
@@ -193,7 +193,7 @@
         "team": "India",
         "players": [
             {
-                "name": "Axar Patel",
+                "name": "Ravichandran Ashwin",
                 "batter": false,
                 "bowler": true,
                 "id": "a7a65755-588e-4db7-b27f-376d5656742b"
@@ -288,52 +288,94 @@
         "team": "Pakistan",
         "players": [
             {
-                "id": "62f3bf50-7e14-4e6a-bad4-4dd29d7e8e37",
+                "name": "Adbullah Shafique",
+                "batter": true,
+                "bowler": false,
+                "id": "4a244e71-8258-4427-998f-896349cc02ca"
+            },
+            {
                 "name": "Babar Azam",
                 "batter": true,
-                "bowler": false
+                "bowler": false,
+                "id": "40ff8a21-f22b-4ff3-9f3f-1b322f0b7a05"
             },
             {
-                "id": "f4ac8d11-18f0-4e63-9b07-596f6c5392e1",
-                "name": "Shaheen Afridi",
-                "batter": false,
-                "bowler": true
-            },
-            {
-                "id": "5d75c921-c2d1-44b3-8570-5e13b44f89a3",
                 "name": "Fakhar Zaman",
                 "batter": true,
-                "bowler": false
+                "bowler": false,
+                "id": "d15aaa9a-d149-4165-9bcf-68d3c1754bb2"
             },
             {
-                "id": "d195b219-94a9-48e1-81c7-c3b18da03e9f",
-                "name": "Shadab Khan",
-                "batter": true,
-                "bowler": true
-            },
-            {
-                "id": "48cb4501-6c8f-42b1-98a6-693f2b8f0c7d",
-                "name": "Imam-ul-Haq",
-                "batter": true,
-                "bowler": false
-            },
-            {
-                "id": "0d34731c-1705-4876-9a60-48a2de3bce59",
-                "name": "Mohammad Rizwan",
-                "batter": true,
-                "bowler": false
-            },
-            {
-                "id": "bcf49f94-c004-4c5e-9d8d-21f6bc9f9d28",
                 "name": "Haris Rauf",
                 "batter": false,
-                "bowler": true
+                "bowler": true,
+                "id": "7f290b6c-2c70-49ad-90d5-ee937cef7dd1"
             },
             {
-                "id": "7c437f5b-c16b-43bf-98e0-eb04715e2ce0",
-                "name": "Shoaib Malik",
+                "name": "Hasan Ali",
+                "batter": false,
+                "bowler": true,
+                "id": "6f514a6b-b707-4e5e-9952-580c49277ced"
+            },
+            {
+                "name": "Iftikhar Ahmed",
                 "batter": true,
-                "bowler": true
+                "bowler": true,
+                "id": "b64fcc73-458b-4d46-bf7d-cbaf66538819"
+            },
+            {
+                "name": "Iman-ul-Haq",
+                "batter": true,
+                "bowler": false,
+                "id": "d180901c-37a5-40f5-814d-2604deecd81d"
+            },
+            {
+                "name": "Mohammad Nawaz",
+                "batter": true,
+                "bowler": true,
+                "id": "44efa373-b828-40a7-b747-7775c3f201f6"
+            },
+            {
+                "name": "Mohammad Rizwan",
+                "batter": true,
+                "bowler": false,
+                "id": "609cb887-cb98-4510-b5e5-0510f9c712df"
+            },
+            {
+                "name": "Mohammad Wasim",
+                "batter": false,
+                "bowler": true,
+                "id": "dc97b19d-678b-4eba-8d71-4c841da043c7"
+            },
+            {
+                "name": "Salman Ali Agha",
+                "batter": true,
+                "bowler": true,
+                "id": "051260c5-f9c8-4293-916a-37c5e179d122"
+            },
+            {
+                "name": "Saud Shakeel",
+                "batter": true,
+                "bowler": false,
+                "id": "5a819779-4bb0-482a-a05b-d84fc92a6d54"
+            },
+            {
+                "name": "Shadab Khan",
+                "batter": true,
+                "bowler": true,
+                "id": "bb3a8311-76a9-4bff-9063-83da01ccb29e"
+            },
+            {
+                "name": "Shaheen Afridi",
+                "batter": false,
+                "bowler": true,
+                "id": "373e899c-7b0a-4030-87db-df46e3a5a704"
+            },
+            {
+                "name": "Usama Mir",
+                "batter": false,
+                "bowler": true,
+                "id": "09d383e0-577f-45c1-ba2a-8fb03ec52716"
             }
         ]
     },
@@ -347,7 +389,7 @@
                 "id": "65377934-ab1b-43e0-bc1c-58c2da8ac0c5"
             },
             {
-                "name": "Anrich Nortje",
+                "name": "Andile Phehlukwayo",
                 "batter": false,
                 "bowler": true,
                 "id": "c9ba7272-6d3e-40e8-bb5c-a683a540fb24"
@@ -365,7 +407,7 @@
                 "id": "74033a5d-b324-44ad-b48d-03c587e89a70"
             },
             {
-                "name": "Henrik Klaasen",
+                "name": "Heinrich Klaasen",
                 "batter": true,
                 "bowler": false,
                 "id": "74033a5d-b324-44ad-b48d-03c587e89a70"
@@ -413,7 +455,7 @@
                 "id": "62eb6b4b-4044-41a9-8ae9-8bab1f9d2ccf"
             },
             {
-                "name": "Sisanda Magala",
+                "name": "Lizaad Williams",
                 "batter": false,
                 "bowler": true,
                 "id": "fc4fb954-69cd-4e3f-9f4e-1c479c5f51d1"
@@ -514,7 +556,7 @@
                 "id": "01a72ba4-9a7d-45f2-a189-4651321a1cc6"
             },
             {
-                "name": "Vikramjit Singh",
+                "name": "Vikram Singh",
                 "batter": true,
                 "bowler": false,
                 "id": "78bc8f95-8059-43ff-b888-d36443152b7f"
@@ -716,5 +758,105 @@
                 "id": "b01792af-2732-44fe-851b-500a9106c437"
             }
         ]
+    },
+    {
+        "team": "Bangladesh",
+        "players": [
+            {
+                "name": "Hasan Mahmud",
+                "batter": false,
+                "bowler": true,
+                "id": "286aa14c-a9fa-42dc-89f4-fd8ad2bf2566"
+            },
+            {
+                "name": "Litton Kumer Das",
+                "batter": true,
+                "bowler": false,
+                "id": "8ff9baad-c89f-4846-9d04-4aeca7328435"
+            },
+            {
+                "name": "Mahmudullah Riyad",
+                "batter": true,
+                "bowler": true,
+                "id": "94333997-ba2b-48f3-a25d-1c3ed26aca04"
+            },
+            {
+                "name": "Mehidy Hasan Miraz",
+                "batter": true,
+                "bowler": true,
+                "id": "ad9a2e8d-888e-4aba-a562-4df203672344"
+            },
+            {
+                "name": "Mushfiqur Rahim",
+                "batter": true,
+                "bowler": false,
+                "id": "89be60e7-dfb5-4ab1-999d-cbf332bd5e58"
+            },
+            {
+                "name": "Mustafizur Rahman",
+                "batter": false,
+                "bowler": true,
+                "id": "29909330-8deb-4313-a6aa-9593ee336fb6"
+            },
+            {
+                "name": "Najmul Hossain Shanto",
+                "batter": true,
+                "bowler": false,
+                "id": "f548468e-2f01-4c96-8fdf-3d20785270ba"
+            },
+            {
+                "name": "Nasum Ahmed",
+                "batter": false,
+                "bowler": true,
+                "id": "55a80c28-f322-417d-ac66-d3658c9037ef"
+            },
+            {
+                "name": "Shak Mahedi Hasan",
+                "batter": true,
+                "bowler": true,
+                "id": "18797f66-e81b-4d7f-93ae-a6223154f627"
+            },
+            {
+                "name": "Shakib Al Hasan",
+                "batter": true,
+                "bowler": true,
+                "id": "655acdac-1acc-4d31-9e24-0c4177560bdf"
+            },
+            {
+                "name": "Shoriful Islam",
+                "batter": false,
+                "bowler": true,
+                "id": "f9a1f8a1-327e-4ae5-9827-110a65251dc6"
+            },
+            {
+                "name": "Tanzid Hasan Tamim",
+                "batter": true,
+                "bowler": true,
+                "id": "98a52718-4eb0-4333-84b0-c4b24e3ffbb0"
+            },
+            {
+                "name": "Tanzim Hasan Sakib",
+                "batter": false,
+                "bowler": true,
+                "id": "5d05034d-9f82-45a8-8aa8-fb3c99df23db"
+            },
+            {
+                "name": "Taskin Ahmed",
+                "batter": false,
+                "bowler": true,
+                "id": "91be31a5-764e-4497-ae86-917b270142d9"
+            },
+            {
+                "name": "Tawhid Hridoy",
+                "batter": true,
+                "bowler": true,
+                "id": "96171a34-83c0-49d3-bf56-e11001f49c27"
+            }
+        ]
+    },
+    {
+        "team" : "Sri Lanka",
+        "players" : [{"name":"Charith Asalanka","batter":true,"bowler":true,"id":"15bdfb5c-3272-4cc5-a62f-0440fed1312f"},{"name":"Dasun Shanaka","batter":true,"bowler":true,"id":"4651ce54-f76f-4c05-b166-1684ca3096f8"},{"name":"Dhananjaya de Silva","batter":true,"bowler":true,"id":"71017bbc-1d12-486d-9a01-a2b449f82096"},{"name":"Dilshan Madushanka","batter":false,"bowler":true,"id":"6cd26c49-c230-4a6c-8dba-701484b648f5"},{"name":"Dimuth Karunaratne","batter":true,"bowler":false,"id":"3e6c455b-3b65-4e20-b466-a1600dd1fba4"},{"name":"Dunith Wellalage","batter":false,"bowler":true,"id":"010db108-f75e-447e-878d-454d3fdc153a"},{"name":"Dushan Hemantha","batter":true,"bowler":true,"id":"dabd442c-16e4-4b41-a4b2-9e942ab4a11c"},{"name":"Kasun Rajitha","batter":false,"bowler":true,"id":"7e8cde79-6c30-4ecf-b945-fce54522aad9"},{"name":"Kusal Mendis","batter":true,"bowler":false,"id":"0d59a463-4f68-4f67-8fc9-75ab1437ad4e"},{"name":"Kusal Perera","batter":true,"bowler":false,"id":"abb9cb30-857a-4097-a3e4-f065e9d1df07"},{"name":"Lahiru Kumara","batter":false,"bowler":true,"id":"ab5ca14e-74f6-4245-9852-a4888e9c5786"},{"name":"Maheesh Theekshana","batter":false,"bowler":true,"id":"8bec07c8-78d7-43e8-a927-bc266c669fa7"},{"name":"Matheesha Pathirana","batter":false,"bowler":true,"id":"de08e45e-4d88-48a6-93fb-b2d0a976cee5"},{"name":"Pathum Nissanka","batter":true,"bowler":false,"id":"e6572773-5eb7-4240-aaeb-3436f55d1e21"},{"name":"Sadeera Samarawickrama","batter":true,"bowler":false,"id":"16d88947-b13d-499f-9b7a-f25834b555ec"}]
     }
+
 ]

@@ -45,6 +45,7 @@ export const EnglandRound = () => {
                                 placeholder="Pick..."
                                 value={guesses['eng_noplay']}
                             >
+                                <MenuItem value="everyone">Everyone plays</MenuItem>
                                 {getOptions(englandPlayers, 'name', 'name').map((opt, i) => (
                                     <MenuItem key={i} value={opt.value}>{opt.label}</MenuItem>
                                 ))}
