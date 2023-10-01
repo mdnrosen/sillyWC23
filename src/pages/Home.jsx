@@ -1,8 +1,12 @@
 import React from 'react'
 import { Box, Button, Typography } from '@mui/material'
 import { RoundCard } from '../components/RoundCard'
+import { useNavigate } from 'react-router-dom'
+
+
 
 export const Home = () => {
+  const navigate = useNavigate()
   return (
     <RoundCard fullHeight={true}>
     <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', m: 2 }}>
@@ -33,7 +37,11 @@ export const Home = () => {
         </Typography>
         ________________________________________
 
-        <Button variant="contained" color="secondary" href="/england" sx={{ mt: 2}}>
+        <Button 
+          variant="contained" 
+          onClick={() => navigate('/england')}
+          color="secondary" 
+          sx={{ mt: 2}}>
             start quiz
         </Button>
     </Box>
