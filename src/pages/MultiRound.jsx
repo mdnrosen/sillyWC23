@@ -121,7 +121,7 @@ export const MultiRound = () => {
                         <QuestionTitle
                             title="Last WC?"
                             num="22"
-                            hint="Could be easy this if Kane doesn't play"
+                            hint="Press and hold to drag and drop"
                             question="Place the 'Big 4' in order of runs scored. +2 for each correct"
                         />
                         <DragAndDrop 

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 import { Avatar, Card, ListItem, ListItemAvatar, ListItemText, Typography } from '@mui/material'
+import { DragIndicator } from '@mui/icons-material';
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
 import { useGuesses } from "../context/GuessContext";
 
@@ -83,7 +84,11 @@ export const DragAndDrop = ({ initialData, questionName }) => {
                       )}
                     >
                         <Card>
-                            <ListItem>
+                            <ListItem
+                              secondaryAction={
+                                <DragIndicator />
+                              }
+                            >
                                 <ListItemAvatar>
                                     <Avatar 
                                         variant="square"
