@@ -24,7 +24,7 @@ export const Navbar = () => {
     }
 
     const IS_LOCKED = localStorage.getItem('sillywc_submitted')
-
+    
     return (
         <Card>
             <Toolbar sx={{ display: 'flex', justifyContent: 'space-between'}}>

@@ -28,7 +28,12 @@ export const BottomNav = () => {
     },[location])
 
   
-  if (location.pathname === '/' || location.pathname === '/submit') return null // don't render bottom nav on home page
+  if (
+    location.pathname === '/' || 
+    location.pathname === '/submit' ||
+    location.pathname === '/submitted'
+    
+    ) return null // don't render bottom nav on home page
   return (
     <Card sx={{ pb: 2 , px: { xs: 2 }}}>
       <Toolbar>

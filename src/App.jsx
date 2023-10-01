@@ -6,7 +6,6 @@ import { Box, Button, Container, ThemeProvider, Typography } from '@mui/material
 import theme from './configs/theme'
 import CssBaseline from '@mui/material/CssBaseline';
 import { TeamList } from './components/TeamList';
-
 import { Home } from './pages/Home'
 import { EnglandRound } from './pages/EnglandRound';
 import { StandingsRound } from './pages/StandingsRound';
@@ -20,9 +19,11 @@ import { Submitted } from './pages/Submitted';
 import { GuessesProvider } from './context/GuessContext'
 import { MultiRound } from './pages/MultiRound'
 import ScrollToTop from './components/ScrollToTop'
+import { CheckIsLocked } from './components/CheckIsLocked'
+
+
 
 function App() {
-
 
   return (
     <Container maxWidth='md' disableGutters>
@@ -30,6 +31,7 @@ function App() {
         <CssBaseline />
           <BrowserRouter>
             <ScrollToTop />
+            <CheckIsLocked />
             <Navbar />
             <GuessesProvider>
               <Routes>
