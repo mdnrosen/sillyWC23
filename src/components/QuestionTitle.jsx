@@ -7,7 +7,11 @@ export const QuestionTitle = ({ num, title, question, hint }) => {
     <Toolbar sx={{ py: 1, display: 'flex', justifyContent: 'space-between' , alignItems: 'center', pt: 2 }} disableGutters>
         <ListItem
             secondaryAction={
-                <Tooltip title={hint} enterTouchDelay={0}>
+                <Tooltip 
+                  title={hint} 
+                  enterTouchDelay={0}
+                  leaveTouchDelay={2500}
+                >
                     <IconButton>
                         <HelpOutline />
                     </IconButton>
@@ -17,11 +21,12 @@ export const QuestionTitle = ({ num, title, question, hint }) => {
         >
           <ListItemText 
             primary={
-                <Typography color="secondary" variant="h6">
+                <Typography color="secondary" variant="body1">
                     Q{num}. {title.toUpperCase()}
                 </Typography>
+                
                 }
-                secondary={<Typography color="primary" variant="body1">{question}</Typography>}
+                secondary={<Typography color="primary" variant="body2">{question}</Typography>}
           />
         </ListItem>
     </Toolbar>

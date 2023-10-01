@@ -2,7 +2,7 @@
 import './App.css'
 import { useState, createContext, useEffect } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { Box, Button, Container, ThemeProvider, Typography } from '@mui/material'
+import { Box, Button, Container, ThemeProvider, Toolbar } from '@mui/material'
 import theme from './configs/theme'
 import CssBaseline from '@mui/material/CssBaseline';
 import { TeamList } from './components/TeamList';
@@ -32,6 +32,7 @@ function App() {
             <ScrollToTop />
             <CheckIsLocked />
             <Navbar />
+            <Toolbar />
             <GuessesProvider>
               <Routes>
                 <Route path='/england' element={<EnglandRound />} />

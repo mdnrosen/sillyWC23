@@ -29,7 +29,7 @@ export const EnglandRound = () => {
         <RoundTitle num="1" name="England" marking="5pts for each correct" />
         <CardContent>
             <Box component="form" onChange={handleChange}>
-                <Grid container spacing={2}>
+                <Grid container rowSpacing={2} columnSpacing={0}>
                     <Grid item xs={12}>
                         <FormControl fullWidth>
                             <QuestionTitle 
@@ -37,7 +37,6 @@ export const EnglandRound = () => {
                                 num="1"
                                 question="Which player won't play a single game?"
                                 hint="Listed XI - playing as a sub doesn't count"
-                            
                             />
                             <Select
                                 name="eng_noplay"

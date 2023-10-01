@@ -24,14 +24,13 @@ export const StandingsRound = () => {
                             <QuestionTitle 
                                 title="Group Standings"
                                 num="23"
-                                hint="Just drag and drop"
+                                hint="Press and hold to drag and drop"
                                 question="Select your final group standings"                    
                             />
                         <DragAndDrop
                             initialData={teamData}
                             questionName="standings"
                         />
-                        {/* <TeamList updateStandings={updateStandings} /> */}
                         </FormControl>
                     </Grid>
                 </Grid>

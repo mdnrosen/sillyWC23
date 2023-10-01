@@ -1,5 +1,5 @@
 import React, { useState} from 'react'
-import { Box, IconButton, Card, Menu, MenuItem, Toolbar, Typography } from '@mui/material'
+import { Box, IconButton, Card, Menu, MenuItem, Toolbar, Typography, AppBar } from '@mui/material'
 import { useNavigate, Link } from 'react-router-dom';
 
 import MenuIcon from '@mui/icons-material/Menu';
@@ -26,11 +26,11 @@ export const Navbar = () => {
     const IS_LOCKED = localStorage.getItem('sillywc_submitted')
     
     return (
-        <Card>
-            <Toolbar sx={{ display: 'flex', justifyContent: 'space-between'}}>
+        <AppBar position='fixed' component="nav" sx={{ mb: 5}}>
+            <Toolbar sx={{ display: 'absolute', justifyContent: 'space-between'}}>
                 <Typography variant="h6" color="primary" sx={{ flexGrow: 1 }}>
                     <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
-                        SILLY ODI WORLD CUP 2023
+                        SILLY WORLD CUP 
                     </Link>
                 </Typography>
                 <Box>
@@ -62,6 +62,6 @@ export const Navbar = () => {
                     </Menu>
                 </Box>
             </Toolbar>
-        </Card>
+        </AppBar>
     )
 }

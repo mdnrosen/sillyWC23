@@ -78,67 +78,49 @@ export const SubmitAnswers = () => {
               </DialogContent>
           </Dialog> 
       :null}
-      <RoundCard fullHeight={true}>
-          <RoundTitle 
-              num=""
-              name="Submit Answers"
-              marking="Go back and check your answers before submitting below"
-          />
-          <Box sx={{ p: 4}}>
-            <Grid container spacing={2} direction="column" alignItems="center">
-              <Grid item xs={12} sx={{ mt: 4}}>
+      <> 
+      <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', mx: 1,  pb: 2 }}>
                 <Typography variant="h6" color="primary">
                   Almost done!
                 </Typography>
-              </Grid>
               ________________________________________
 
-              <Grid item xs={12}>
-                <Typography variant="body1" color="secondary">
-                  Use the menu above to go back and check you've answered everything
-                </Typography>
-              </Grid>
-              <Grid item xs={12}>
-                <Typography variant="body1" color="secondary">
-                  Enter your name or a nickname below. (Please do not use your email address)
-                </Typography>
-              </Grid>
-              <Grid item xs={12}>
-                <Typography variant="body1" color="secondary">
-                  You can heck back in a couple of weeks to see how you're doing
-                </Typography>
-              </Grid>
+              <Typography variant="body1" sx={{ mt: 2 }} color="primary">
+              Use the menu above to go back and check you've answered everything.
+              </Typography>
+              <Typography variant="body1" sx={{ mt: 2 }} color="secondary">
+              Enter your name or a nickname below (please do not use your email address)
+              </Typography>
+              <Typography variant="body1" sx={{ mt: 2 }} color="secondary">
+              You can check back in a couple of weeks to see how you're doing
+              </Typography>
+
               ________________________________________
 
-              <Grid item xs={12}>
-                <Typography variant="body1" color="primary">
-                  Good luck!
-                </Typography>
-              </Grid>
-              <Grid item xs={12}>
-                <Box component="form" sx={{ m: 2 }}> 
-                  <TextField
-                        error={dupName}
-                        placeholder='Enter your name or a nickname'
-                        fullWidth 
-                        required    
-                        onChange={(e) => setName(e.target.value)}
-                        helperText={dupName ? `${name} is already taken` : null}
-                  />
-                  <Button
-                    type="submit"
-                    disabled={dupName}
-                    variant="contained"
-                    sx={{ mt: 2}}
-                    color="primary"
-                    onClick={handleSubmit}
-                    fullWidth>SUBMIT</Button>
-                </Box>
-              </Grid>
-            </Grid>
+              <Typography variant="body1" sx={{ mt: 2 }} color="primary">
+              Good luck!
+              </Typography>
+              <Box component="form" sx={{ m: 2 }}> 
+                <TextField
+                      error={dupName}
+                      placeholder='Enter name or nickname'
+                      fullWidth 
+                      required    
+                      onChange={(e) => setName(e.target.value)}
+                      helperText={dupName ? `${name} is already taken` : null}
+                />
+                <Button
+                  type="submit"
+                  disabled={dupName}
+                  variant="contained"
+                  size="large"
+                  sx={{ mt: 2}}
+                  color="primary"
+                  onClick={handleSubmit}
+                  fullWidth>SUBMIT</Button>
+              </Box>
           </Box>
-
-      </RoundCard>
+        </>
     </>
   )
 }
