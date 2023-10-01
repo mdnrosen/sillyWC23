@@ -3,7 +3,7 @@ import { Card } from '@mui/material'
 
 // Card component for easier tweaking to various mobile and browser styles
 export const RoundCard = ({ children, fullHeight = false  }) => (
-    <Card sx={{ py: 2, mt: 0, mb: 10, height: fullHeight ? '100%' : 'auto', overflow: 'scroll'  }}>
+    <Card sx={{ py: 2, mt: 0, pb: fullHeight ? 20 : 0,  height: fullHeight ? '100vh' : 'auto'  }}>
         {children}
     </Card>
   )
