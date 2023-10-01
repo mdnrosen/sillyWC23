@@ -24,7 +24,6 @@ import { CheckIsLocked } from './components/CheckIsLocked'
 
 
 function App() {
-
   return (
     <Container maxWidth='md' disableGutters>
       <ThemeProvider theme={theme}>
