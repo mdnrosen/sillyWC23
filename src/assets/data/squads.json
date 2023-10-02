@@ -855,8 +855,98 @@
         ]
     },
     {
-        "team" : "Sri Lanka",
-        "players" : [{"name":"Charith Asalanka","batter":true,"bowler":true,"id":"15bdfb5c-3272-4cc5-a62f-0440fed1312f"},{"name":"Dasun Shanaka","batter":true,"bowler":true,"id":"4651ce54-f76f-4c05-b166-1684ca3096f8"},{"name":"Dhananjaya de Silva","batter":true,"bowler":true,"id":"71017bbc-1d12-486d-9a01-a2b449f82096"},{"name":"Dilshan Madushanka","batter":false,"bowler":true,"id":"6cd26c49-c230-4a6c-8dba-701484b648f5"},{"name":"Dimuth Karunaratne","batter":true,"bowler":false,"id":"3e6c455b-3b65-4e20-b466-a1600dd1fba4"},{"name":"Dunith Wellalage","batter":false,"bowler":true,"id":"010db108-f75e-447e-878d-454d3fdc153a"},{"name":"Dushan Hemantha","batter":true,"bowler":true,"id":"dabd442c-16e4-4b41-a4b2-9e942ab4a11c"},{"name":"Kasun Rajitha","batter":false,"bowler":true,"id":"7e8cde79-6c30-4ecf-b945-fce54522aad9"},{"name":"Kusal Mendis","batter":true,"bowler":false,"id":"0d59a463-4f68-4f67-8fc9-75ab1437ad4e"},{"name":"Kusal Perera","batter":true,"bowler":false,"id":"abb9cb30-857a-4097-a3e4-f065e9d1df07"},{"name":"Lahiru Kumara","batter":false,"bowler":true,"id":"ab5ca14e-74f6-4245-9852-a4888e9c5786"},{"name":"Maheesh Theekshana","batter":false,"bowler":true,"id":"8bec07c8-78d7-43e8-a927-bc266c669fa7"},{"name":"Matheesha Pathirana","batter":false,"bowler":true,"id":"de08e45e-4d88-48a6-93fb-b2d0a976cee5"},{"name":"Pathum Nissanka","batter":true,"bowler":false,"id":"e6572773-5eb7-4240-aaeb-3436f55d1e21"},{"name":"Sadeera Samarawickrama","batter":true,"bowler":false,"id":"16d88947-b13d-499f-9b7a-f25834b555ec"}]
+        "team": "Sri Lanka",
+        "players": [
+            {
+                "name": "Charith Asalanka",
+                "batter": true,
+                "bowler": true,
+                "id": "15bdfb5c-3272-4cc5-a62f-0440fed1312f"
+            },
+            {
+                "name": "Dasun Shanaka",
+                "batter": true,
+                "bowler": true,
+                "id": "4651ce54-f76f-4c05-b166-1684ca3096f8"
+            },
+            {
+                "name": "Dhananjaya de Silva",
+                "batter": true,
+                "bowler": true,
+                "id": "71017bbc-1d12-486d-9a01-a2b449f82096"
+            },
+            {
+                "name": "Dilshan Madushanka",
+                "batter": false,
+                "bowler": true,
+                "id": "6cd26c49-c230-4a6c-8dba-701484b648f5"
+            },
+            {
+                "name": "Dimuth Karunaratne",
+                "batter": true,
+                "bowler": false,
+                "id": "3e6c455b-3b65-4e20-b466-a1600dd1fba4"
+            },
+            {
+                "name": "Dunith Wellalage",
+                "batter": false,
+                "bowler": true,
+                "id": "010db108-f75e-447e-878d-454d3fdc153a"
+            },
+            {
+                "name": "Dushan Hemantha",
+                "batter": true,
+                "bowler": true,
+                "id": "dabd442c-16e4-4b41-a4b2-9e942ab4a11c"
+            },
+            {
+                "name": "Kasun Rajitha",
+                "batter": false,
+                "bowler": true,
+                "id": "7e8cde79-6c30-4ecf-b945-fce54522aad9"
+            },
+            {
+                "name": "Kusal Mendis",
+                "batter": true,
+                "bowler": false,
+                "id": "0d59a463-4f68-4f67-8fc9-75ab1437ad4e"
+            },
+            {
+                "name": "Kusal Perera",
+                "batter": true,
+                "bowler": false,
+                "id": "abb9cb30-857a-4097-a3e4-f065e9d1df07"
+            },
+            {
+                "name": "Lahiru Kumara",
+                "batter": false,
+                "bowler": true,
+                "id": "ab5ca14e-74f6-4245-9852-a4888e9c5786"
+            },
+            {
+                "name": "Maheesh Theekshana",
+                "batter": false,
+                "bowler": true,
+                "id": "8bec07c8-78d7-43e8-a927-bc266c669fa7"
+            },
+            {
+                "name": "Matheesha Pathirana",
+                "batter": false,
+                "bowler": true,
+                "id": "de08e45e-4d88-48a6-93fb-b2d0a976cee5"
+            },
+            {
+                "name": "Pathum Nissanka",
+                "batter": true,
+                "bowler": false,
+                "id": "e6572773-5eb7-4240-aaeb-3436f55d1e21"
+            },
+            {
+                "name": "Sadeera Samarawickrama",
+                "batter": true,
+                "bowler": false,
+                "id": "16d88947-b13d-499f-9b7a-f25834b555ec"
+            }
+        ]
     }
-
 ]

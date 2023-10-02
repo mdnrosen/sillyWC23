@@ -35,7 +35,7 @@ export const SubmitAnswers = () => {
         window.alert('You need a name!')
       }
   
-      const res = await axios.post(`${import.meta.env.VITE_API_URL}/people`, {
+      await axios.post(`${import.meta.env.VITE_API_URL}/people`, {
         name,
         guesses
       })
