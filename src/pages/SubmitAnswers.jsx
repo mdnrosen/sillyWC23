@@ -27,27 +27,35 @@ export const SubmitAnswers = () => {
   }
 
   const handleSubmit = async (e) => {
+    if (!name) {
+      window.alert('You need a name!')
+      return
+    }
+
+    if (dupName) return
+
+
     setLoading(true)
     try {
       e.preventDefault()
-      if (dupName) return
-      if (!name) {
-        window.alert('You need a name!')
-        return
-      }
-  
+
       await axios.post(`${import.meta.env.VITE_API_URL}/people`, {
         name,
         guesses
       })
       
-      window.localStorage.setItem('sillywc_submitted', true)
-      
-      navigate('/submitted')
     } catch (error ) {
       console.error(error)
       window.alert('Oops. Something went wrong, try again later')
       setLoading(false)
+    } finally {
+      
+      setLoading(false)
+      navigate('/submitted')
+      window.localStorage.setItem('sillywc_submitted', true)
+
+    
+
     }
   }
 
@@ -112,7 +120,7 @@ export const SubmitAnswers = () => {
                 />
                 <Button
                   type="submit"
-                  disabled={dupName}
+                  disabled={dupName || !name}
                   variant="contained"
                   size="large"
                   sx={{ mt: 2}}
