@@ -33,6 +33,7 @@ export const SubmitAnswers = () => {
       if (dupName) return
       if (!name) {
         window.alert('You need a name!')
+        return
       }
   
       await axios.post(`${import.meta.env.VITE_API_URL}/people`, {
