@@ -116,7 +116,7 @@ export const FiftyFiftyRound = () => {
                                     <ToggleGroup
                                         name="h2h_india_v_pakistan"
                                         values={["india", "pakistan", "neither"]}
-                                        labels={["india, pakistan or game cancelled", "India wins", "Pakistan wins", "neither: game cancelled"]}
+                                        labels={["india, pakistan or game cancelled", "India wins", "Pakistan wins", "No one wins"]}
                                         handleChange={handleChange}
                                     />
                                 </Box>

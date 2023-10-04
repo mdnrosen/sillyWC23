@@ -112,6 +112,7 @@ export const SubmitAnswers = () => {
               <Box component="form" sx={{ m: 2 }}> 
                 <TextField
                       error={dupName}
+                      name="name"
                       placeholder='Enter name or nickname'
                       fullWidth 
                       required    
