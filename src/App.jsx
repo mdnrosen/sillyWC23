@@ -20,6 +20,7 @@ import { GuessesProvider } from './context/GuessContext'
 import { MultiRound } from './pages/MultiRound'
 import ScrollToTop from './components/ScrollToTop'
 import { CheckIsLocked } from './components/CheckIsLocked'
+import { Locked } from './pages/Locked'
 
 
 
@@ -31,10 +32,11 @@ function App() {
           <BrowserRouter>
             <ScrollToTop />
             <CheckIsLocked />
-            <Navbar />
+            {/* <Navbar /> */}
             <Toolbar />
             <GuessesProvider>
-              <Routes>
+              <Locked />
+              {/* <Routes>
                 <Route path='/england' element={<EnglandRound />} />
                 <Route path='/numbers' element={<NumbersRound />} />
                 <Route path="/multis" element={<MultiRound />} />
@@ -43,9 +45,9 @@ function App() {
                 <Route path='/submit' element={<SubmitAnswers />} />
                 <Route path="/submitted" element={<Submitted />} />
                 <Route exact path='/' element={<Home />} />
-              </Routes>
+              </Routes> */}
             </GuessesProvider>
-            <BottomNav />
+            {/* <BottomNav /> */}
           </BrowserRouter>
       </ThemeProvider>
     </Container>
