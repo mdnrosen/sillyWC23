@@ -16,7 +16,7 @@ export const StandingsRound = () => {
             name="Group Standings"
             marking="5pts correct, 3pts one out, 1pt two out"
         />
-        <CardContent>
+        <CardContent>x
             <Box component="form">
                 <Grid container spacing={2}>
                     <Grid item xs={12}>
