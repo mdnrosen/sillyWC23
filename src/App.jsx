@@ -16,6 +16,8 @@ import { Navbar } from './components/Navbar';
 import { BottomNav } from './components/BottomNav';
 import { Submitted } from './pages/Submitted';
 
+import { EnglandRoundResults } from './pages/EnglandRoundResults'
+
 import { GuessesProvider } from './context/GuessContext'
 import { MultiRound } from './pages/MultiRound'
 import ScrollToTop from './components/ScrollToTop'
@@ -35,6 +37,10 @@ function App() {
             {/* <Navbar /> */}
             <Toolbar />
             <GuessesProvider>
+              <Routes>
+                {/* TODO test only - update with proper path obvs */}
+                <Route path="/r" element={<EnglandRoundResults />} />
+              </Routes>
               <Locked />
               {/* <Routes>
                 <Route path='/england' element={<EnglandRound />} />
