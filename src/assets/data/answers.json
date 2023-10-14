@@ -1,0 +1,101 @@
+[
+    {
+        "num": 1,
+        "title": "The Liam Dawson Role",
+        "question": "Which player won't play a single game?",
+        "name": "eng_noplay",
+        "answer": [
+            "Gus Atkinson",
+            "David Willey",
+            "Ben Stokes"
+        ]
+    },
+    {
+        "num": 2,
+        "question": "What will England's run rate be?",
+        "title": "500 out of the question?",
+        "name": "eng_runrate",
+        "answer": [
+            "6+"
+        ]
+    },
+    {
+        "num": 3,
+        "title": "Keep it tight, or not...",
+        "question": "Which bowler will have the worst economy rate?",
+        "name": "eng_expensiveBowling",
+        "answer": [
+            "Chris Woakes"
+        ]
+    },
+    {
+        "num": 4,
+        "title": "Pole-less",
+        "question": "Which bowler will take the fewest wickets?",
+        "name": "eng_fewestwickets",
+        "answer": [
+            "Mark Wood",
+            "Adil Rashid"
+        ]
+    },
+    {
+        "num": 5,
+        "title": "Get on with it",
+        "question": "Who will have the lowest batting strike rate?",
+        "name": "eng_strikerate",
+        "answer": [
+            "Jonny Bairstow"
+        ]
+    },
+    {
+        "num": 6,
+        "title": "No! Down!",
+        "question": "Who will drop the most catches?",
+        "name": "eng_drops",
+        "answer": [
+            "Reece Topley"
+        ]
+    },
+    {
+        "num": 7,
+        "title": "Don't Overstep then",
+        "question": "What percentage of free hits will go for six?",
+        "name": "num_freehits",
+        "answer" : 21
+    },
+    {
+        "num": 8,
+        "title": "Runs on the board",
+        "question": "What will be the average first innings score?",
+        "name": "num_firstinns",
+        "answer" : 296
+    },
+    {
+        "num": 9,
+        "title": "Giant Killers",
+        "question": "How many wickets will the Netherlands take?",
+        "name": "num_firstinns",
+        "answer" : 77
+    },
+    {
+        "num": 10,
+        "title": "Michael Gough FTW",
+        "question": "How many umpires' decisions will be overturned?",
+        "name": "num_umpires",
+        "answer" : 29
+    },
+    {
+        "num": 11,
+        "title": "Sting in the tail",
+        "question": "How will be the top score made by a tailender (9-11)?",
+        "name": "num_tailenderruns",
+        "answer" : 33
+    },
+    {
+        "num": 12,
+        "title": "ANOTHER UNACADEMY CRACKING SIX",
+        "question": "How many sixes will be hit?",
+        "name": "num_totalsixes",
+        "answer" : 581
+    }
+]

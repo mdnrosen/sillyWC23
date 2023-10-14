@@ -8,6 +8,8 @@ import { RoundCard } from '../components/RoundCard'
 
 
 import { EnglandAnswers } from '../components/EnglandAnswers'
+import { markEngland, markNumbers } from '../utils/marking'
+import { NumberAnswers } from '../components/NumberAnswers'
 
 export const Answers = () => {
     const [ person, setPerson ] = useState(null);
@@ -16,6 +18,15 @@ export const Answers = () => {
     useEffect(() => {
         setPerson(people.find(p => p.id === params.id) || null);
     },[]);
+
+    const overallScore = () => {
+        const eng = markEngland(person.guesses).reduce((a, b) => a + b.score, 0);
+        const num = markNumbers(person.guesses).reduce((a, b) => a + b.score, 0);
+        console.log('eng score',eng)
+        return eng + num
+    }
+
+  
 
 
   if (!person) return null; 
@@ -26,10 +37,11 @@ export const Answers = () => {
                 {person.name}
             </Typography>
             <Typography variant="h6" color="secondary">
-                53 pts
+                {`${overallScore()} pts`}
             </Typography>
         </Toolbar>
         <EnglandAnswers guesses={person.guesses} />
+        <NumberAnswers guesses={person.guesses} />
     </RoundCard>
   )
 };
