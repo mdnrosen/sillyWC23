@@ -1,5 +1,9 @@
 import { filterByRound } from './helpers'
 import allQuestions from '../assets/data/answers.json'
+import allSixes from '../assets/data/sixesList.json'
+import allWickets from '../assets/data/wicketsList.json'
+
+
 
 export const markEngland = (guesses) => {
     const questions = filterByRound(allQuestions, '^eng')
@@ -15,7 +19,47 @@ export const markEngland = (guesses) => {
     return result
 }
 
+export const markh2h = (guesses) => {
+    const questions = filterByRound(allQuestions, '^h2h')
+    const result = questions.map(q => {
+        const correct = q.answer.includes(guesses[q.name])
+        const score = correct ? 5 : 0
+        return {
+            ...q,
+            correct,
+            score
+        }
+    })
+    return result
+}
 
+export const markMultis = (guesses) => {
+    const questions = filterByRound(allQuestions, '^multi')
+    console.log(guesses)
+    const result = questions.map(q => {
+        const player1 = guesses[`${q.name}_1`]?.value
+        const player2 = guesses[`${q.name}_2`]?.value
+
+        if (q.name.includes('wickets')) {
+
+            return {
+                ...q,
+                choices: [
+                    {
+                        player: player1,
+                        wickets: allWickets.find(w => w.name === player1).wickets
+                    }
+                ]
+
+            }
+        }
+    })
+    return result
+}   
+
+
+
+const getLookup = (data, name) => data.find(d => d.name === name) || ''
 
 const between = (x, min, max) => x >= min && x <= max
 const addPerc = (x, perc) => x * (1 + perc)

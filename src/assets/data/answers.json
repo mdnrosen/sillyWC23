@@ -74,7 +74,7 @@
         "num": 9,
         "title": "Giant Killers",
         "question": "How many wickets will the Netherlands take?",
-        "name": "num_firstinns",
+        "name": "num_dutchwkts",
         "answer" : 77
     },
     {
@@ -97,5 +97,70 @@
         "question": "How many sixes will be hit?",
         "name": "num_totalsixes",
         "answer" : 581
+    },
+    {
+        "num": 13,
+        "title": "Oh no, not another one!?",
+        "question": "There will be a superover?",
+        "name": "h2h_superover",
+        "answer" : "false"
+    },
+    {
+        "num": 14,
+        "title": "Let it turn",
+        "question": "What will take more wickets?",
+        "name": "h2h_pacespin",
+        "answer" : "pace"
+    },
+    {
+        "num": 15,
+        "title": "Win the toss and...",
+        "question": "What will teams opt to do more?",
+        "name": "h2h_tossDecision",
+        "answer" : "bowl first"
+    },
+    {
+        "num": 16,
+        "title": "Runs on the board?.",
+        "question": "What will win more games?",
+        "name": "h2h_bat-v-chase",
+        "answer" : "chase total"
+    },
+    {
+        "num": 17,
+        "title": "This is it. The big one.",
+        "question": "India or Pakistan or Game Cancelled?",
+        "name": "h2h_india_v_pakistan",
+        "answer" : "india"
+    },
+    {
+        "num": 18,
+        "title": "Bigus Hittus",
+        "question": "Pick 2 players. +1 point for each six they hit.",
+        "name": "multi_sixes"
+    },
+    {
+        "num": 19,
+        "title": "Gun Fielding",
+        "question": "Pick 2 players. +10 point for each run out",
+        "name": "multi_runouts"
+    },
+    {
+        "num": 20,
+        "title": "Howzat!?",
+        "question": "Pick 2 players. +1 points for every wicket they take",
+        "name": "multi_wickets"
+    },
+    {
+        "num": 21,
+        "title": "Top run getters",
+        "question": "Pick 2 players. +10pts for 1st, +9pts for 2nd, etc...",
+        "name": "multi_mostruns"
+    },
+    {
+        "num": 22,
+        "title": "Last WC?",
+        "question": "Place the 'Big 4' in order of runs scored. +2 for each correct",
+        "name": "multi_bigfour"
     }
 ]
