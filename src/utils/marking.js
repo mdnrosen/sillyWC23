@@ -4,7 +4,7 @@ import allSixes from '../assets/data/sixesList.json'
 import allWickets from '../assets/data/wicketsList.json'
 import allRunouts from '../assets/data/runoutsList.json'
 import mostRuns from '../assets/data/mostruns.json'
-
+import bigFour from '../assets/data/bigFour.json'
 
 
 
@@ -109,21 +109,51 @@ export const markMultis = (guesses) => {
                 ]
             }
         }
+
+        if (q.name.includes('mostruns')) {
+            const match1 = mostRuns.find(s => s.name === player1)
+            const match2 = mostRuns.find(s => s.name === player2)
+            let pts1 = match1 ? match1.points : 0
+            let pts2 = match2 ? match2.points : 0
+            return {
+                ...q,
+                score: pts1 + pts2,
+                choices: [
+                    {
+                        player: player1,
+                        position: match1 ? match1.position : 'X',
+                        item: 'runs',
+                        score: match1 ? match1.points : 0,
+
+                    },
+                    {
+                        player: player2,
+                        position: match2 ? match2.position : 'X',
+                        item: 'runs',
+                        score: match2 ? match2.points : 0,
+                    }
+                ]
+            }
+
+        }
+        let choices = guesses[q.name].map(c => {
+            const actualPos = bigFour.find(f => f.name === c.name).position
+            const correct = actualPos === c.position
+            const score = actualPos === c.position ? 2 : 0
+            return {
+                ...c,
+                runs: bigFour.find(f => f.name === c.name).runs,
+                actualPos,
+                correct,
+                score
+            }
+        })
         return {
             ...q,
-            score: 0
+            choices,
+            score: choices.reduce((acc, c) => acc + c.score, 0)
         }
-        // if (q.name.includes('mostruns')) {
-        //     return {
-        //         ...q,
-        //         choices: [
-        //             {
 
-        //             }
-        //         ]
-        //     }
-
-        // }
     })
     // console.log('result',result)
     return result

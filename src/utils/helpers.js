@@ -13,3 +13,19 @@ export const filterByRound = (all, subStr) => {
         return regexp.test(q.name) ?? q
     })
 }
+
+export const getPos = (pos) => {
+    // return st, nd, or rd etc
+    switch (pos) {
+        case 1:
+            return `${pos}st`
+        case 2:
+            return `${pos}nd`
+        case 3:
+            return `${pos}rd`
+        default:
+            return `${pos}th`
+    }
+}
+    
+    

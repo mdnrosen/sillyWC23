@@ -25,11 +25,6 @@ import { Answers } from './pages/Answers'
 import { SearchPerson } from './pages/SearchPerson'
 
 
-
-
-
-
-
 function App() {
   return (
     <Container maxWidth='md' disableGutters>
@@ -37,19 +32,19 @@ function App() {
         <CssBaseline />
           <BrowserRouter>
             <ScrollToTop />
-            <CheckIsLocked />
+            {/* <CheckIsLocked /> */}
             <Navbar />
             <Toolbar />
             <GuessesProvider>
               {/* <Locked /> */}
               <Routes>
-                <Route path='/england' element={<EnglandRound />} />
+                {/* <Route path='/england' element={<EnglandRound />} />
                 <Route path='/numbers' element={<NumbersRound />} />
                 <Route path="/multis" element={<MultiRound />} />
                 <Route path='/fiftyfifty' element={<FiftyFiftyRound />} />
                 <Route path='/standings' element={<StandingsRound />} />
                 <Route path='/submit' element={<SubmitAnswers />} />
-                <Route path="/submitted" element={<Submitted />} />
+                <Route path="/submitted" element={<Submitted />} /> */}
                 <Route path="/:id" element={<Answers />} />"
                 <Route exact path='/' element={<SearchPerson />} />
               </Routes>

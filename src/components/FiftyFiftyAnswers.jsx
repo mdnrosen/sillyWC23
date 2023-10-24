@@ -15,7 +15,7 @@ export const FiftyFiftyAnswers = ({ guesses }) => {
     <Accordion>
       <AccordionSummary
         sx={{ backgroundColor: 'primary.main', borderTop: 2, borderColor: 'secondary'}}
-        expandIcon={<ExpandMore variant="contained" size="large" color="black.main" />}
+        expandIcon={<ExpandMore variant="contained" size="large" color="dark" />}
       >
         <RoundTitle 
           num="3"

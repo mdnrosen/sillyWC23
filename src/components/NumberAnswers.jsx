@@ -15,7 +15,7 @@ export const NumberAnswers = ({ guesses }) => {
     <Accordion>
         <AccordionSummary
             sx={{ backgroundColor: 'primary.main', borderTop: 2, borderColor: 'secondary'}}
-            expandIcon={<ExpandMore variant="contained" size="large" color="black.main" />}
+            expandIcon={<ExpandMore variant="contained" size="large" color="dark" />}
             >
                 <RoundTitle 
                     num="2"
@@ -37,7 +37,7 @@ export const NumberAnswers = ({ guesses }) => {
                             sx={{ opacity: 0.9}}
                             label={guesses[q.name]} 
                             color={q.score ? 'success' : 'error'}
-                            icon={q.correct ? <Done /> : <Close />}
+                            icon={q.score ? <Done /> : <Close />}
                         />
                     </Grid>
                     <Grid item xs={3}> 
