@@ -3,7 +3,7 @@ import React from 'react'
 
 export const RoundTitle = ({ num, name, marking }) => {
   return (
-    <Toolbar sx={{ backgroundColor: 'secondary.main', color: 'black', py: 4, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' , alignItems: 'flex-start' }}>
+    <Toolbar sx={{ backgroundColor: 'primary.main', color: 'black', py: 2, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' , alignItems: 'flex-start' }}>
         <Typography color="black" variant="h5">
             {num && `ROUND ${num} - `} {name.toUpperCase()}
         </Typography>

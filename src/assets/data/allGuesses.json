@@ -1,5 +1,4 @@
 {
-
 	"body": [
 		{
 			"guesses": {
@@ -2127,12 +2126,12 @@
 				"num_dutchwkts": "60",
 				"eng_drops": "Jos Buttler",
 				"multi_wickets_2": {
-					"value": "Mitchell Starc",
-					"label": "Mitchell Starc"
+					"value": "Shaheen Afridi",
+					"label": "Shaheen Afridi"
 				},
 				"multi_wickets_1": {
-					"value": "Maheesh Theekshana",
-					"label": "Maheesh Theekshana"
+					"value": "Mitchell Starc",
+					"label": "Mitchell Starc"
 				},
 				"multi_sixes_1": {
 					"value": "Rohit Sharma",

@@ -6,17 +6,17 @@ export const QuestionTitle = ({ num, title, question, hint }) => {
   return (
     <Toolbar sx={{ py: 1, display: 'flex', justifyContent: 'space-between' , alignItems: 'center', pt: 2 }} disableGutters>
         <ListItem
-            secondaryAction={
-                <Tooltip 
-                  title={hint} 
-                  enterTouchDelay={0}
-                  leaveTouchDelay={2500}
-                >
-                    <IconButton>
-                        <HelpOutline />
-                    </IconButton>
-                </Tooltip>
-            }
+            // secondaryAction={
+            //     <Tooltip 
+            //       title={hint} 
+            //       enterTouchDelay={0}
+            //       leaveTouchDelay={2500}
+            //     >
+            //         <IconButton>
+            //             <HelpOutline />
+            //         </IconButton>
+            //     </Tooltip>
+            // }
             
         >
           <ListItemText 
