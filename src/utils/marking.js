@@ -2,6 +2,10 @@ import { filterByRound } from './helpers'
 import allQuestions from '../assets/data/answers.json'
 import allSixes from '../assets/data/sixesList.json'
 import allWickets from '../assets/data/wicketsList.json'
+import allRunouts from '../assets/data/runoutsList.json'
+import mostRuns from '../assets/data/mostruns.json'
+
+
 
 
 
@@ -35,26 +39,95 @@ export const markh2h = (guesses) => {
 
 export const markMultis = (guesses) => {
     const questions = filterByRound(allQuestions, '^multi')
-    console.log(guesses)
     const result = questions.map(q => {
         const player1 = guesses[`${q.name}_1`]?.value
         const player2 = guesses[`${q.name}_2`]?.value
 
         if (q.name.includes('wickets')) {
-
+            const p1_wkts = allWickets.find(w => w.name === player1).wickets
+            const p2_wkts = allWickets.find(w => w.name === player2).wickets
             return {
                 ...q,
+                score: (p1_wkts + p2_wkts) * 1,
                 choices: [
                     {
                         player: player1,
-                        wickets: allWickets.find(w => w.name === player1).wickets
-                    }
+                        number: p1_wkts,
+                        item: 'wickets',
+                        score: p1_wkts * 1
+                    },
+                    {
+                        player: player2,
+                        number: p2_wkts,
+                        item: 'wickets',
+                        score: p2_wkts * 1
+                    },
                 ]
-
             }
         }
+        if (q.name.includes('sixes')) {
+            const p1_sixes = allSixes.find(s => s.name === player1).sixes
+            const p2_sixes = allSixes.find(s => s.name === player2).sixes
+            return {
+                ...q,
+                score: (p1_sixes + p2_sixes) * 1,
+                choices: [
+                    {
+                        player: player1,
+                        number: p1_sixes,
+                        item: 'sixes',
+                        score: p1_sixes * 1
+                    },
+                    {
+                        player: player2,
+                        number: p2_sixes,
+                        item: 'sixes',
+                        score: p2_sixes * 1
+                    },
+                ]
+            }
+        }
+        if (q.name.includes('runouts')) {
+            const p1_runouts = allRunouts.find(s => s.name === player1).runouts
+            const p2_runouts = allRunouts.find(s => s.name === player2).runouts
+            return {
+                ...q,
+                score: (p1_runouts + p2_runouts) * 10,
+                choices: [
+                    {
+                        player: player1,
+                        number: p1_runouts,
+                        item: 'run outs',
+                        score: p1_runouts * 10
+                    },
+                    {
+                        player: player2,
+                        number: p2_runouts,
+                        item: 'run outs',
+                        score: p2_runouts * 10
+                    },
+                ]
+            }
+        }
+        return {
+            ...q,
+            score: 0
+        }
+        // if (q.name.includes('mostruns')) {
+        //     return {
+        //         ...q,
+        //         choices: [
+        //             {
+
+        //             }
+        //         ]
+        //     }
+
+        // }
     })
+    // console.log('result',result)
     return result
+    return questions
 }   
 
 

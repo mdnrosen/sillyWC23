@@ -5,9 +5,7 @@
         "question": "Which player won't play a single game?",
         "name": "eng_noplay",
         "answer": [
-            "Gus Atkinson",
-            "David Willey",
-            "Ben Stokes"
+            "everyone"
         ]
     },
     {
@@ -25,7 +23,7 @@
         "question": "Which bowler will have the worst economy rate?",
         "name": "eng_expensiveBowling",
         "answer": [
-            "Chris Woakes"
+            "Sam Curran"
         ]
     },
     {
@@ -34,8 +32,7 @@
         "question": "Which bowler will take the fewest wickets?",
         "name": "eng_fewestwickets",
         "answer": [
-            "Mark Wood",
-            "Adil Rashid"
+            "Joe Root"
         ]
     },
     {
@@ -53,7 +50,9 @@
         "question": "Who will drop the most catches?",
         "name": "eng_drops",
         "answer": [
-            "Reece Topley"
+            "Reece Topley",
+            "Dawid Malan",
+            "Sam Curran"
         ]
     },
     {
@@ -61,42 +60,42 @@
         "title": "Don't Overstep then",
         "question": "What percentage of free hits will go for six?",
         "name": "num_freehits",
-        "answer" : 21
+        "answer" : 20
     },
     {
         "num": 8,
         "title": "Runs on the board",
         "question": "What will be the average first innings score?",
         "name": "num_firstinns",
-        "answer" : 296
+        "answer" : 285
     },
     {
         "num": 9,
         "title": "Giant Killers",
         "question": "How many wickets will the Netherlands take?",
         "name": "num_dutchwkts",
-        "answer" : 77
+        "answer" : 74
     },
     {
         "num": 10,
         "title": "Michael Gough FTW",
         "question": "How many umpires' decisions will be overturned?",
         "name": "num_umpires",
-        "answer" : 29
+        "answer" : 52
     },
     {
         "num": 11,
         "title": "Sting in the tail",
         "question": "How will be the top score made by a tailender (9-11)?",
         "name": "num_tailenderruns",
-        "answer" : 33
+        "answer" : 43
     },
     {
         "num": 12,
         "title": "ANOTHER UNACADEMY CRACKING SIX",
         "question": "How many sixes will be hit?",
         "name": "num_totalsixes",
-        "answer" : 581
+        "answer" : 606
     },
     {
         "num": 13,

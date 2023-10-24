@@ -42,7 +42,7 @@ export const NumberAnswers = ({ guesses }) => {
                     </Grid>
                     <Grid item xs={3}> 
                         <Typography 
-                        color={q.score ? 'success' : 'error'}
+                        color={q.score ? '#A8D1A2' : 'error'}
                         variant="h6">
                             {q.score ? '+' : ''}{q.score}
                         </Typography>

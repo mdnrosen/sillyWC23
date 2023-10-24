@@ -5,7 +5,7 @@ import { body as people } from '../assets/data/allGuesses'
 import { RoundCard } from '../components/RoundCard'
 
 import { EnglandAnswers } from '../components/EnglandAnswers'
-import { markEngland, markNumbers, markh2h } from '../utils/marking'
+import { markEngland, markNumbers, markh2h, markMultis } from '../utils/marking'
 import { NumberAnswers } from '../components/NumberAnswers'
 import { FiftyFiftyAnswers } from '../components/FiftyFiftyAnswers'
 import { MultiAnswers } from '../components/MultiAnswers'
@@ -22,8 +22,8 @@ export const Answers = () => {
         const eng = markEngland(person.guesses).reduce((a, b) => a + b.score, 0);
         const num = markNumbers(person.guesses).reduce((a, b) => a + b.score, 0);
         const h2h = markh2h(person.guesses).reduce((a, b) => a + b.score, 0);
-        console.log('eng score',eng)
-        return eng + num + h2h
+        const multi = markMultis(person.guesses).reduce((a, b) => a + b.score, 0);
+        return eng + num + h2h + multi
     }
 
   if (!person) return null; 
@@ -40,7 +40,7 @@ export const Answers = () => {
         <EnglandAnswers guesses={person.guesses} />
         <NumberAnswers guesses={person.guesses} />
         <FiftyFiftyAnswers guesses={person.guesses} />
-        {/* <MultiAnswers guesses={person.guesses} /> */}
+        <MultiAnswers guesses={person.guesses} />
     </RoundCard>
   )
 };

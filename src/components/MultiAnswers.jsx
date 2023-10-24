@@ -1,5 +1,5 @@
 import { Done, Close, ExpandMore } from '@mui/icons-material'
-import { Accordion, AccordionSummary, Box, Chip, Grid, Typography } from '@mui/material'
+import { Accordion, AccordionSummary, Box, Paper, Grid, Typography } from '@mui/material'
 import React from 'react'
 
 import { QuestionTitle } from './QuestionTitle'
@@ -8,8 +8,8 @@ import { RoundTitle } from './RoundTitle'
 export const MultiAnswers = ({ guesses }) => {
 
   const questions = markMultis(guesses)
-  console.log(questions)
-//   const totalScore = questions.reduce((acc, curr) => acc + curr.score, 0)
+  const totalScore = questions.reduce((acc, curr) => acc + curr.score, 0)
+  const cardQs = ['multi_runouts', 'multi_sixes', 'multi_wickets']
 
   if (!questions) return null
   return (
@@ -21,7 +21,7 @@ export const MultiAnswers = ({ guesses }) => {
         <RoundTitle 
           num="4"
           name="Mutli"
-          marking={`Score: 13`}
+          marking={`Score: ${totalScore}`}
         />
 
       </AccordionSummary>
@@ -33,9 +33,32 @@ export const MultiAnswers = ({ guesses }) => {
               question={q.question}
             />
             <Grid container spacing={2} sx={{ mx: 2}}>
-
+              {cardQs.includes(q.name) && (
+              <Grid item xs={9}> 
+                <Box>
+                {q.choices.map((c, i) => (
+                  <Paper elevation={8} square={false} sx={{ p: 2, mb: 1, display: 'flex'}}>
+                    <Box sx={{ width: '100%', display: 'flex', flexDirection: 'row',justifyContent: 'space-between', alignItems: 'center'}}>
+                      <Typography variant="body1">{c.player} ({c.number})</Typography>
+                      <Typography 
+                        variant="h6"
+                        color={c.score > 0 ? '#A8D1A2' : 'inherit'}
+                        >{c.score > 0 ? `+${c.score}` : c.score}</Typography>
+                    </Box>
+                  </Paper>
+                  ))}
+                  </Box>
               </Grid>
-
+              )}
+              <Grid item xs={3} container direction="column" justifyContent="center" alignItems="center">
+                  <Grid item>
+                    <Typography 
+                      color={q.score > 0 ? '#A8D1A2' : 'inherit'}
+                      variant="h5">{q.score > 0 ? `+${q.score}` : q.score}
+                    </Typography>
+                  </Grid>
+              </Grid>
+              </Grid>
           </Box>
     ))}
 
