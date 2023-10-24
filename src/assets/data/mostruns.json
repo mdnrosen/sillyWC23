@@ -2,26 +2,26 @@
     {
       "position": 1,
       "points": 10,
-      "name": "Virat Kohli",
-      "runs": 354
+      "name": "Quinton de Kock",
+      "runs": 407
     },
     {
       "position": 2,
       "points": 9,
-      "name": "Rohit Sharma",
-      "runs": 311
+      "name": "Virat Kohli",
+      "runs": 354
     },
     {
       "position": 3,
       "points": 8,
-      "name": "Mohammad Rizwan",
-      "runs": 302
+      "name": "Rohit Sharma",
+      "runs": 311
     },
     {
       "position": 4,
       "points": 7,
-      "name": "Quinton de Kock",
-      "runs": 292
+      "name": "Mohammad Rizwan",
+      "runs": 302
     },
     {
       "position": 5,
@@ -32,31 +32,31 @@
     {
       "position": 6,
       "points": 5,
-      "name": "Daryl Mitchell",
-      "runs": 268
+      "name": "Heinrich Klaasen",
+      "runs": 288
     },
     {
       "position": 7,
       "points": 4,
-      "name": "Abdullah Shafique",
-      "runs": 255
+      "name": "Daryl Mitchell",
+      "runs": 268
     },
     {
       "position": 8,
       "points": 3,
-      "name": "Devon Conway",
-      "runs": 249
+      "name": "Aiden Markram",
+      "runs": 265
     },
     {
       "position": 9,
       "points": 2,
-      "name": "Aiden Markram",
-      "runs": 232
+      "name": "Abdullah Shafique",
+      "runs": 255
     },
     {
       "position": 10,
       "points": 1,
-      "name": "Sadeera Samarawickrama",
-      "runs": 230
+      "name": "Devon Conway",
+      "runs": 249
     }
    ]
