@@ -33,10 +33,13 @@ export const Answers = () => {
 
     const accordion = {
         expanded: expanded,
-        clickHandler: function(index) {
+        expandComponent: function(index) {
             const newArr = falseArr
             newArr[index] = !expanded[index]
             setExpanded(newArr)
+        },
+        scrollToTop: function(target) {
+            setTimeout(function(){target.current.scrollIntoView({ behavior: "smooth", block: "nearest" })}, 419)
         }
     }
 

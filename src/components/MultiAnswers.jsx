@@ -1,6 +1,6 @@
 import { ExpandMore } from '@mui/icons-material'
 import { Accordion, AccordionSummary, Box, Paper, Grid, Typography } from '@mui/material'
-import React from 'react'
+import React, { useRef } from 'react'
 
 import { QuestionTitle } from './QuestionTitle'
 import { markMultis } from '../utils/marking'
@@ -12,12 +12,17 @@ export const MultiAnswers = ({ guesses, accordion }) => {
   const totalScore = questions.reduce((acc, curr) => acc + curr.score, 0)
   const cardQs = ['multi_runouts', 'multi_sixes', 'multi_wickets']
   const componentIndex = 3
-  const clickHandler = () => accordion.clickHandler(componentIndex)
+  const scrollTarget = useRef(null)
+  const clickHandler = () => {
+    accordion.expandComponent(componentIndex)
+    accordion.scrollToTop(scrollTarget)
+  }
 
   if (!questions) return null
   return (
     <Accordion expanded={accordion.expanded[componentIndex]}>
       <AccordionSummary
+        ref={scrollTarget}
         onClick={clickHandler}
         sx={{ backgroundColor: 'primary.main', borderTop: 2, borderColor: 'secondary'}}
         expandIcon={<ExpandMore variant="outlined" size="large" color="dark" />}

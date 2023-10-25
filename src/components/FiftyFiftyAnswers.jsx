@@ -1,6 +1,6 @@
 import { Done, Close, ExpandMore } from '@mui/icons-material'
 import { Accordion, AccordionSummary, Box, Chip, Grid, Typography } from '@mui/material'
-import React from 'react'
+import React, { useRef } from 'react'
 
 import { QuestionTitle } from './QuestionTitle'
 import { markh2h } from '../utils/marking'
@@ -10,12 +10,16 @@ export const FiftyFiftyAnswers = ({ guesses, accordion }) => {
   const questions = markh2h(guesses)
   const totalScore = questions.reduce((acc, curr) => acc + curr.score, 0)
   const componentIndex = 2
-  const clickHandler = () => accordion.clickHandler(componentIndex)
-
+  const scrollTarget = useRef(null)
+  const clickHandler = () => {
+    accordion.expandComponent(componentIndex)
+    accordion.scrollToTop(scrollTarget)
+  }
   if (!questions) return null
   return (
     <Accordion expanded={accordion.expanded[componentIndex]}>
       <AccordionSummary
+        ref={scrollTarget}
         onClick={clickHandler}
         sx={{ backgroundColor: 'primary.main', borderTop: 2, borderColor: 'secondary'}}
         expandIcon={<ExpandMore variant="contained" size="large" color="dark" />}
