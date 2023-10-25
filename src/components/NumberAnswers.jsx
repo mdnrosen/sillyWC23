@@ -7,13 +7,18 @@ import { QuestionTitle } from './QuestionTitle'
 import { RoundTitle } from './RoundTitle'
 
 
-export const NumberAnswers = ({ guesses }) => {
+export const NumberAnswers = ({ guesses, accordion }) => {
+
     const questions = markNumbers(guesses)
     const totalScore = questions.reduce((acc, curr) => acc + curr.score, 0)
+    const componentIndex = 1
+    const clickHandler = () => accordion.clickHandler(componentIndex)
+
     if (!questions) return null
   return (
-    <Accordion>
+    <Accordion expanded={accordion.expanded[componentIndex]}>
         <AccordionSummary
+            onClick={clickHandler}
             sx={{ backgroundColor: 'primary.main', borderTop: 2, borderColor: 'secondary'}}
             expandIcon={<ExpandMore variant="contained" size="large" color="dark" />}
             >

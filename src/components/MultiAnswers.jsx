@@ -6,16 +6,19 @@ import { QuestionTitle } from './QuestionTitle'
 import { markMultis } from '../utils/marking'
 import { RoundTitle } from './RoundTitle'
 import { getPos } from '../utils/helpers'
-export const MultiAnswers = ({ guesses }) => {
+export const MultiAnswers = ({ guesses, accordion }) => {
 
   const questions = markMultis(guesses)
   const totalScore = questions.reduce((acc, curr) => acc + curr.score, 0)
   const cardQs = ['multi_runouts', 'multi_sixes', 'multi_wickets']
+  const componentIndex = 3
+  const clickHandler = () => accordion.clickHandler(componentIndex)
 
   if (!questions) return null
   return (
-    <Accordion>
+    <Accordion expanded={accordion.expanded[componentIndex]}>
       <AccordionSummary
+        onClick={clickHandler}
         sx={{ backgroundColor: 'primary.main', borderTop: 2, borderColor: 'secondary'}}
         expandIcon={<ExpandMore variant="outlined" size="large" color="dark" />}
       >

@@ -5,15 +5,18 @@ import React from 'react'
 import { QuestionTitle } from './QuestionTitle'
 import { markEngland } from '../utils/marking'
 import { RoundTitle } from './RoundTitle'
-export const EnglandAnswers = ({ guesses }) => {
+export const EnglandAnswers = ({ guesses, accordion }) => {
 
   const questions = markEngland(guesses)
   const totalScore = questions.reduce((acc, curr) => acc + curr.score, 0)
+  const componentIndex = 0
+  const clickHandler = () => accordion.clickHandler(componentIndex)
 
   if (!questions) return null
   return (
-    <Accordion>
+    <Accordion expanded={accordion.expanded[componentIndex]}>
       <AccordionSummary
+        onClick={clickHandler}
         sx={{ backgroundColor: 'primary.main'}}
         expandIcon={<ExpandMore variant="contained" size="large" color="dark" />}
       >

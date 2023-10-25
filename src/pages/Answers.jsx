@@ -15,6 +15,8 @@ import { StandingsAnswers } from '../components/StandingsAnswers'
 
 export const Answers = () => {
     const [ person, setPerson ] = useState(null);
+    const falseArr = Array(4).fill(false)
+    const [ expanded, setExpanded ] = useState(falseArr)
     const params = useParams();
 
     useEffect(() => {
@@ -29,6 +31,15 @@ export const Answers = () => {
         return eng + num + h2h + multi
     }
 
+    const accordion = {
+        expanded: expanded,
+        clickHandler: function(index) {
+            const newArr = falseArr
+            newArr[index] = !expanded[index]
+            setExpanded(newArr)
+        }
+    }
+
   if (!person) return null; 
   return (
     <RoundCard>
@@ -40,10 +51,10 @@ export const Answers = () => {
                 {`${overallScore()} pts`}
             </Typography>
         </Toolbar>
-        <EnglandAnswers guesses={person.guesses} />
-        <NumberAnswers guesses={person.guesses} />
-        <FiftyFiftyAnswers guesses={person.guesses} />
-        <MultiAnswers guesses={person.guesses} />
+        <EnglandAnswers guesses={person.guesses} accordion={accordion} />
+        <NumberAnswers guesses={person.guesses} accordion={accordion} />
+        <FiftyFiftyAnswers guesses={person.guesses} accordion={accordion} />
+        <MultiAnswers guesses={person.guesses} accordion={accordion} />
         <Toolbar>
             <Typography variant="overline" sx={{ mx: 'auto'}}>
                 Standings Round coming soon
