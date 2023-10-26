@@ -1,45 +1,28 @@
 [
     {
-        "name" : "Virat Kohli",
-        "id" : "viratkohli",
-        "image" : "https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_320,q_50/lsci/db/PICTURES/CMS/316600/316605.png"
+      "position": 1,
+      "runs": 354,
+      "name": "Virat Kohli",
+      "image": "https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_320,q_50/lsci/db/PICTURES/CMS/316600/316605.png"
     },
     {
-<<<<<<< Updated upstream
-        "name" : "Joe Root",
-        "id" : "joeroot",
-        "image" : "https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_320,q_50/lsci/db/PICTURES/CMS/316600/316639.png"
-    },
-    {
-        "name" : "Steve Smith",
-        "id" : "stevesmith",
-        "image" : "https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_320,q_50/lsci/db/PICTURES/CMS/316600/316609.png"
-    },
-    {
-        "name" : "Kane Williamson",
-        "id" : "kanewilliamson",
-        "image" : "https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_320,q_50/lsci/db/PICTURES/CMS/316600/316618.png"
-    }
-    
-]
-=======
+
       "position": 2,
-      "runs": 175,
+      "runs": 170,
       "name": "Joe Root",
       "image": "https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_320,q_50/lsci/db/PICTURES/CMS/316600/316639.png"
-    },
-    {
-        "position": 4,
-        "runs": 143,
-        "name": "Steve Smith",
-        "image": "https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_320,q_50/lsci/db/PICTURES/CMS/316600/316618.png"
     },
     {
       "position": 3,
       "runs": 78,
       "name": "Kane Williamson",
       "image": "https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_320,q_50/lsci/db/PICTURES/CMS/316600/316609.png"
+    },
+    {
+      "position": 4,
+      "runs": 72,
+      "name": "Steve Smith",
+      "image": "https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_320,q_50/lsci/db/PICTURES/CMS/316600/316618.png"
     }
-
    ]
->>>>>>> Stashed changes
+

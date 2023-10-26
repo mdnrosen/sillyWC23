@@ -21,7 +21,8 @@ import { MultiRound } from './pages/MultiRound'
 import ScrollToTop from './components/ScrollToTop'
 import { CheckIsLocked } from './components/CheckIsLocked'
 import { Locked } from './pages/Locked'
-
+import { Answers } from './pages/Answers'
+import { SearchPerson } from './pages/SearchPerson'
 
 
 function App() {
@@ -31,21 +32,22 @@ function App() {
         <CssBaseline />
           <BrowserRouter>
             <ScrollToTop />
-            <CheckIsLocked />
-            {/* <Navbar /> */}
+            {/* <CheckIsLocked /> */}
+            <Navbar />
             <Toolbar />
             <GuessesProvider>
-              <Locked />
-              {/* <Routes>
-                <Route path='/england' element={<EnglandRound />} />
+              {/* <Locked /> */}
+              <Routes>
+                {/* <Route path='/england' element={<EnglandRound />} />
                 <Route path='/numbers' element={<NumbersRound />} />
                 <Route path="/multis" element={<MultiRound />} />
                 <Route path='/fiftyfifty' element={<FiftyFiftyRound />} />
                 <Route path='/standings' element={<StandingsRound />} />
                 <Route path='/submit' element={<SubmitAnswers />} />
-                <Route path="/submitted" element={<Submitted />} />
-                <Route exact path='/' element={<Home />} />
-              </Routes> */}
+                <Route path="/submitted" element={<Submitted />} /> */}
+                <Route path="/:id" element={<Answers />} />"
+                <Route exact path='/' element={<SearchPerson />} />
+              </Routes>
             </GuessesProvider>
             {/* <BottomNav /> */}
           </BrowserRouter>

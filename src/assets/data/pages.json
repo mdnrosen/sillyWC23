@@ -1,26 +1,7 @@
 [
     {
-        "label" : "Round 1 - England",
-        "path" : "/england"
-    },
-    {
-        "label" : "Round 2 - Numbers",
-        "path" : "/numbers"
-    },
-    {
-        "label" : "Round 3 - Head to Head",
-        "path" : "/fiftyfifty"
-    },
-    {
-        "label" : "Round 4 - Multis",
-        "path" : "/multis"
-    },
-    {
-        "label" : "Round 5 - Standings",
-        "path" : "/standings"
-    },
-    {
-        "label" : "Submit",
-        "path" : "/submit"
+        "label" : "Home",
+        "path" : "/"
     }
+
 ]
