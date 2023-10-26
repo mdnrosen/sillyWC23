@@ -32,7 +32,7 @@
         "question": "Which bowler will take the fewest wickets?",
         "name": "eng_fewestwickets",
         "answer": [
-            "Joe Root"
+            "Moeen Ali"
         ]
     },
     {
@@ -41,7 +41,7 @@
         "question": "Who will have the lowest batting strike rate?",
         "name": "eng_strikerate",
         "answer": [
-            "Jonny Bairstow"
+            "Ben Stokes"
         ]
     },
     {
@@ -60,21 +60,21 @@
         "title": "Don't Overstep then",
         "question": "What percentage of free hits will go for six?",
         "name": "num_freehits",
-        "answer" : 19
+        "answer" : 18
     },
     {
         "num": 8,
         "title": "Runs on the board",
         "question": "What will be the average first innings score?",
         "name": "num_firstinns",
-        "answer" : 289
+        "answer" : 288
     },
     {
         "num": 9,
         "title": "Giant Killers",
         "question": "How many wickets will the Netherlands take?",
         "name": "num_dutchwkts",
-        "answer" : 74
+        "answer" : 72
     },
     {
         "num": 10,
@@ -95,7 +95,7 @@
         "title": "ANOTHER UNACADEMY CRACKING SIX",
         "question": "How many sixes will be hit?",
         "name": "num_totalsixes",
-        "answer" : 630
+        "answer" : 616
     },
     {
         "num": 13,
