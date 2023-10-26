@@ -8,21 +8,21 @@
     {
 
       "position": 2,
-      "runs": 170,
+      "runs": 175,
       "name": "Joe Root",
       "image": "https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_320,q_50/lsci/db/PICTURES/CMS/316600/316639.png"
     },
     {
-      "position": 3,
-      "runs": 78,
-      "name": "Kane Williamson",
-      "image": "https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_320,q_50/lsci/db/PICTURES/CMS/316600/316609.png"
+        "position": 3,
+        "runs": 143,
+        "name": "Steve Smith",
+        "image": "https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_320,q_50/lsci/db/PICTURES/CMS/316600/316618.png"
     },
     {
       "position": 4,
-      "runs": 72,
-      "name": "Steve Smith",
-      "image": "https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_320,q_50/lsci/db/PICTURES/CMS/316600/316618.png"
+      "runs": 78,
+      "name": "Kane Williamson",
+      "image": "https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_320,q_50/lsci/db/PICTURES/CMS/316600/316609.png"
     }
    ]
 
