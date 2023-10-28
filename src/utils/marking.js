@@ -195,7 +195,8 @@ export const markStandings = (guesses) => {
         return {
             ...c,
             actualPos,
-            results
+            results,
+            
             
         }
     })
@@ -203,6 +204,8 @@ export const markStandings = (guesses) => {
     return {
         ...question,
         choices,
+        score: choices.reduce((acc, c) => acc + c.results.score, 0)
+
     }
 }
 

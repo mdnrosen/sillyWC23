@@ -27,5 +27,19 @@ export const getPos = (pos) => {
             return `${pos}th`
     }
 }
+
+export const getBorder = (results) => {
+    const { result } = results;
+    switch (result) {
+      case 'correct':
+        return 'green'
+      case 'One Out':
+        return 'success.main'
+      case 'Two Out':
+        return 'warning.main'
+      default:
+        return 'error.main'
+    }
+  }
     
     
