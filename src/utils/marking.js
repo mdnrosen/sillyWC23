@@ -5,9 +5,7 @@ import allWickets from '../assets/data/wicketsList.json'
 import allRunouts from '../assets/data/runoutsList.json'
 import mostRuns from '../assets/data/mostruns.json'
 import bigFour from '../assets/data/bigFour.json'
-
-
-
+import standingsAnswers from '../assets/data/standingsAnswers.json'
 
 export const markEngland = (guesses) => {
     const questions = filterByRound(allQuestions, '^eng')
@@ -155,12 +153,58 @@ export const markMultis = (guesses) => {
         }
 
     })
-    // console.log('result',result)
     return result
-    return questions
 }   
 
+export const markStandings = (guesses) => {
 
+    const getResult = (position, actualPos) => {
+        if (position === actualPos) {
+            return {
+                result: 'correct',
+                score: 5
+            }
+        }
+
+        if (actualPos === position + 1 || actualPos === position -  1) {
+            return {
+                result: 'One Out',
+                score: 3
+            }
+        }
+        if (actualPos === position +2 || actualPos === position - 2) {
+            return {
+                result: 'Two Out',
+                score: 1
+            }
+        }
+
+        return {
+            result: 'wrong',
+            score: 0
+        }
+      }
+
+
+    // can use [0] here as we know it's the standings round
+    const question = filterByRound(allQuestions, '^standings')[0]
+    const choices = guesses[question.name].map(c => {
+        const actualPos = standingsAnswers.find(a => a.id === c.id).position
+        const results = getResult(c.position, actualPos)
+
+        return {
+            ...c,
+            actualPos,
+            results
+            
+        }
+    })
+    
+    return {
+        ...question,
+        choices,
+    }
+}
 
 const getLookup = (data, name) => data.find(d => d.name === name) || ''
 

@@ -44,6 +44,7 @@ export const Answers = () => {
         <NumberAnswers guesses={person.guesses} />
         <FiftyFiftyAnswers guesses={person.guesses} />
         <MultiAnswers guesses={person.guesses} />
+        <StandingsAnswers guesses={person.guesses} />
         <Toolbar>
             <Typography variant="overline" sx={{ mx: 'auto'}}>
                 Standings Round coming soon
