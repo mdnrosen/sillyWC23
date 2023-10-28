@@ -15,7 +15,7 @@ export const EnglandAnswers = ({ guesses }) => {
     <Accordion>
       <AccordionSummary
         sx={{ backgroundColor: 'primary.main'}}
-        expandIcon={<ExpandMore variant="contained" size="large" color="dark  " />}
+        expandIcon={<ExpandMore variant="contained" size="large" color="dark" />}
       >
         <RoundTitle 
           num="1"

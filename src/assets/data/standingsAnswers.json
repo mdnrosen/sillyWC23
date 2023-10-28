@@ -1,0 +1,62 @@
+[
+    {
+      "name": "India",
+      "id": "india",
+      "image": "https://cdn.countryflags.com/thumbs/india/flag-square-500.png",
+      "position": 1
+    },
+    {
+      "name": "South Africa",
+      "id": "south_africa",
+      "image": "https://cdn.countryflags.com/thumbs/south-africa/flag-square-500.png",
+      "position": 2
+    },
+    {
+      "name": "New Zealand",
+      "id": "new_zealand",
+      "image": "https://cdn.countryflags.com/thumbs/new-zealand/flag-square-500.png",
+      "position": 3
+    },
+    {
+      "name": "Australia",
+      "id": "australia",
+      "image": "https://cdn.countryflags.com/thumbs/australia/flag-square-500.png",
+      "position": 4
+    },
+    {
+      "name": "Sri Lanka",
+      "id": "sri_lanka",
+      "image": "https://cdn.countryflags.com/thumbs/sri-lanka/flag-square-500.png",
+      "position": 5
+    },
+    {
+      "name": "Pakistan",
+      "id": "pakistan",
+      "image": "https://cdn.countryflags.com/thumbs/pakistan/flag-square-500.png",
+      "position": 6
+    },
+    {
+      "name": "Afghanistan",
+      "id": "afghanistan",
+      "image": "https://cdn.countryflags.com/thumbs/afghanistan/flag-square-500.png",
+      "position": 7
+    },
+    {
+      "name": "Bangladesh",
+      "id": "bangladesh",
+      "image": "https://cdn.countryflags.com/thumbs/bangladesh/flag-square-500.png",
+      "position": 8
+    },
+    {
+      "name": "England",
+      "id": "england",
+      "image": "https://cdn.countryflags.com/thumbs/england/flag-square-500.png",
+      "position": 9
+    },
+    {
+      "name": "Netherlands",
+      "id": "netherlands",
+      "image": "https://cdn.countryflags.com/thumbs/netherlands/flag-square-500.png",
+      "position": 10
+    }
+]

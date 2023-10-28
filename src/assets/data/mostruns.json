@@ -1,66 +1,62 @@
 [
-    {
-      "position": 1,
-      "points": 10,
-      "name": "Quinton de Kock",
-      "runs": 407
-    },
-    {
-      "position": 2,
-      "points": 9,
-      "name": "Virat Kohli",
-      "runs": 354
-    },
-    {
-      "position": 3,
-      "points": 8,
-      "name": "David Warner",
-      "runs": 332
-    },
-    {
-      "position": 4,
-      "points": 7,
-      "name": "Rohit Sharma",
-      "runs": 311
-    },
-    {
-      "position": 5,
-      "points": 6,
-      "name": "Mohammad Rizwan",
-      "runs": 302
-
-    },
-    {
-      "position": 6,
-      "points": 5,
-      "name": "Sadeera Samarawickrama",
-      "runs": 295
-    },
-    {
-      "position": 7,
-      "points": 4,
-      "name": "Rachin Ravindra",
-      "runs": 290
-
-    },
-    {
-      "position": 8,
-      "points": 3,
-      "name": "Heinrich Klaasen",
-      "runs": 288
-
-    },
-    {
-      "position": 9,
-      "points": 2,
-      "name": "Daryl Mitchell",
-      "runs": 268
-
-    },
-    {
-      "position": 10,
-      "points": 1,
-      "name": "Aiden Markram",
-      "runs": 265
-    }
-   ]
+  {
+    "position": 1,
+    "points": 10,
+    "name": "Quinton de Kock",
+    "runs": 431
+  },
+  {
+    "position": 2,
+    "points": 9,
+    "name": "David Warner",
+    "runs": 413
+  },
+  {
+    "position": 3,
+    "points": 8,
+    "name": "Rachin Ravindra",
+    "runs": 406
+  },
+  {
+    "position": 4,
+    "points": 7,
+    "name": "Aiden Markram",
+    "runs": 356
+  },
+  {
+    "position": 5,
+    "points": 6,
+    "name": "Virat Kohli",
+    "runs": 354
+  },
+  {
+    "position": 6,
+    "points": 5,
+    "name": "Mohammad Rizwan",
+    "runs": 333
+  },
+  {
+    "position": 7,
+    "points": 4,
+    "name": "Daryl Mitchell",
+    "runs": 322
+  },
+  {
+    "position": 8,
+    "points": 3,
+    "name": "Rohit Sharma",
+    "runs": 311
+  },
+  {
+    "position": 9,
+    "points": 2,
+    "name": "Heinrich Klaasen",
+    "runs": 300
+  },
+  {
+    "position": 10,
+    "points": 1,
+    "name": "Sadeera Samarawickrama",
+    "runs": 295
+  }
+ ]

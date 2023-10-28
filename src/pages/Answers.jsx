@@ -5,7 +5,7 @@ import { body as people } from '../assets/data/allGuesses'
 import { RoundCard } from '../components/RoundCard'
 
 import { EnglandAnswers } from '../components/EnglandAnswers'
-import { markEngland, markNumbers, markh2h, markMultis } from '../utils/marking'
+import { markEngland, markNumbers, markh2h, markMultis, markStandings } from '../utils/marking'
 import { NumberAnswers } from '../components/NumberAnswers'
 import { FiftyFiftyAnswers } from '../components/FiftyFiftyAnswers'
 import { MultiAnswers } from '../components/MultiAnswers'
@@ -26,7 +26,8 @@ export const Answers = () => {
         const num = markNumbers(person.guesses).reduce((a, b) => a + b.score, 0);
         const h2h = markh2h(person.guesses).reduce((a, b) => a + b.score, 0);
         const multi = markMultis(person.guesses).reduce((a, b) => a + b.score, 0);
-        return eng + num + h2h + multi
+        const standings = markStandings(person.guesses).score
+        return eng + num + h2h + multi + standings
     }
 
   if (!person) return null; 
@@ -44,11 +45,7 @@ export const Answers = () => {
         <NumberAnswers guesses={person.guesses} />
         <FiftyFiftyAnswers guesses={person.guesses} />
         <MultiAnswers guesses={person.guesses} />
-        <Toolbar>
-            <Typography variant="overline" sx={{ mx: 'auto'}}>
-                Standings Round coming soon
-            </Typography>
-        </Toolbar>
+        <StandingsAnswers guesses={person.guesses} />
     </RoundCard>
   )
 };

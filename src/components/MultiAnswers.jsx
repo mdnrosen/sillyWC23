@@ -11,7 +11,7 @@ export const MultiAnswers = ({ guesses }) => {
   const questions = markMultis(guesses)
   const totalScore = questions.reduce((acc, curr) => acc + curr.score, 0)
   const cardQs = ['multi_runouts', 'multi_sixes', 'multi_wickets']
-
+  
   if (!questions) return null
   return (
     <Accordion>
