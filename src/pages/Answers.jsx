@@ -27,7 +27,6 @@ export const Answers = () => {
         const h2h = markh2h(person.guesses).reduce((a, b) => a + b.score, 0);
         const multi = markMultis(person.guesses).reduce((a, b) => a + b.score, 0);
         const standings = markStandings(person.guesses).score
-        console.log('STANDINGS SCORE', standings)
         return eng + num + h2h + multi + standings
     }
 
