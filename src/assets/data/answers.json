@@ -14,7 +14,7 @@
         "title": "500 out of the question?",
         "name": "eng_runrate",
         "answer": [
-            "6+"
+            "5.51 to 6"
         ]
     },
     {
@@ -53,7 +53,8 @@
             "Reece Topley",
             "Dawid Malan",
             "Sam Curran",
-            "Joe Root"
+            "Joe Root",
+            "Moeen Ali"
         ]
     },
     {
@@ -68,7 +69,7 @@
         "title": "Runs on the board",
         "question": "What will be the average first innings score?",
         "name": "num_firstinns",
-        "answer" : 289
+        "answer" : 287
     },
     {
         "num": 9,
@@ -96,7 +97,7 @@
         "title": "ANOTHER UNACADEMY CRACKING SIX",
         "question": "How many sixes will be hit?",
         "name": "num_totalsixes",
-        "answer" : 639
+        "answer" : 629
     },
     {
         "num": 13,
@@ -124,7 +125,7 @@
         "title": "Runs on the board?.",
         "question": "What will win more games?",
         "name": "h2h_bat-v-chase",
-        "answer" : "chase total"
+        "answer" : "bat first"
     },
     {
         "num": 17,

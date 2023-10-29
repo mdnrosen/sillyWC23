@@ -2,10 +2,13 @@ import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { body as people } from '../assets/data/allGuesses.json'
 
-import { Box,  Button, Select, FormControl, MenuItem, Typography } from '@mui/material'
+import { Box,  Button, Select, FormControl, MenuItem, TextField, Typography } from '@mui/material'
 
 export const SearchPerson = () => {
   const [ chosen, setChosen ] = useState('')
+  const [ search, setSearch ] = useState('')
+
+
   const navigate = useNavigate();
   return (
     <Box sx={{ px: 2, my: 5, mx: 'auto', width: { md: '60%'}}}>
@@ -15,6 +18,10 @@ export const SearchPerson = () => {
             sx={{ mb: 2, textAlign: 'center' }}
         >Select a person to view their progress
         </Typography>
+        {/* <TextField 
+            fullWidth
+            onChange={(e) => setSearch(e.target.value)} 
+        /> */}
         <FormControl fullWidth>
             <Select 
                 name="Chosen"
@@ -33,11 +40,7 @@ export const SearchPerson = () => {
                 color="secondary"
                 disabled={!chosen}
                 onClick={() => navigate(`/${chosen}`)}
-
             >View Progress</Button>
-
-
-
         </FormControl>
 
     </Box>
