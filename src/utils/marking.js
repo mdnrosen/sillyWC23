@@ -247,3 +247,12 @@ export const markNumbers = (guesses) => {
     })
     return results
 }
+
+export const overallScore = (person) => {
+    const eng = markEngland(person.guesses).reduce((a, b) => a + b.score, 0);
+    const num = markNumbers(person.guesses).reduce((a, b) => a + b.score, 0);
+    const h2h = markh2h(person.guesses).reduce((a, b) => a + b.score, 0);
+    const multi = markMultis(person.guesses).reduce((a, b) => a + b.score, 0);
+    const standings = markStandings(person.guesses).score
+    return eng + num + h2h + multi + standings
+}
