@@ -52,7 +52,7 @@ export const FiftyFiftyAnswers = ({ guesses }) => {
                   <span>
                   <small><strong>Correct Answer(s): </strong></small>
                   <br></br>
-                  <small>{q.answer.toUpperCase()}</small>
+                  <small>{q.answer}</small>
                   </span>
 
                   )}

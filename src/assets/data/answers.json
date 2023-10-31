@@ -125,7 +125,7 @@
         "title": "Runs on the board?.",
         "question": "What will win more games?",
         "name": "h2h_bat-v-chase",
-        "answer" :[ "chase total" ]
+        "answer" :["chase total"]
     },
     {
         "num": 17,
