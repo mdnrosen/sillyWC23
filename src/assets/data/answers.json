@@ -69,7 +69,7 @@
         "title": "Runs on the board",
         "question": "What will be the average first innings score?",
         "name": "num_firstinns",
-        "answer" : 283
+        "answer" : 285
     },
     {
         "num": 9,
@@ -83,7 +83,7 @@
         "title": "Michael Gough FTW",
         "question": "How many umpires' decisions will be overturned?",
         "name": "num_umpires",
-        "answer" : 50
+        "answer" : 48
     },
     {
         "num": 11,
@@ -97,7 +97,7 @@
         "title": "ANOTHER UNACADEMY CRACKING SIX",
         "question": "How many sixes will be hit?",
         "name": "num_totalsixes",
-        "answer" : 618
+        "answer" : 627
     },
     {
         "num": 13,
@@ -125,7 +125,7 @@
         "title": "Runs on the board?.",
         "question": "What will win more games?",
         "name": "h2h_bat-v-chase",
-        "answer" :["chase total"]
+        "answer" :["chase total", "bat first"]
     },
     {
         "num": 17,

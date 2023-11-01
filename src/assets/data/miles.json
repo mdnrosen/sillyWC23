@@ -1,0 +1,143 @@
+{
+    "guesses": {
+      "eng_noplay": "everyone",
+      "standings": [
+        {
+          "name": "India",
+          "image": "https://cdn.countryflags.com/thumbs/india/flag-square-500.png",
+          "position": 1,
+          "id": "india"
+        },
+        {
+          "name": "England",
+          "image": "https://cdn.countryflags.com/thumbs/england/flag-square-500.png",
+          "position": 2,
+          "id": "england"
+        },
+        {
+          "name": "South Africa",
+          "image": "https://cdn.countryflags.com/thumbs/south-africa/flag-square-500.png",
+          "position": 3,
+          "id": "south_africa"
+        },
+        {
+          "name": "Australia",
+          "image": "https://cdn.countryflags.com/thumbs/australia/flag-square-500.png",
+          "position": 4,
+          "id": "australia"
+        },
+        {
+          "name": "Pakistan",
+          "image": "https://cdn.countryflags.com/thumbs/pakistan/flag-square-500.png",
+          "position": 5,
+          "id": "pakistan"
+        },
+        {
+          "name": "New Zealand",
+          "image": "https://cdn.countryflags.com/thumbs/new-zealand/flag-square-500.png",
+          "position": 6,
+          "id": "new_zealand"
+        },
+        {
+          "name": "Bangladesh",
+          "image": "https://cdn.countryflags.com/thumbs/bangladesh/flag-square-500.png",
+          "position": 7,
+          "id": "bangladesh"
+        },
+        {
+          "name": "Afghanistan",
+          "image": "https://cdn.countryflags.com/thumbs/afghanistan/flag-square-500.png",
+          "position": 8,
+          "id": "afghanistan"
+        },
+        {
+          "name": "Sri Lanka",
+          "image": "https://cdn.countryflags.com/thumbs/sri-lanka/flag-square-500.png",
+          "position": 9,
+          "id": "sri_lanka"
+        },
+        {
+          "name": "Netherlands",
+          "image": "https://cdn.countryflags.com/thumbs/netherlands/flag-square-500.png",
+          "position": 10,
+          "id": "netherlands"
+        }
+      ],
+      "h2h_pacespin": "pace",
+      "h2h_tossDecision": "bowl first",
+      "eng_runrate": "5.51 to 6",
+      "num_tailenderruns": "62",
+      "num_freehits": "19",
+      "h2h_bat-v-chase": "chase total",
+      "h2h_india_v_pakistan": "india",
+      "num_totalsixes": "503",
+      "h2h_superover": "false",
+      "multi_runouts_1": {
+        "value": "Jos Buttler",
+        "label": "Jos Buttler"
+      },
+      "multi_mostruns_2": {
+        "value": "Kane Williamson",
+        "label": "Kane Williamson"
+      },
+      "eng_fewestwickets": "Moeen Ali",
+      "multi_runouts_2": {
+        "value": "Glenn Phillips",
+        "label": "Glenn Phillips"
+      },
+      "multi_mostruns_1": {
+        "value": "Shubman Gill",
+        "label": "Shubman Gill"
+      },
+      "eng_strikerate": "Joe Root",
+      "multi_bigfour": [
+        {
+          "name": "Kane Williamson",
+          "image": "https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_320,q_50/lsci/db/PICTURES/CMS/316600/316618.png",
+          "position": 1,
+          "id": "kanewilliamson"
+        },
+        {
+          "name": "Joe Root",
+          "image": "https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_320,q_50/lsci/db/PICTURES/CMS/316600/316639.png",
+          "position": 2,
+          "id": "joeroot"
+        },
+        {
+          "name": "Virat Kohli",
+          "image": "https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_320,q_50/lsci/db/PICTURES/CMS/316600/316605.png",
+          "position": 3,
+          "id": "viratkohli"
+        },
+        {
+          "name": "Steve Smith",
+          "image": "https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_320,q_50/lsci/db/PICTURES/CMS/316600/316609.png",
+          "position": 4,
+          "id": "stevesmith"
+        }
+      ],
+      "num_umpires": "120",
+      "eng_expensiveBowling": "Liam Livingstone",
+      "num_firstinns": "245",
+      "num_dutchwkts": "60",
+      "eng_drops": "Jos Buttler",
+      "multi_wickets_2": {
+        "value": "Mitchell Starc",
+        "label": "Mitchell Starc"
+      },
+      "multi_wickets_1": {
+        "value": "Maheesh Theekshana",
+        "label": "Maheesh Theekshana"
+      },
+      "multi_sixes_1": {
+        "value": "Rohit Sharma",
+        "label": "Rohit Sharma"
+      },
+      "multi_sixes_2": {
+        "value": "Mitch Marsh",
+        "label": "Mitch Marsh"
+      }
+    },
+    "id": "ccb52ee9-bf53-420c-b3cd-1e541263ba6b",
+    "name": "miles"
+  }
