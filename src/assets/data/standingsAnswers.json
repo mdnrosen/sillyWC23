@@ -1,14 +1,14 @@
 [
   {
-    "name": "South Africa",
-    "id": "south_africa",
-    "image": "https://cdn.countryflags.com/thumbs/south-africa/flag-square-500.png",
-    "position": 1
-  },
-  {
     "name": "India",
     "id": "india",
     "image": "https://cdn.countryflags.com/thumbs/india/flag-square-500.png",
+    "position": 1
+  },
+  {
+    "name": "South Africa",
+    "id": "south_africa",
+    "image": "https://cdn.countryflags.com/thumbs/south-africa/flag-square-500.png",
     "position": 2
   },
   {

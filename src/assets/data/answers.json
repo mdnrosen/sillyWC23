@@ -62,14 +62,14 @@
         "title": "Don't Overstep then",
         "question": "What percentage of free hits will go for six?",
         "name": "num_freehits",
-        "answer" : 23
+        "answer" : 22
     },
     {
         "num": 8,
         "title": "Runs on the board",
         "question": "What will be the average first innings score?",
         "name": "num_firstinns",
-        "answer" : 285
+        "answer" : 287
     },
     {
         "num": 9,
@@ -83,7 +83,7 @@
         "title": "Michael Gough FTW",
         "question": "How many umpires' decisions will be overturned?",
         "name": "num_umpires",
-        "answer" : 48
+        "answer" : 51
     },
     {
         "num": 11,
@@ -97,7 +97,7 @@
         "title": "ANOTHER UNACADEMY CRACKING SIX",
         "question": "How many sixes will be hit?",
         "name": "num_totalsixes",
-        "answer" : 627
+        "answer" : 621
     },
     {
         "num": 13,
@@ -125,7 +125,7 @@
         "title": "Runs on the board?.",
         "question": "What will win more games?",
         "name": "h2h_bat-v-chase",
-        "answer" :["chase total", "bat first"]
+        "answer" :["bat first"]
     },
     {
         "num": 17,

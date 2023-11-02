@@ -8,38 +8,38 @@
   {
     "position": 2,
     "points": 9,
-    "name": "Rachin Ravindra",
-    "runs": 415
+    "name": "Virat Kohli",
+    "runs": 442
   },
   {
     "position": 3,
     "points": 8,
-    "name": "David Warner",
-    "runs": 413
+    "name": "Rachin Ravindra",
+    "runs": 415
   },
   {
     "position": 4,
     "points": 7,
-    "name": "Rohit Sharma",
-    "runs": 398
+    "name": "David Warner",
+    "runs": 413
   },
   {
     "position": 5,
     "points": 6,
-    "name": "Aiden Markram",
-    "runs": 362
+    "name": "Rohit Sharma",
+    "runs": 402
   },
   {
     "position": 6,
     "points": 5,
-    "name": "Mohammad Rizwan",
-    "runs": 359
+    "name": "Aiden Markram",
+    "runs": 362
   },
   {
     "position": 7,
     "points": 4,
-    "name": "Virat Kohli",
-    "runs": 354
+    "name": "Mohammad Rizwan",
+    "runs": 359
   },
   {
     "position": 8,
@@ -58,5 +58,83 @@
     "points": 1,
     "name": "Abdullah Shafique",
     "runs": 332
+  },
+  {
+    "position": 11,
+    "points": 0,
+    "name": "Babar Azam",
+    "runs": 216
+  },
+  {
+    "position": 11,
+    "points": 0,
+    "name": "Ben Stokes",
+    "runs": 48
+  },
+  {
+    "position": 11,
+    "points": 0,
+    "name": "Dawid Malan",
+    "runs": 236
+  },
+  {
+    "position": 11,
+    "points": 0,
+    "name": "Devon Conway",
+    "runs": 279
+  },
+  {
+    "position": 11,
+    "points": 0,
+    "name": "Harry Brook",
+    "runs": 128
+  },
+  {
+    "position": 11,
+    "points": 0,
+    "name": "Ibrahim Zadran",
+    "runs": 212
+  },
+  {
+    "position": 11,
+    "points": 0,
+    "name": "Joe Root",
+    "runs": 175
+  },
+  {
+    "position": 11,
+    "points": 0,
+    "name": "Jonny Bairstow",
+    "runs": 141
+  },
+  {
+    "position": 11,
+    "points": 0,
+    "name": "KL Rahul",
+    "runs": 237
+  },
+  {
+    "position": 11,
+    "points": 0,
+    "name": "Kane Williamson",
+    "runs": 78
+  },
+  {
+    "position": 11,
+    "points": 0,
+    "name": "Marnus Labuschagne",
+    "runs": 201
+  },
+  {
+    "position": 11,
+    "points": 0,
+    "name": "Mitch Marsh",
+    "runs": 225
+  },
+  {
+    "position": 11,
+    "points": 0,
+    "name": "Shubman Gill",
+    "runs": 196
   }
  ]

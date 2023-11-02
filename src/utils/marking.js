@@ -120,6 +120,7 @@ export const markMultis = (guesses) => {
                     {
                         player: player1,
                         position: match1 ? match1.position : 'X',
+                        runs: match1 ? match1.runs : 0,
                         item: 'runs',
                         score: match1 ? match1.points : 0,
 
@@ -128,6 +129,8 @@ export const markMultis = (guesses) => {
                         player: player2,
                         position: match2 ? match2.position : 'X',
                         item: 'runs',
+                        runs: match2 ? match2.runs : 0,
+
                         score: match2 ? match2.points : 0,
                     }
                 ]

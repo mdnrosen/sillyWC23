@@ -72,7 +72,7 @@ export const MultiAnswers = ({ guesses }) => {
                     {q.choices.map((c, i) => (
                       <Paper key={i} variant="outlined" square={false} sx={{ p: 1, mb: 1, display: 'flex'}}>
                         <Box sx={{ width: '100%', display: 'flex', flexDirection: 'row',justifyContent: 'space-between', alignItems: 'center'}}>
-                          <Typography variant="body1">{c.player}</Typography>
+                          <Typography variant="body1">{c.player} ({c.runs})</Typography>
                           <Typography 
                             variant="h6"
                             color={c.score > 0 ? '#A8D1A2' : 'error'}
