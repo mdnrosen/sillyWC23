@@ -69,11 +69,6 @@ export const StandingsAnswers = ({ guesses }) => {
                     </Box>
                 </Grid>
         </Grid>
-        <Toolbar>
-            <Typography variant="overline" sx={{ mx: 'auto'}}>
-                Last update after 6 games
-            </Typography>
-        </Toolbar>
       </Box>
     </Accordion>
   )

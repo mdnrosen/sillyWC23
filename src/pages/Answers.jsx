@@ -46,6 +46,12 @@ export const Answers = () => {
         <FiftyFiftyAnswers guesses={person.guesses} />
         <MultiAnswers guesses={person.guesses} />
         <StandingsAnswers guesses={person.guesses} />
+
+        <Toolbar>
+            <Typography variant="overline" sx={{ mx: 'auto'}}>
+                Last update - Afghanistan vs Netherlands
+            </Typography>
+        </Toolbar>
     </RoundCard>
   )
 };

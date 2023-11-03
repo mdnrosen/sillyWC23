@@ -14,17 +14,18 @@ export const filterByRound = (all, subStr) => {
     })
 }
 
-export const getPos = (pos) => {
+export const getPos = (num) => {
     // return st, nd, or rd etc
-    switch (pos) {
-        case 1:
-            return `${pos}st`
-        case 2:
-            return `${pos}nd`
-        case 3:
-            return `${pos}rd`
-        default:
-            return `${pos}th`
+    if (num > 3 && num < 21) return `${num}th`;
+    switch (num % 10) {
+      case 1:
+        return `${num}st`;
+      case 2:
+        return `${num}nd`;
+      case 3:
+        return `${num}rd`;
+      default:
+        return `${num}th`;
     }
 }
 

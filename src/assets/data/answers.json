@@ -62,28 +62,28 @@
         "title": "Don't Overstep then",
         "question": "What percentage of free hits will go for six?",
         "name": "num_freehits",
-        "answer" : 22
+        "answer" : 21
     },
     {
         "num": 8,
         "title": "Runs on the board",
         "question": "What will be the average first innings score?",
         "name": "num_firstinns",
-        "answer" : 287
+        "answer" : 284
     },
     {
         "num": 9,
         "title": "Giant Killers",
         "question": "How many wickets will the Netherlands take?",
         "name": "num_dutchwkts",
-        "answer" : 75
+        "answer" : 68
     },
     {
         "num": 10,
         "title": "Michael Gough FTW",
         "question": "How many umpires' decisions will be overturned?",
         "name": "num_umpires",
-        "answer" : 51
+        "answer" : 52
     },
     {
         "num": 11,
@@ -97,7 +97,7 @@
         "title": "ANOTHER UNACADEMY CRACKING SIX",
         "question": "How many sixes will be hit?",
         "name": "num_totalsixes",
-        "answer" : 621
+        "answer" : 603
     },
     {
         "num": 13,
@@ -125,7 +125,7 @@
         "title": "Runs on the board?.",
         "question": "What will win more games?",
         "name": "h2h_bat-v-chase",
-        "answer" :["bat first"]
+        "answer" :["bat first", "chase total"]
     },
     {
         "num": 17,
