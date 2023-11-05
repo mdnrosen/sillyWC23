@@ -8,14 +8,14 @@
   {
     "position": 2,
     "points": 9,
-    "name": "Virat Kohli",
-    "runs": 442
+    "name": "Rachin Ravindra",
+    "runs": 523
   },
   {
     "position": 3,
     "points": 8,
-    "name": "Rachin Ravindra",
-    "runs": 415
+    "name": "Virat Kohli",
+    "runs": 442
   },
   {
     "position": 4,
@@ -32,109 +32,109 @@
   {
     "position": 6,
     "points": 5,
-    "name": "Aiden Markram",
-    "runs": 362
+    "name": "Daryl Mitchell",
+    "runs": 375
   },
   {
     "position": 7,
     "points": 4,
-    "name": "Mohammad Rizwan",
-    "runs": 359
+    "name": "Aiden Markram",
+    "runs": 362
   },
   {
     "position": 8,
     "points": 3,
-    "name": "Rassie van der Dussen",
-    "runs": 353
+    "name": "Mohammad Rizwan",
+    "runs": 359
   },
   {
     "position": 9,
     "points": 2,
-    "name": "Daryl Mitchell",
-    "runs": 346
+    "name": "Rassie van der Dussen",
+    "runs": 353
   },
   {
     "position": 10,
     "points": 1,
     "name": "Abdullah Shafique",
-    "runs": 332
+    "runs": 336
   },
   {
-    "position": 24,
-    "points": 0,
-    "name": "Babar Azam",
-    "runs": 216
+    "position": 13,
+    "points": null,
+    "name": "Devon Conway",
+    "runs": 314
   },
   {
-    "position": 84,
-    "points": 0,
-    "name": "Ben Stokes",
-    "runs": 48
-  },
-  {
-    "position": 18,
+    "position": 15,
     "points": 0,
     "name": "Dawid Malan",
-    "runs": 236
-  },
-  {
-    "position": 14,
-    "points": 0,
-    "name": "Devon Conway",
-    "runs": 279
-  },
-  {
-    "position": 48,
-    "points": 0,
-    "name": "Harry Brook",
-    "runs": 128
-  },
-  {
-    "position": 23,
-    "points": 0,
-    "name": "Ibrahim Zadran",
-    "runs": 232
-  },
-  {
-    "position": 36,
-    "points": 0,
-    "name": "Joe Root",
-    "runs": 175
-  },
-  {
-    "position": 46,
-    "points": 0,
-    "name": "Jonny Bairstow",
-    "runs": 141
+    "runs": 286
   },
   {
     "position": 17,
+    "points": 0,
+    "name": "Babar Azam",
+    "runs": 282
+  },
+  {
+    "position": 19,
+    "points": 0,
+    "name": "Marnus Labuschagne",
+    "runs": 272
+  },
+  {
+    "position": 23,
     "points": 0,
     "name": "KL Rahul",
     "runs": 237
   },
   {
-    "position": 69,
+    "position": 26,
     "points": 0,
-    "name": "Kane Williamson",
-    "runs": 78
+    "name": "Ibrahim Zadran",
+    "runs": 232
   },
   {
-    "position": 32,
-    "points": 0,
-    "name": "Marnus Labuschagne",
-    "runs": 201
-  },
-  {
-    "position": 24,
+    "position": 28,
     "points": 0,
     "name": "Mitch Marsh",
     "runs": 225
   },
   {
-    "position": 33,
+    "position": 32,
     "points": 0,
     "name": "Shubman Gill",
     "runs": 196
+  },
+  {
+    "position": 39,
+    "points": 0,
+    "name": "Joe Root",
+    "runs": 188
+  },
+  {
+    "position": 41,
+    "points": 0,
+    "name": "Kane Williamson",
+    "runs": 173
+  },
+  {
+    "position": 48,
+    "points": 0,
+    "name": "Jonny Bairstow",
+    "runs": 141
+  },
+  {
+    "position": 51,
+    "points": 0,
+    "name": "Harry Brook",
+    "runs": 128
+  },
+  {
+    "position": 56,
+    "points": 0,
+    "name": "Ben Stokes",
+    "runs": 112
   }
  ]
