@@ -24,15 +24,15 @@
     "position": 4
   },
   {
-    "name": "Afghanistan",
-    "id": "afghanistan",
-    "image": "https://cdn.countryflags.com/thumbs/afghanistan/flag-square-500.png",
-    "position": 5
-  },
-  {
     "name": "Pakistan",
     "id": "pakistan",
     "image": "https://cdn.countryflags.com/thumbs/pakistan/flag-square-500.png",
+    "position": 5
+  },
+  {
+    "name": "Afghanistan",
+    "id": "afghanistan",
+    "image": "https://cdn.countryflags.com/thumbs/afghanistan/flag-square-500.png",
     "position": 6
   },
   {
