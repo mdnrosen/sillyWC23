@@ -3,31 +3,31 @@
     "position": 1,
     "points": 10,
     "name": "Quinton de Kock",
-    "runs": 545
+    "runs": 550
   },
   {
     "position": 2,
     "points": 9,
-    "name": "Rachin Ravindra",
-    "runs": 523
+    "name": "Virat Kohli",
+    "runs": 543
   },
   {
     "position": 3,
     "points": 8,
-    "name": "Virat Kohli",
-    "runs": 442
+    "name": "Rachin Ravindra",
+    "runs": 523
   },
   {
     "position": 4,
     "points": 7,
-    "name": "David Warner",
-    "runs": 413
+    "name": "Rohit Sharma",
+    "runs": 442
   },
   {
     "position": 5,
     "points": 6,
-    "name": "Rohit Sharma",
-    "runs": 402
+    "name": "David Warner",
+    "runs": 413
   },
   {
     "position": 6,
@@ -39,19 +39,19 @@
     "position": 7,
     "points": 4,
     "name": "Aiden Markram",
-    "runs": 362
+    "runs": 371
   },
   {
     "position": 8,
     "points": 3,
-    "name": "Mohammad Rizwan",
-    "runs": 359
+    "name": "Rassie van der Dussen",
+    "runs": 366
   },
   {
     "position": 9,
     "points": 2,
-    "name": "Rassie van der Dussen",
-    "runs": 353
+    "name": "Mohammad Rizwan",
+    "runs": 359
   },
   {
     "position": 10,
@@ -66,7 +66,7 @@
     "runs": 314
   },
   {
-    "position": 15,
+    "position": 16,
     "points": 0,
     "name": "Dawid Malan",
     "runs": 286
@@ -78,7 +78,7 @@
     "runs": 282
   },
   {
-    "position": 19,
+    "position": 20,
     "points": 0,
     "name": "Marnus Labuschagne",
     "runs": 272
@@ -87,7 +87,7 @@
     "position": 23,
     "points": 0,
     "name": "KL Rahul",
-    "runs": 237
+    "runs": 245
   },
   {
     "position": 26,
@@ -96,7 +96,7 @@
     "runs": 232
   },
   {
-    "position": 28,
+    "position": 29,
     "points": 0,
     "name": "Mitch Marsh",
     "runs": 225
@@ -132,7 +132,7 @@
     "runs": 128
   },
   {
-    "position": 56,
+    "position": 57,
     "points": 0,
     "name": "Ben Stokes",
     "runs": 112
