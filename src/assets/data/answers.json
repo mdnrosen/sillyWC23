@@ -32,7 +32,7 @@
         "question": "Which bowler will take the fewest wickets?",
         "name": "eng_fewestwickets",
         "answer": [
-            "Moeen Ali"
+            "Joe Root"
         ]
     },
     {
@@ -41,7 +41,7 @@
         "question": "Who will have the lowest batting strike rate?",
         "name": "eng_strikerate",
         "answer": [
-            "Ben Stokes"
+            "Liam Livingstone"
         ]
     },
     {
@@ -50,11 +50,7 @@
         "question": "Who will drop the most catches?",
         "name": "eng_drops",
         "answer": [
-            "Reece Topley",
-            "Dawid Malan",
-            "Sam Curran",
-            "Joe Root",
-            "Moeen Ali"
+            "Joe Root"
         ]
     },
     {
@@ -62,28 +58,28 @@
         "title": "Don't Overstep then",
         "question": "What percentage of free hits will go for six?",
         "name": "num_freehits",
-        "answer" : 19
+        "answer" : 21
     },
     {
         "num": 8,
         "title": "Runs on the board",
         "question": "What will be the average first innings score?",
         "name": "num_firstinns",
-        "answer" : 288
+        "answer" : 289
     },
     {
         "num": 9,
         "title": "Giant Killers",
         "question": "How many wickets will the Netherlands take?",
         "name": "num_dutchwkts",
-        "answer" : 68
+        "answer" : 70
     },
     {
         "num": 10,
         "title": "Michael Gough FTW",
         "question": "How many umpires' decisions will be overturned?",
         "name": "num_umpires",
-        "answer" : 52
+        "answer" : 50
     },
     {
         "num": 11,
@@ -97,7 +93,7 @@
         "title": "ANOTHER UNACADEMY CRACKING SIX",
         "question": "How many sixes will be hit?",
         "name": "num_totalsixes",
-        "answer" : 613
+        "answer" : 617
     },
     {
         "num": 13,
@@ -125,7 +121,7 @@
         "title": "Runs on the board?.",
         "question": "What will win more games?",
         "name": "h2h_bat-v-chase",
-        "answer" :["chase total" ]
+        "answer" :["chase total", "bat first" ]
     },
     {
         "num": 17,

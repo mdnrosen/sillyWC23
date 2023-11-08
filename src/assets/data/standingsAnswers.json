@@ -36,27 +36,28 @@
     "position": 6
   },
   {
+    "name": "England",
+    "id": "england",
+    "image": "https://cdn.countryflags.com/thumbs/england/flag-square-500.png",
+    "position": 7
+  },
+  {
     "name": "Bangladesh",
     "id": "bangladesh",
     "image": "https://cdn.countryflags.com/thumbs/bangladesh/flag-square-500.png",
-    "position": 7
+    "position": 8
   },
   {
     "name": "Sri Lanka",
     "id": "sri_lanka",
     "image": "https://cdn.countryflags.com/thumbs/sri-lanka/flag-square-500.png",
-    "position": 8
+    "position": 9
   },
   {
     "name": "Netherlands",
     "id": "netherlands",
     "image": "https://cdn.countryflags.com/thumbs/netherlands/flag-square-500.png",
-    "position": 8
-  },
-  {
-    "name": "England",
-    "id": "england",
-    "image": "https://cdn.countryflags.com/thumbs/england/flag-square-500.png",
     "position": 10
   }
+
  ]
