@@ -62,7 +62,7 @@
         "title": "Don't Overstep then",
         "question": "What percentage of free hits will go for six?",
         "name": "num_freehits",
-        "answer" : 20
+        "answer" : 19
     },
     {
         "num": 8,
@@ -97,7 +97,7 @@
         "title": "ANOTHER UNACADEMY CRACKING SIX",
         "question": "How many sixes will be hit?",
         "name": "num_totalsixes",
-        "answer" : 601
+        "answer" : 613
     },
     {
         "num": 13,
@@ -125,7 +125,7 @@
         "title": "Runs on the board?.",
         "question": "What will win more games?",
         "name": "h2h_bat-v-chase",
-        "answer" :[ "bat first" ]
+        "answer" :["chase total" ]
     },
     {
         "num": 17,
