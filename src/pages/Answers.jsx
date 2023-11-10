@@ -49,7 +49,7 @@ export const Answers = () => {
 
         <Toolbar>
             <Typography variant="overline" sx={{ mx: 'auto'}}>
-                Last update after: ENG v NET
+                Last update after: SL v NZ
             </Typography>
         </Toolbar>
     </RoundCard>

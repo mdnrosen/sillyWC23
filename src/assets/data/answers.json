@@ -65,7 +65,7 @@
         "title": "Runs on the board",
         "question": "What will be the average first innings score?",
         "name": "num_firstinns",
-        "answer" : 289
+        "answer" : 287
     },
     {
         "num": 9,
@@ -93,7 +93,7 @@
         "title": "ANOTHER UNACADEMY CRACKING SIX",
         "question": "How many sixes will be hit?",
         "name": "num_totalsixes",
-        "answer" : 617
+        "answer" : 611
     },
     {
         "num": 13,
@@ -121,7 +121,7 @@
         "title": "Runs on the board?.",
         "question": "What will win more games?",
         "name": "h2h_bat-v-chase",
-        "answer" :["chase total", "bat first" ]
+        "answer" :["chase total"]
     },
     {
         "num": 17,
