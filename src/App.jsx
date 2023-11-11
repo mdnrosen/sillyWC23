@@ -23,6 +23,7 @@ import { CheckIsLocked } from './components/CheckIsLocked'
 import { Locked } from './pages/Locked'
 import { Answers } from './pages/Answers'
 import { SearchPerson } from './pages/SearchPerson'
+import { Summary } from './pages/Summary'
 
 
 function App() {
@@ -46,6 +47,7 @@ function App() {
                 <Route path='/submit' element={<SubmitAnswers />} />
                 <Route path="/submitted" element={<Submitted />} /> */}
                 <Route path="/:id" element={<Answers />} />"
+                {/* <Route exact path="/summary" element={<Summary />}/> */}
                 <Route exact path='/' element={<SearchPerson />} />
               </Routes>
             </GuessesProvider>

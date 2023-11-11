@@ -58,7 +58,7 @@
         "title": "Don't Overstep then",
         "question": "What percentage of free hits will go for six?",
         "name": "num_freehits",
-        "answer" : 21
+        "answer" : 20
     },
     {
         "num": 8,
@@ -93,7 +93,7 @@
         "title": "ANOTHER UNACADEMY CRACKING SIX",
         "question": "How many sixes will be hit?",
         "name": "num_totalsixes",
-        "answer" : 611
+        "answer" : 612
     },
     {
         "num": 13,
