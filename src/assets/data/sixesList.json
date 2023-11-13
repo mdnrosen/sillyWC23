@@ -5,7 +5,7 @@
   },
   {
     "name": "Ben Stokes",
-    "sixes": 12
+    "sixes": 11
   },
   {
     "name": "David Miller",
@@ -53,11 +53,11 @@
   },
   {
     "name": "Rohit Sharma",
-    "sixes": 22
+    "sixes": 24
   },
   {
     "name": "Shubman Gill",
-    "sixes": 5
+    "sixes": 9
   },
   {
     "name": "Suryakumar Yadav",
@@ -65,6 +65,6 @@
   },
   {
     "name": "Virat Kohli",
-    "sixes": 6
+    "sixes": 7
   }
  ]

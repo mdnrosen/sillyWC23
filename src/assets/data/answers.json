@@ -65,21 +65,21 @@
         "title": "Runs on the board",
         "question": "What will be the average first innings score?",
         "name": "num_firstinns",
-        "answer" : 287
+        "answer" : 290
     },
     {
         "num": 9,
         "title": "Giant Killers",
         "question": "How many wickets will the Netherlands take?",
         "name": "num_dutchwkts",
-        "answer" : 70
+        "answer" : 66
     },
     {
         "num": 10,
         "title": "Michael Gough FTW",
         "question": "How many umpires' decisions will be overturned?",
         "name": "num_umpires",
-        "answer" : 50
+        "answer" : 48
     },
     {
         "num": 11,
@@ -93,7 +93,7 @@
         "title": "ANOTHER UNACADEMY CRACKING SIX",
         "question": "How many sixes will be hit?",
         "name": "num_totalsixes",
-        "answer" : 612
+        "answer" : 631
     },
     {
         "num": 13,
