@@ -65,7 +65,7 @@
         "title": "Runs on the board",
         "question": "What will be the average first innings score?",
         "name": "num_firstinns",
-        "answer" : 290
+        "answer" : 289
     },
     {
         "num": 9,
@@ -93,7 +93,7 @@
         "title": "ANOTHER UNACADEMY CRACKING SIX",
         "question": "How many sixes will be hit?",
         "name": "num_totalsixes",
-        "answer" : 650
+        "answer" : 644
     },
     {
         "num": 13,
